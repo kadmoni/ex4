@@ -131,7 +131,7 @@ public:
      */
     int getAttackStrength() const;
 
-private:
+protected:
     std::string m_name;
     int m_maxHp;
     int m_hp;
