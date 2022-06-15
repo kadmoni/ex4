@@ -5,12 +5,39 @@
 #include "Player.h"
 
 
-class Rogue: public Player{
+class Rogue: public Player {
 public:
+    /*
+     * constructor for subclass Rogue
+     * 
+     * @param name - the name of the Rogue, Passed to baseclass Player
+     * 
+     * @return
+     *      a new instance of Rogue
+     */
+    Rogue(std::string name);
+
+    /*
+     * Virtual copy constructor for subclass Rogue
+     * 
+     * @return
+     *      pointer of baseclass type (Player) to a new Rogue
+     */
+    Player *clone() const override;
+
     /*
      * overloading << operator for printing according to instructions
      */
-    friend std::ostream& operator<<(std::ostream& out,const Rogue& rogue);
+    friend std::ostream &operator<<(std::ostream &out, const Rogue &rogue);
+
+    /*
+     * copy constructor, assignment operator and destructor defined as default
+     */
+    Rogue(const Rogue &) = default;
+
+    Rogue &operator=(const Rogue &) = default;
+
+    ~Rogue() override = default;
 };
 
 #endif //EX4_ROGUE_H

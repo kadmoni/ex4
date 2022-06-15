@@ -7,9 +7,32 @@
 class Fighter: public Player{
 public:
     /*
+     * constructor for subclass Fighter
+     *
+     * @param name - the name of the Fighter, Passed to baseclass Player
+     *
+     * @return
+     *      a new instance of Fighter
+     */
+    Fighter(std::string name);
+    /*
+     * Virtual copy constructor for subclass Fighter
+     *
+     * @return
+     *      pointer of baseclass type (Player) to a new Fighter
+     */
+    Player* clone () const override;
+    /*
      * overloading << operator for printing according to instructions
      */
     friend std::ostream& operator<<(std::ostream& out,const Fighter& fighter);
+    /*
+     * copy constructor, assignment operator and destructor defined as default
+     */
+    Fighter(const Fighter&) = default;
+    Fighter& operator=(const Fighter&) = default;
+    ~Fighter() override = default;
+
 };
 
 #endif //EX4_FIGHTER_H

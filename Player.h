@@ -34,7 +34,7 @@ public:
      * D'tor for class Player
      * default is used
      */
-    ~Player() = default;
+    virtual ~Player() = default;
 
     /*
      * allows assignment of Player to Player
@@ -130,6 +130,9 @@ public:
      *      the strength of attack
      */
     int getAttackStrength() const;
+
+    virtual Player* clone() const = 0;
+
 
 protected:
     std::string m_name;
