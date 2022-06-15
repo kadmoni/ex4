@@ -131,6 +131,10 @@ public:
      */
     virtual int getAttackStrength() const;
 
+    virtual std::ostream& print (std::ostream& out) const = 0;
+
+    friend std::ostream &operator<<(std::ostream &out, const Player& player);
+
     virtual Player* clone() const = 0;
 
     const int MULTIPLIER = 2;

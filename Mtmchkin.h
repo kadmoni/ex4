@@ -1,5 +1,9 @@
 #ifndef MTMCHKIN_H_
 #define MTMCHKIN_H_
+#include "Player.h"
+#include <deque>
+#include <queue>
+#include <memory>
 
 class Mtmchkin{
 
@@ -12,7 +16,7 @@ public:
     * @return
     *      A new instance of Mtmchkin.
     */
-    Mtmchkin(const string fileName);
+    Mtmchkin(const std::string fileName);
     
     /*
     * Play the next Round of the game - according to the instruction in the exercise document.
@@ -46,6 +50,13 @@ public:
     *          int - number of rounds played
     */
     int getNumberOfRounds() const;
+
+private:
+    std::vector<std::unique_ptr<Player>> m_activePlayers;
+    std::vector<std::unique_ptr<Player>> m_winners;
+    std::deque<std::unique_ptr<Player>> m_losers;
+    std::queue<std::unique_ptr<Cards>> m_deck;
+    int m_numOfRounds;
 };
 
 

@@ -25,9 +25,9 @@ void Wizard::heal(int amount)
     }
 }
 
-std::ostream& operator<<(std::ostream& out,const Wizard& wizard)
+std::ostream& Wizard::print(std::ostream &out) const
 {
-    printPlayerDetails(out,wizard.m_name,Wizard::JOB,wizard.m_level,wizard.m_force,wizard.m_hp,wizard.m_coins);
+    printPlayerDetails(out,m_name,Wizard::JOB,m_level,m_force,m_hp,m_coins);
     return out;
 }
 

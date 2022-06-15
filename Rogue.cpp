@@ -18,9 +18,9 @@ void Rogue::addCoins(int amount)
     this->m_coins+= amount*MULTIPLIER;
 }
 
-std::ostream& operator<<(std::ostream& out,const Rogue& rogue)
+std::ostream& Rogue::print(std::ostream &out) const
 {
-    printPlayerDetails(out,rogue.m_name,Rogue::JOB,rogue.m_level,rogue.m_force,rogue.m_hp,rogue.m_coins);
+    printPlayerDetails(out,m_name,Rogue::JOB,m_level,m_force,m_hp,m_coins);
     return out;
 }
 

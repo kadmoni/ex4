@@ -17,11 +17,10 @@ int Fighter::getAttackStrength() const
     return this->m_level+this->m_force*MULTIPLIER;
 }
 
-std::ostream& operator<<(std::ostream& out,const Fighter& fighter)
+std::ostream& Fighter::print(std::ostream &out) const
 {
-    printPlayerDetails(out,fighter.m_name,Fighter::JOB,fighter.m_level,fighter.m_force,fighter.m_hp,fighter.m_coins);
+    printPlayerDetails(out,m_name,Fighter::JOB,m_level,m_force,m_hp,m_coins);
     return out;
 }
-
 
 

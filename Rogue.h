@@ -35,7 +35,8 @@ public:
     /*
      * overloading << operator for printing according to instructions
      */
-    friend std::ostream &operator<<(std::ostream &out, const Rogue &rogue);
+
+    std::ostream & print(std::ostream &out) const override;
 
     /*
      * copy constructor, assignment operator and destructor defined as default

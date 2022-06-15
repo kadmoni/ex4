@@ -32,10 +32,9 @@ public:
     *      void
     */
     void heal(int amount) override;
-    /*
-     * overloading << operator for printing according to instructions
-     */
-    friend std::ostream& operator<<(std::ostream& out,const Wizard& wizard);
+
+    std::ostream & print(std::ostream &out) const override;
+
     /*
      * copy constructor, assignment operator and destructor defined as default
      */
