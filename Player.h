@@ -84,7 +84,7 @@ public:
      *      void
      */
 
-    void heal(int amount);
+    virtual void heal(int amount);
 
     /*
      * reduces Player health
@@ -111,11 +111,11 @@ public:
      * @return
      *      void
      */
-    void addCoins(int amount);
+    virtual void addCoins(int amount);
 
     /*
      * reduces coins from the Player if he has enough coins
-     *
+     *r
      * @param amount - the amount to be reduced from coins
      * @return
      *      true - the Player has enough coins to pay (coins reduced)
@@ -129,9 +129,11 @@ public:
      * @return
      *      the strength of attack
      */
-    int getAttackStrength() const;
+    virtual int getAttackStrength() const;
 
     virtual Player* clone() const = 0;
+
+    const int MULTIPLIER = 2;
 
 
 protected:

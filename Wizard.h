@@ -25,6 +25,14 @@ public:
      */
     Player* clone () const override;
     /*
+    * adds to the hp of the Player
+    *
+    * @param amount - the amount of hp to be added to the Wizard according to Wizard stipulations
+    * @return
+    *      void
+    */
+    void heal(int amount) override;
+    /*
      * overloading << operator for printing according to instructions
      */
     friend std::ostream& operator<<(std::ostream& out,const Wizard& wizard);
@@ -34,6 +42,8 @@ public:
     Wizard(const Wizard&) = default;
     Wizard& operator=(const Wizard&) = default;
     ~Wizard() override = default;
+
+    static const std::string JOB;
 };
 
 #endif //EX4_WIZARD_H

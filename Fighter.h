@@ -23,6 +23,15 @@ public:
      */
     Player* clone () const override;
     /*
+    * adds to the hp of the Player
+    *
+    * @param amount - the amount of hp to be added to the Fighter according to Fighter stipulations
+    * @return
+    *      void
+    */
+    int getAttackStrength() const override;
+
+    /*
      * overloading << operator for printing according to instructions
      */
     friend std::ostream& operator<<(std::ostream& out,const Fighter& fighter);
@@ -32,6 +41,8 @@ public:
     Fighter(const Fighter&) = default;
     Fighter& operator=(const Fighter&) = default;
     ~Fighter() override = default;
+
+    static const std::string JOB;
 
 };
 
