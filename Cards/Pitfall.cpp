@@ -13,9 +13,10 @@
 using std::cout;
 using std::endl;
 
+const std::string Pitfall::TYPE = "Pitfall";
+
 
 Pitfall::Pitfall() : Card(),
-    m_name("Pitfall"),
     m_damage(10)
 {}
 
@@ -36,7 +37,7 @@ void Pitfall::applyEncounter(Player& player) const {
 
 std::ostream& Pitfall::print(std::ostream &out) const
 {
-    printCardDetails(out,m_name);
+    printCardDetails(out,Pitfall::TYPE);
     printEndOfCardDetails(out);
     return out;
 }

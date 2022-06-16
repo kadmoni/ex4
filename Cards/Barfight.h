@@ -1,8 +1,8 @@
 //
 // Created by Daniel_Meents on 07/04/2022.
 //
-#ifndef EX2_Batfight_H
-#define EX2_Batfight_H
+#ifndef EX2_Barfight_H
+#define EX2_Barfight_H
 
 #include <string>
 #include "Player.h"
@@ -60,11 +60,12 @@ public:
     ~Barfight() override = default;
     Barfight& operator=(const Barfight& other) = default;
 
+    static const std::string TYPE;
+
 
 private:
-    std::string m_name;
     int m_damage;
 };
 
 
-#endif //EX2_Batfight_H
+#endif //EX2_Barfight_H

@@ -52,9 +52,10 @@ public:
     ~Goblin() override = default;
     Goblin& operator=(const Goblin& other) = default;
 
+    static const std::string TYPE;
+
 
 private:
-    std::string m_name;
     int m_force;
     int m_loot;
     int m_damage;

@@ -52,9 +52,9 @@ public:
     ~Pitfall() override = default;
     Pitfall& operator=(const Pitfall& other) = default;
 
+    static const std::string TYPE;
 
 private:
-    std::string m_name;
     int m_damage;
 };
 

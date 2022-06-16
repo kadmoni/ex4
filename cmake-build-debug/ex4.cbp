@@ -138,6 +138,9 @@
 		<Unit filename="C:/Users/barke/ex4/Cards/Vampire.h">
 			<Option target="ex4"/>
 		</Unit>
+		<Unit filename="C:/Users/barke/ex4/Exception.h">
+			<Option target="ex4"/>
+		</Unit>
 		<Unit filename="C:/Users/barke/ex4/Fighter.cpp">
 			<Option target="ex4"/>
 		</Unit>

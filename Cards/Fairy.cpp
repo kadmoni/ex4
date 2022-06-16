@@ -12,9 +12,10 @@
 using std::cout;
 using std::endl;
 
+const std::string Fairy::TYPE = "Fairy";
+
 
 Fairy::Fairy() : Card(),
-    m_name("Fairy"),
     m_heal(10)
 {}
 
@@ -35,7 +36,7 @@ void Fairy::applyEncounter(Player& player) const {
 
 std::ostream& Fairy::print(std::ostream &out) const
 {
-    printCardDetails(out,m_name);
+    printCardDetails(out,Fairy::TYPE);
     printEndOfCardDetails(out);
     return out;
 }

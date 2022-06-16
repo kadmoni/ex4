@@ -11,9 +11,10 @@
 using std::cout;
 using std::endl;
 
+const std::string Merchant::TYPE = "Merchant";
+
 
 Merchant::Merchant() : Card(),
-    m_name("Merchant"),
     m_heal(1),
     m_buff(1),
     m_healCost(5),
@@ -71,7 +72,7 @@ void Merchant::applyEncounter(Player& player) const {
 
 std::ostream& Merchant::print(std::ostream &out) const
 {
-    printCardDetails(out,m_name);
+    printCardDetails(out,Merchant::TYPE);
     printEndOfCardDetails(out);
     return out;
 }
