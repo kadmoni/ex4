@@ -74,8 +74,8 @@ public:
     virtual Card* clone() const = 0;
 
 
-//private:
-//    CardStats m_stats;
+protected:
+    std::string m_name;
 
 };
 

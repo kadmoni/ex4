@@ -12,40 +12,29 @@ using std::endl;
 void negativeCheck(int& a);
 
 
-Card::Card(CardType type, const CardStats& stats) :
-    m_effect(type),
-    m_stats(stats)
+Fairy::Fairy() : Card()
 {}
 
+Card* Fairy::clone() const
+{
+    return new Fairy(*this);
+}
 
-void Card::applyEncounter(Player& player) const {
+void Fairy::applyEncounter(Player& player) const {
     Wizard* ptr = dynamic_cast<Wizard*>(&player);
     bool isWizard = ptr != nullptr;
     if (!isWizard) {
         return;
     }
-    player.heal(10);
+    player.heal(m_heal);
     printFairyMessage(isWizard);
 }
 
-
-void Card::printInfo() const {
-    if (this->m_effect == CardType::Battle)
-    {
-        printBattleCardInfo(m_stats);
-    }
-    else if (this->m_effect == CardType::Buff)
-    {
-        printBuffCardInfo(m_stats);
-    }
-    else if (this->m_effect == CardType::Heal)
-    {
-        printHealCardInfo(m_stats);
-    }
-    else if (this->m_effect == CardType::Treasure)
-    {
-        printTreasureCardInfo(m_stats);
-    }
+std::ostream& Fairy::print(std::ostream &out) const
+{
+    printCardDetails(out,m_name);
+    printEndOfCardDetails(out);
+    return out;
 }
 
 void negativeCheck(int& a) {

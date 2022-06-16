@@ -8,17 +8,8 @@
 #include "Player.h"
 #include "utilities.h"
 
-/*
- *  CardType:
- *  Each card has an type:
- *  BATTLE - Battle against a monster.
- *  BUFF - Increase your player's force by 'm_force' points of CardStats.
- *  HEAL - Increase your player's HP by 'm_heal' points  of CardStats (no more than maxHP points).
- *  TREASURE - Get 'm_profit' coins of CardStats.
-*/
-enum class CardType {Battle, Buff, Heal, Treasure}; // The type of the Card
 
-class Card {
+class Vampire ; public Card {
 public:
     /*
      * C'tor of Card class
@@ -28,9 +19,11 @@ public:
      * @return
      *      A new instance of Card.
     */
-    Card(CardType type, const CardStats& stats);
+    Vampire(std::string m_name = "Vampire", int m_force = 10, int m_loot = 2, int m_damage = 10, int m_debuff = 1);
 
+    Card* clone() const override;
 
+    
     /*
      * Handling the player's applyEncounter with the card:
      *
@@ -47,26 +40,23 @@ public:
      * @return
      *      void
     */
-    void printInfo() const;
+    std::ostream & print(std::ostream &out) const override;
 
-
-    /*
-     * C'tor to the "default card" - Treasure card that gives 0 coins
-    */
-    Card(): m_effect(CardType::Treasure), m_stats() {}
 
 
     /*
      * Here we are explicitly telling the compiler to use the default methods
     */
-    Card(const Card&) = default;
-    ~Card() = default;
-    Card& operator=(const Card& other) = default;
+    Vampire(const Card&) = default;
+    ~Vampire() = default;
+    Vampire& operator=(const Card& other) = default;
 
 
 private:
-    CardType m_effect;
-    CardStats m_stats;
+    int m_force;
+    int m_loot;
+    int m_damage;
+    int m_debuff;
 
 };
 

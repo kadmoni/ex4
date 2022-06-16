@@ -12,13 +12,17 @@ using std::endl;
 void negativeCheck(int& a);
 
 
-Card::Card(CardType type, const CardStats& stats) :
-    m_effect(type),
-    m_stats(stats)
+Merchant::Merchant() : Card()
 {}
 
 
-void Card::applyEncounter(Player& player) const {
+Card* Merchant::clone() const
+{
+    return new Merchant(*this);
+}
+
+
+void Merchant::applyEncounter(Player& player) const {
     printMerchantInitialMessageForInteractiveEncounter(cout, player.getName(), player.getCoins());
     
     std::string choice;
@@ -33,48 +37,36 @@ void Card::applyEncounter(Player& player) const {
     }
     else if (choice == 1)
     {
-        if (!player.pay(5))
+        if (!player.pay(m_healCost))
         {
             printMerchantInsufficientCoins(cout);
         }
-        player.heal(1);
+        player.heal(m_heal);
         type = 1;
-        cost = 5;
+        cost = m_healCost;
     }
     else if (choice == 2)
     {
-        if (!player.pay(10))
+        if (!player.pay(m_buffCost))
         {
             printMerchantInsufficientCoins(cout);
         }
-        player.buff(1);
+        player.buff(m_buff);
         type = 2;
-        cost = 10;
+        cost = m_buffCost;
     }
     else {
         printInvalidInput();
     }
-    printMerchantSummary(cout, player.getName(), type, )
+    printMerchantSummary(cout, player.getName(), type, cost);
 }
 
 
-void Card::printInfo() const {
-    if (this->m_effect == CardType::Battle)
-    {
-        printBattleCardInfo(m_stats);
-    }
-    else if (this->m_effect == CardType::Buff)
-    {
-        printBuffCardInfo(m_stats);
-    }
-    else if (this->m_effect == CardType::Heal)
-    {
-        printHealCardInfo(m_stats);
-    }
-    else if (this->m_effect == CardType::Treasure)
-    {
-        printTreasureCardInfo(m_stats);
-    }
+std::ostream& Merchant::print(std::ostream &out) const
+{
+    printCardDetails(out,m_name);
+    printEndOfCardDetails(out);
+    return out;
 }
 
 void negativeCheck(int& a) {

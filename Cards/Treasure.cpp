@@ -12,36 +12,27 @@ using std::endl;
 void negativeCheck(int& a);
 
 
-Card::Card(CardType type, const CardStats& stats) :
-    m_effect(type),
-    m_stats(stats)
+Treasure::Treasure() : card()
 {}
 
+Card* Treasure::clone() const
+{
+    return new Treasure(*this);
+}
 
-void Card::applyEncounter(Player& player) const {
-    player.addCoins(10);
+void Treasure::applyEncounter(Player& player) const {
+    player.addCoins(m_loot);
     printTreasureMessage();
 }
 
 
-void Card::printInfo() const {
-    if (this->m_effect == CardType::Battle)
-    {
-        printBattleCardInfo(m_stats);
-    }
-    else if (this->m_effect == CardType::Buff)
-    {
-        printBuffCardInfo(m_stats);
-    }
-    else if (this->m_effect == CardType::Heal)
-    {
-        printHealCardInfo(m_stats);
-    }
-    else if (this->m_effect == CardType::Treasure)
-    {
-        printTreasureCardInfo(m_stats);
-    }
+std::ostream& Treasure::print(std::ostream &out) const
+{
+    printCardDetails(out,m_name);
+    printEndOfCardDetails(out);
+    return out;
 }
+
 
 void negativeCheck(int& a) {
     if (a < 0)

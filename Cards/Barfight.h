@@ -27,7 +27,10 @@ public:
      * @return
      *      A new instance of Card.
     */
-    Card(CardType type, const CardStats& stats);
+    Barfight(std::string m_name = "Barfight", int m_damage = 10);
+    
+    
+    Card* clone() const override;
 
 
     /*
@@ -46,26 +49,20 @@ public:
      * @return
      *      void
     */
-    void printInfo() const;
+ //   void printInfo() const;
 
-
-    /*
-     * C'tor to the "default card" - Treasure card that gives 0 coins
-    */
-    Card(): m_effect(CardType::Treasure), m_stats() {}
-
+    std::ostream & print(std::ostream &out) const override;
 
     /*
      * Here we are explicitly telling the compiler to use the default methods
     */
-    Card(const Card&) = default;
-    ~Card() = default;
-    Card& operator=(const Card& other) = default;
+    Barfight(const Card&) = default;
+    ~Barfight() = default;
+    Barfight& operator=(const Card& other) = default;
 
 
 private:
     int m_damage;
-    ///////////
 };
 
 

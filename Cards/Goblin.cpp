@@ -12,47 +12,39 @@ using std::endl;
 void negativeCheck(int& a);
 
 
-Card::Card(CardType type, const CardStats& stats) :
-    m_effect(type),
-    m_stats(stats)
+Goblin::Goblin() : Card()
 {}
 
 
-void Card::applyEncounter(Player& player) const {
-    bool win = player.getAttackStrength() >= 6;
+Card* Goblin::clone() const
+{
+    return new Goblin(*this);
+}
+
+void Dragon::applyEncounter(Player& player) const {
+    bool win = player.getAttackStrength() >= m_force;
     if (win)
     {
         player.levelUp();
-        player.addCoins(2);
-        printWinBattle(player.getName(), "Goblin");
+        player.addCoins(m_loot);
+        printWinBattle(player.getName(), m_name);
 
     }
     else
     {
-        player.damage(10);
-        printLossBattle(player.getName(), "Goblin");
+        player.damage(m_damage);
+        printLossBattle(player.getName(), m_name);
 
     }
 }
 
 
-void Card::printInfo() const {
-    if (this->m_effect == CardType::Battle)
-    {
-        printBattleCardInfo(m_stats);
-    }
-    else if (this->m_effect == CardType::Buff)
-    {
-        printBuffCardInfo(m_stats);
-    }
-    else if (this->m_effect == CardType::Heal)
-    {
-        printHealCardInfo(m_stats);
-    }
-    else if (this->m_effect == CardType::Treasure)
-    {
-        printTreasureCardInfo(m_stats);
-    }
+std::ostream& Goblin::print(std::ostream &out) const
+{
+    printCardDetails(out,m_name);
+    printMonsterDetails(out, m_force, m_damage, m_loot, 0);
+    printEndOfCardDetails(out);
+    return out;
 }
 
 void negativeCheck(int& a) {

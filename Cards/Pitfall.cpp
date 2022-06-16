@@ -12,37 +12,29 @@ using std::endl;
 void negativeCheck(int& a);
 
 
-Card::Card() {}
+Pitfall::Pitfall() : card() {}
 
+Card* Pitfall::clone() const
+{
+    return new Pitfall(*this);
+}
 
-void Card::applyEncounter(Player& player) const {
+void Pitfall::applyEncounter(Player& player) const {
     Rogue* ptr = dynamic_cast<Rogue*>(&player);
     bool isRogue = ptr != nullptr;
     if (!isRogue) {
-        player.damage(10);
+        player.damage(m_damage);
     }
     printPitfallMessage(isRogue);
 }
 
 
-//void Card::printInfo() const {
-//    if (this->m_effect == CardType::Battle)
-//    {
-//        printBattleCardInfo(m_stats);
-//    }
-//    else if (this->m_effect == CardType::Buff)
-//    {
-//        printBuffCardInfo(m_stats);
-//    }
-//    else if (this->m_effect == CardType::Heal)
-//    {
-//        printHealCardInfo(m_stats);
-//    }
-//    else if (this->m_effect == CardType::Treasure)
-//    {
-//        printTreasureCardInfo(m_stats);
-//    }
-//}
+std::ostream& Pitfall::print(std::ostream &out) const
+{
+    printCardDetails(out,m_name);
+    printEndOfCardDetails(out);
+    return out;
+}
 
 void negativeCheck(int& a) {
     if (a < 0)

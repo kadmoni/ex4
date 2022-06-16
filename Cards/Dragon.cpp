@@ -12,48 +12,41 @@ using std::endl;
 void negativeCheck(int& a);
 
 
-Card::Card(CardType type, const CardStats& stats) :
-    m_effect(type),
-    m_stats(stats)
+Dragon::Dragon() : Card()
 {}
 
+Card* Dragon::clone() const
+{
+    return new Dragon(*this);
+}
 
-void Card::applyEncounter(Player& player) const {
-    bool win = player.getAttackStrength() >= 25;
+void Dragon::applyEncounter(Player& player) const {
+    bool win = player.getAttackStrength() >= m_force;
     if (win)
     {
         player.levelUp();
-        player.addCoins(1000);
-        printWinBattle(player.getName(), "Dragon");
+        player.addCoins(m_loot);
+        printWinBattle(player.getName(), m_name);
 
     }
     else
     {
         int damage = player.getHp();
         player.damage(damage);
-        printLossBattle(player.getName(), "Dragon");
+        printLossBattle(player.getName(), m_name);
     }
 }
 
 
-void Card::printInfo() const {
-    if (this->m_effect == CardType::Battle)
-    {
-        printBattleCardInfo(m_stats);
-    }
-    else if (this->m_effect == CardType::Buff)
-    {
-        printBuffCardInfo(m_stats);
-    }
-    else if (this->m_effect == CardType::Heal)
-    {
-        printHealCardInfo(m_stats);
-    }
-    else if (this->m_effect == CardType::Treasure)
-    {
-        printTreasureCardInfo(m_stats);
-    }
+std::ostream& Dragon::print(std::ostream &out) const
+{
+    printCardDetails(out,m_name);
+    printMonsterDetails(out, m_force, 0, m_loot, 1);
+    printEndOfCardDetails(out);
+    return out;
 }
+
+
 
 void negativeCheck(int& a) {
     if (a < 0)
