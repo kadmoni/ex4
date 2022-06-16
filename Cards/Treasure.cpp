@@ -19,58 +19,8 @@ Card::Card(CardType type, const CardStats& stats) :
 
 
 void Card::applyEncounter(Player& player) const {
-    if (this->m_effect == CardType::Battle)
-    {
-        bool win = player.getAttackStrength() >= this->m_stats.force;
-        if (win)
-        {
-            int loot = this->m_stats.loot;
-            negativeCheck(loot);
-            player.levelUp();
-            player.addCoins(loot);
-        }
-
-        else
-        {
-            int damage = this->m_stats.hpLossOnDefeat;
-            negativeCheck(damage);
-            player.damage(damage);
-        }
-
-        printBattleResult(win);
-    }
-    else if (this->m_effect == CardType::Buff)
-    {
-        int cost = this->m_stats.cost;
-        negativeCheck(cost);
-        if (!player.pay(cost))
-        {
-            cout << "Not enough coins" << endl;
-        }
-
-        int buff = this->m_stats.buff;
-        negativeCheck(buff);
-        player.buff(buff);
-    }
-    else if (this->m_effect == CardType::Heal)
-    {
-        int cost = this->m_stats.cost;
-        negativeCheck(cost);
-        if (!player.pay(cost))
-        {
-            cout << "Not enough coins" << endl;
-        }
-
-        int heal = this->m_stats.heal;
-        negativeCheck(heal);
-        player.heal(heal);
-    }
-    else if (this->m_effect == CardType::Treasure)
-    {
-        int loot = this->m_stats.loot;
-        negativeCheck(loot);
-        player.addCoins(loot);
-    }
+    player.addCoins(10);
+    printTreasureMessage();
 }
 
 

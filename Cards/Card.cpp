@@ -12,15 +12,10 @@ using std::endl;
 void negativeCheck(int& a);
 
 
-Card::Card(CardType type, const CardStats& stats) :
-    m_effect(type),
-    m_stats(stats)
-{}
+Card::Card(){}
 
 
-
-
-void Card::printInfo() const {
+void Card::printEndOfCardDetails() const {
     if (this->m_effect == CardType::Battle)
     {
         printBattleCardInfo(m_stats);

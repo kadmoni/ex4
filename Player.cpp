@@ -35,11 +35,34 @@ int Player::getLevel() const
     return m_level;
 }
 
+int Player::getHp() const
+{
+    return m_hp;
+}
+
+std::string Player::getName() const
+{
+    return m_name;
+}
+
+int Player::getCoins() const
+{
+    return m_coins;
+}
+
 void Player::buff(int amount)
 {
     if (amount > 0)
     {
         m_force += amount;
+    }
+}
+
+void Player::debuff(int amount)
+{
+    if (amount > 0)
+    {
+        m_force -= amount;
     }
 }
 

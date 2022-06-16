@@ -24,14 +24,14 @@ void Card::applyEncounter(Player& player) const {
     {
         player.levelUp();
         player.addCoins(1000);
+        printWinBattle(player.getName(), "Dragon");
+
     }
     else
     {
-        int damage = this->m_stats.hpLossOnDefeat;
-        negativeCheck(damage);
+        int damage = player.getHp();
         player.damage(damage);
-    }
-        printBattleResult(win);
+        printLossBattle(player.getName(), "Dragon");
     }
 }
 

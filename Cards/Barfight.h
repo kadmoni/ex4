@@ -17,7 +17,7 @@
  *  TREASURE - Get 'm_profit' coins of CardStats.
 */
 
-class Card {
+class Barfight : public Card {
 public:
     /*
      * C'tor of Card class
@@ -64,9 +64,8 @@ public:
 
 
 private:
-    CardType m_effect;
-    CardStats m_stats;
-
+    int m_damage;
+    ///////////
 };
 
 

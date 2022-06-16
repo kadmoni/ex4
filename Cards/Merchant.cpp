@@ -19,58 +19,42 @@ Card::Card(CardType type, const CardStats& stats) :
 
 
 void Card::applyEncounter(Player& player) const {
-    if (this->m_effect == CardType::Battle)
-    {
-        bool win = player.getAttackStrength() >= this->m_stats.force;
-        if (win)
-        {
-            int loot = this->m_stats.loot;
-            negativeCheck(loot);
-            player.levelUp();
-            player.addCoins(loot);
-        }
+    printMerchantInitialMessageForInteractiveEncounter(cout, player.getName(), player.getCoins());
+    
+    std::string choice;
+    getline(cin, stoi(choice));
+    int type;
+    int cost;
 
-        else
-        {
-            int damage = this->m_stats.hpLossOnDefeat;
-            negativeCheck(damage);
-            player.damage(damage);
-        }
-
-        printBattleResult(win);
-    }
-    else if (this->m_effect == CardType::Buff)
+    if (choice == 0)
     {
-        int cost = this->m_stats.cost;
-        negativeCheck(cost);
-        if (!player.pay(cost))
-        {
-            cout << "Not enough coins" << endl;
-        }
-
-        int buff = this->m_stats.buff;
-        negativeCheck(buff);
-        player.buff(buff);
+        type = 0;
+        cost = 0;
     }
-    else if (this->m_effect == CardType::Heal)
+    else if (choice == 1)
     {
-        int cost = this->m_stats.cost;
-        negativeCheck(cost);
-        if (!player.pay(cost))
+        if (!player.pay(5))
         {
-            cout << "Not enough coins" << endl;
+            printMerchantInsufficientCoins(cout);
         }
-
-        int heal = this->m_stats.heal;
-        negativeCheck(heal);
-        player.heal(heal);
+        player.heal(1);
+        type = 1;
+        cost = 5;
     }
-    else if (this->m_effect == CardType::Treasure)
+    else if (choice == 2)
     {
-        int loot = this->m_stats.loot;
-        negativeCheck(loot);
-        player.addCoins(loot);
+        if (!player.pay(10))
+        {
+            printMerchantInsufficientCoins(cout);
+        }
+        player.buff(1);
+        type = 2;
+        cost = 10;
     }
+    else {
+        printInvalidInput();
+    }
+    printMerchantSummary(cout, player.getName(), type, )
 }
 
 

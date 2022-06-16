@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ex4.dir/Cards/Pitfall.cpp.o"
   "CMakeFiles/ex4.dir/Cards/Treasure.cpp.o"
   "CMakeFiles/ex4.dir/Cards/Vampire.cpp.o"
+  "CMakeFiles/ex4.dir/Player.cpp.o"
   "CMakeFiles/ex4.dir/test.cpp.o"
   "CMakeFiles/ex4.dir/utilities.cpp.o"
   "ex4"

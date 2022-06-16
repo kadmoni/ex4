@@ -139,6 +139,12 @@
 		<Unit filename="/Users/adi/Technion/matam/HW/ex4/Mtmchkin.h">
 			<Option target="ex4"/>
 		</Unit>
+		<Unit filename="/Users/adi/Technion/matam/HW/ex4/Player.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/Users/adi/Technion/matam/HW/ex4/Player.h">
+			<Option target="ex4"/>
+		</Unit>
 		<Unit filename="/Users/adi/Technion/matam/HW/ex4/test.cpp">
 			<Option target="ex4"/>
 		</Unit>

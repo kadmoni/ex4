@@ -20,10 +20,12 @@ Card::Card(CardType type, const CardStats& stats) :
 
 void Card::applyEncounter(Player& player) const {
     Wizard* ptr = dynamic_cast<Wizard*>(&player);
-    if (ptr == nullptr) {
+    bool isWizard = ptr != nullptr;
+    if (!isWizard) {
         return;
     }
     player.heal(10);
+    printFairyMessage(isWizard);
 }
 
 

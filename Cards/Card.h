@@ -46,7 +46,16 @@ public:
      * @return
      *      void
     */
-   // void printInfo() const;
+    virtual void printCardDetails() const;
+    
+    /*
+     * Prints the card info:
+     *
+     * @return
+     *      void
+    */
+    void printEndOfCardDetails() const;
+    
 
 
     /*

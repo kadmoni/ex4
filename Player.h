@@ -67,14 +67,50 @@ public:
     int getLevel() const;
 
     /*
+     * returns the HP of the Player
+     *
+     * @return
+     *      the HP of the player as int
+     */
+    int getHp() const;
+    
+    /*
+     * returns the name of the Player
+     *
+     * @return
+     *      the name of the player as string
+     */
+    std::string getHName() const;
+    
+    /*
+     * returns the coins of the Player
+     *
+     * @return
+     *      the coins of the player as int
+     */
+    int getCoins() const;
+    
+    /*
      * adds to the force of Player
      *
      * @param amount - the amount of force to be added to the Player
      * @return
      *      void
      */
+    
 
     void buff(int amount);
+    
+    /*
+     * takes from to the force of Player
+     *
+     * @param amount - the amount of force to be subtracted to the Player
+     * @return
+     *      void
+     */
+    
+
+    void debuff(int amount);
 
     /*
      * adds to the hp of the Player
