@@ -5,15 +5,33 @@
 #include "Fighter.h"
 #include "Player.h"
 #include "Rogue.h"
+#include "Card.h"
+#include "Dragon.h"
+#include "Vampire.h"
+#include "Goblin.h"
 
 Mtmchkin::Mtmchkin(const std::string fileName): m_numOfRounds(0)
 {
     int teamSize=0;
+    std::string tempCard;
     std::ifstream deck(fileName);
     //custom exceptions here
-    /*
-     * create deck according to file
-     */
+
+    while (std::getline(deck,tempCard))
+    {
+        if (tempCard == Dragon::TYPE)
+        {
+            m_deck.push_back(std::make_unique<Dragon>());
+        }
+        else if (tempCard == Vampire::TYPE)
+        {
+            m_deck.push_back(std::make_unique<Vampire>());
+        }
+        else if (tempCard == Goblin::TYPE)
+        {
+            m_deck.push_back(std::make_unique<Goblin>());
+        }
+    }
     printStartGameMessage();
     printEnterTeamSizeMessage();
     std::cin >> teamSize;

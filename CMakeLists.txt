@@ -26,8 +26,15 @@ add_executable(ex4
         Cards/Vampire.cpp
         Cards/Vampire.h
         Mtmchkin.h
+        Mtmchkin.cpp
         test.cpp
         Player.h
         Player.cpp
+        Wizard.cpp
+        Wizard.h
+        Rogue.h
+        Rogue.cpp
+        Fighter.h
+        Fighter.cpp
         utilities.cpp
         utilities.h)

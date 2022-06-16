@@ -1,6 +1,6 @@
 
-#ifndef EX4_WIZARD_H
-#define EX4_WIZARD_H
+#ifndef EX4_EXCEPTION_H
+#define EX4_EXCEPTION_H
 
 #include "Player.h"
 #include "Mtmchkin.h"
@@ -30,4 +30,4 @@ public:
     
 };
 
-#endif //EX4_WIZARD_H
+#endif //EX4_EXCEPTION_H
