@@ -11,9 +11,9 @@
 using std::cout;
 using std::endl;
 
+const std::string Vampire::TYPE = "Vampire";
 
 Vampire::Vampire() : Card(),
-    m_name("Vampire"),
     m_force(10),
     m_loot(2),
     m_damage(10),
@@ -33,13 +33,13 @@ void Vampire::applyEncounter(Player& player) const {
     {
         player.levelUp();
         player.addCoins(m_loot);
-        printWinBattle(player.getName(), m_name);
+        printWinBattle(player.getName(), Vampire::TYPE);
     }
     else
     {
         player.damage(m_damage);
         player.debuff(m_debuff);
-        printLossBattle(player.getName(), m_name);
+        printLossBattle(player.getName(), Vampire::TYPE);
     }
     
 }
@@ -47,7 +47,7 @@ void Vampire::applyEncounter(Player& player) const {
 
 std::ostream& Vampire::print(std::ostream &out) const
 {
-    printCardDetails(out,m_name);
+    printCardDetails(out,Vampire::TYPE);
     printMonsterDetails(out, m_force, m_damage, m_loot, false);
     printEndOfCardDetails(out);
     return out;

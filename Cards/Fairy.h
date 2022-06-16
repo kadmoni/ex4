@@ -51,9 +51,10 @@ public:
     ~Fairy() override = default;
     Fairy& operator=(const Fairy& other) = default;
 
+    static const std::string TYPE;
+
 
 private:
-    std::string m_name;
     int m_heal;
 };
 

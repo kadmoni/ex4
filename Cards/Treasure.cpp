@@ -11,9 +11,10 @@
 using std::cout;
 using std::endl;
 
+const std::string Treasure::TYPE = "Treasure";
+
 
 Treasure::Treasure() : Card(),
-    m_name("Treasure"),
     m_loot(10)
 {}
 
@@ -30,7 +31,7 @@ void Treasure::applyEncounter(Player& player) const {
 
 std::ostream& Treasure::print(std::ostream &out) const
 {
-    printCardDetails(out,m_name);
+    printCardDetails(out,Treasure::TYPE);
     printEndOfCardDetails(out);
     return out;
 }

@@ -52,9 +52,10 @@ public:
     ~Dragon() = default;
     Dragon& operator=(const Dragon& other) = default;
 
+    static const std::string TYPE;
+
 
 private:
-    std::string m_name;
     int m_force;
     int m_loot;
 };

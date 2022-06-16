@@ -345,6 +345,54 @@ Cards/Vampire.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/Cards/Vampire.cpp.s
 .PHONY : Cards/Vampire.cpp.s
 
+Fighter.o: Fighter.cpp.o
+.PHONY : Fighter.o
+
+# target to build an object file
+Fighter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/Fighter.cpp.o
+.PHONY : Fighter.cpp.o
+
+Fighter.i: Fighter.cpp.i
+.PHONY : Fighter.i
+
+# target to preprocess a source file
+Fighter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/Fighter.cpp.i
+.PHONY : Fighter.cpp.i
+
+Fighter.s: Fighter.cpp.s
+.PHONY : Fighter.s
+
+# target to generate assembly for a file
+Fighter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/Fighter.cpp.s
+.PHONY : Fighter.cpp.s
+
+Mtmchkin.o: Mtmchkin.cpp.o
+.PHONY : Mtmchkin.o
+
+# target to build an object file
+Mtmchkin.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/Mtmchkin.cpp.o
+.PHONY : Mtmchkin.cpp.o
+
+Mtmchkin.i: Mtmchkin.cpp.i
+.PHONY : Mtmchkin.i
+
+# target to preprocess a source file
+Mtmchkin.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/Mtmchkin.cpp.i
+.PHONY : Mtmchkin.cpp.i
+
+Mtmchkin.s: Mtmchkin.cpp.s
+.PHONY : Mtmchkin.s
+
+# target to generate assembly for a file
+Mtmchkin.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/Mtmchkin.cpp.s
+.PHONY : Mtmchkin.cpp.s
+
 Player.o: Player.cpp.o
 .PHONY : Player.o
 
@@ -368,6 +416,54 @@ Player.s: Player.cpp.s
 Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/Player.cpp.s
 .PHONY : Player.cpp.s
+
+Rogue.o: Rogue.cpp.o
+.PHONY : Rogue.o
+
+# target to build an object file
+Rogue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/Rogue.cpp.o
+.PHONY : Rogue.cpp.o
+
+Rogue.i: Rogue.cpp.i
+.PHONY : Rogue.i
+
+# target to preprocess a source file
+Rogue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/Rogue.cpp.i
+.PHONY : Rogue.cpp.i
+
+Rogue.s: Rogue.cpp.s
+.PHONY : Rogue.s
+
+# target to generate assembly for a file
+Rogue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/Rogue.cpp.s
+.PHONY : Rogue.cpp.s
+
+Wizard.o: Wizard.cpp.o
+.PHONY : Wizard.o
+
+# target to build an object file
+Wizard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/Wizard.cpp.o
+.PHONY : Wizard.cpp.o
+
+Wizard.i: Wizard.cpp.i
+.PHONY : Wizard.i
+
+# target to preprocess a source file
+Wizard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/Wizard.cpp.i
+.PHONY : Wizard.cpp.i
+
+Wizard.s: Wizard.cpp.s
+.PHONY : Wizard.s
+
+# target to generate assembly for a file
+Wizard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/Wizard.cpp.s
+.PHONY : Wizard.cpp.s
 
 test.o: test.cpp.o
 .PHONY : test.o
@@ -453,9 +549,21 @@ help:
 	@echo "... Cards/Vampire.o"
 	@echo "... Cards/Vampire.i"
 	@echo "... Cards/Vampire.s"
+	@echo "... Fighter.o"
+	@echo "... Fighter.i"
+	@echo "... Fighter.s"
+	@echo "... Mtmchkin.o"
+	@echo "... Mtmchkin.i"
+	@echo "... Mtmchkin.s"
 	@echo "... Player.o"
 	@echo "... Player.i"
 	@echo "... Player.s"
+	@echo "... Rogue.o"
+	@echo "... Rogue.i"
+	@echo "... Rogue.s"
+	@echo "... Wizard.o"
+	@echo "... Wizard.i"
+	@echo "... Wizard.s"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"

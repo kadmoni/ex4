@@ -51,9 +51,10 @@ public:
     ~Vampire() override = default;
     Vampire& operator=(const Vampire& other) = default;
 
+    static const std::string TYPE;
+
 
 private:
-    std::string m_name;
     int m_force;
     int m_loot;
     int m_damage;

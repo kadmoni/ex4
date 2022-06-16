@@ -12,8 +12,10 @@
 using std::cout;
 using std::endl;
 
+const std::string Barfight::TYPE = "Barfight";
+
+
 Barfight::Barfight() : Card(),
-    m_name("Barfight"),
     m_damage(10)
 {}
 
@@ -35,7 +37,7 @@ void Barfight::applyEncounter(Player& player) const {
 
 std::ostream& Barfight::print(std::ostream &out) const
 {
-    printCardDetails(out,m_name);
+    printCardDetails(out,Barfight::TYPE);
     printEndOfCardDetails(out);
     return out;
 }

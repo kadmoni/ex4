@@ -52,9 +52,10 @@ public:
     ~Treasure() override = default;
     Treasure& operator=(const Treasure& other) = default;
 
+    static const std::string TYPE;
+
 
 private:
-    std::string m_name;
     int m_loot;
 
 };

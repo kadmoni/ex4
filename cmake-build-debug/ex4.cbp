@@ -136,6 +136,18 @@
 		<Unit filename="/Users/adi/Technion/matam/HW/ex4/Cards/Vampire.h">
 			<Option target="ex4"/>
 		</Unit>
+		<Unit filename="/Users/adi/Technion/matam/HW/ex4/Exception.h">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/Users/adi/Technion/matam/HW/ex4/Fighter.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/Users/adi/Technion/matam/HW/ex4/Fighter.h">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/Users/adi/Technion/matam/HW/ex4/Mtmchkin.cpp">
+			<Option target="ex4"/>
+		</Unit>
 		<Unit filename="/Users/adi/Technion/matam/HW/ex4/Mtmchkin.h">
 			<Option target="ex4"/>
 		</Unit>
@@ -143,6 +155,18 @@
 			<Option target="ex4"/>
 		</Unit>
 		<Unit filename="/Users/adi/Technion/matam/HW/ex4/Player.h">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/Users/adi/Technion/matam/HW/ex4/Rogue.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/Users/adi/Technion/matam/HW/ex4/Rogue.h">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/Users/adi/Technion/matam/HW/ex4/Wizard.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/Users/adi/Technion/matam/HW/ex4/Wizard.h">
 			<Option target="ex4"/>
 		</Unit>
 		<Unit filename="/Users/adi/Technion/matam/HW/ex4/test.cpp">

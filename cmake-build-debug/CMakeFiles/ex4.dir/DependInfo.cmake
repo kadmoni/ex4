@@ -17,7 +17,11 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/adi/Technion/matam/HW/ex4/Cards/Pitfall.cpp" "/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Pitfall.cpp.o"
   "/Users/adi/Technion/matam/HW/ex4/Cards/Treasure.cpp" "/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Treasure.cpp.o"
   "/Users/adi/Technion/matam/HW/ex4/Cards/Vampire.cpp" "/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Vampire.cpp.o"
+  "/Users/adi/Technion/matam/HW/ex4/Fighter.cpp" "/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Fighter.cpp.o"
+  "/Users/adi/Technion/matam/HW/ex4/Mtmchkin.cpp" "/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Mtmchkin.cpp.o"
   "/Users/adi/Technion/matam/HW/ex4/Player.cpp" "/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Player.cpp.o"
+  "/Users/adi/Technion/matam/HW/ex4/Rogue.cpp" "/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Rogue.cpp.o"
+  "/Users/adi/Technion/matam/HW/ex4/Wizard.cpp" "/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Wizard.cpp.o"
   "/Users/adi/Technion/matam/HW/ex4/test.cpp" "/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/ex4.dir/test.cpp.o"
   "/Users/adi/Technion/matam/HW/ex4/utilities.cpp" "/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/ex4.dir/utilities.cpp.o"
   )

@@ -52,9 +52,10 @@ public:
     ~Merchant() override = default;
     Merchant& operator=(const Merchant& other) = default;
 
+    static const std::string TYPE;
+
 
 private:
-    std::string m_name;
     int m_heal;
     int m_buff;
     int m_healCost;

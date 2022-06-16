@@ -183,9 +183,22 @@ CMakeFiles/ex4.dir/Cards/Vampire.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/Cards/Vampire.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/adi/Technion/matam/HW/ex4/Cards/Vampire.cpp -o CMakeFiles/ex4.dir/Cards/Vampire.cpp.s
 
+CMakeFiles/ex4.dir/Mtmchkin.cpp.o: CMakeFiles/ex4.dir/flags.make
+CMakeFiles/ex4.dir/Mtmchkin.cpp.o: ../Mtmchkin.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ex4.dir/Mtmchkin.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex4.dir/Mtmchkin.cpp.o -c /Users/adi/Technion/matam/HW/ex4/Mtmchkin.cpp
+
+CMakeFiles/ex4.dir/Mtmchkin.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex4.dir/Mtmchkin.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/adi/Technion/matam/HW/ex4/Mtmchkin.cpp > CMakeFiles/ex4.dir/Mtmchkin.cpp.i
+
+CMakeFiles/ex4.dir/Mtmchkin.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/Mtmchkin.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/adi/Technion/matam/HW/ex4/Mtmchkin.cpp -o CMakeFiles/ex4.dir/Mtmchkin.cpp.s
+
 CMakeFiles/ex4.dir/test.cpp.o: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/test.cpp.o: ../test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ex4.dir/test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ex4.dir/test.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex4.dir/test.cpp.o -c /Users/adi/Technion/matam/HW/ex4/test.cpp
 
 CMakeFiles/ex4.dir/test.cpp.i: cmake_force
@@ -198,7 +211,7 @@ CMakeFiles/ex4.dir/test.cpp.s: cmake_force
 
 CMakeFiles/ex4.dir/Player.cpp.o: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/Player.cpp.o: ../Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ex4.dir/Player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ex4.dir/Player.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex4.dir/Player.cpp.o -c /Users/adi/Technion/matam/HW/ex4/Player.cpp
 
 CMakeFiles/ex4.dir/Player.cpp.i: cmake_force
@@ -209,9 +222,48 @@ CMakeFiles/ex4.dir/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/Player.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/adi/Technion/matam/HW/ex4/Player.cpp -o CMakeFiles/ex4.dir/Player.cpp.s
 
+CMakeFiles/ex4.dir/Wizard.cpp.o: CMakeFiles/ex4.dir/flags.make
+CMakeFiles/ex4.dir/Wizard.cpp.o: ../Wizard.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ex4.dir/Wizard.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex4.dir/Wizard.cpp.o -c /Users/adi/Technion/matam/HW/ex4/Wizard.cpp
+
+CMakeFiles/ex4.dir/Wizard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex4.dir/Wizard.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/adi/Technion/matam/HW/ex4/Wizard.cpp > CMakeFiles/ex4.dir/Wizard.cpp.i
+
+CMakeFiles/ex4.dir/Wizard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/Wizard.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/adi/Technion/matam/HW/ex4/Wizard.cpp -o CMakeFiles/ex4.dir/Wizard.cpp.s
+
+CMakeFiles/ex4.dir/Fighter.cpp.o: CMakeFiles/ex4.dir/flags.make
+CMakeFiles/ex4.dir/Fighter.cpp.o: ../Fighter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ex4.dir/Fighter.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex4.dir/Fighter.cpp.o -c /Users/adi/Technion/matam/HW/ex4/Fighter.cpp
+
+CMakeFiles/ex4.dir/Fighter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex4.dir/Fighter.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/adi/Technion/matam/HW/ex4/Fighter.cpp > CMakeFiles/ex4.dir/Fighter.cpp.i
+
+CMakeFiles/ex4.dir/Fighter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/Fighter.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/adi/Technion/matam/HW/ex4/Fighter.cpp -o CMakeFiles/ex4.dir/Fighter.cpp.s
+
+CMakeFiles/ex4.dir/Rogue.cpp.o: CMakeFiles/ex4.dir/flags.make
+CMakeFiles/ex4.dir/Rogue.cpp.o: ../Rogue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ex4.dir/Rogue.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex4.dir/Rogue.cpp.o -c /Users/adi/Technion/matam/HW/ex4/Rogue.cpp
+
+CMakeFiles/ex4.dir/Rogue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex4.dir/Rogue.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/adi/Technion/matam/HW/ex4/Rogue.cpp > CMakeFiles/ex4.dir/Rogue.cpp.i
+
+CMakeFiles/ex4.dir/Rogue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/Rogue.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/adi/Technion/matam/HW/ex4/Rogue.cpp -o CMakeFiles/ex4.dir/Rogue.cpp.s
+
 CMakeFiles/ex4.dir/utilities.cpp.o: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/utilities.cpp.o: ../utilities.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ex4.dir/utilities.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/ex4.dir/utilities.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex4.dir/utilities.cpp.o -c /Users/adi/Technion/matam/HW/ex4/utilities.cpp
 
 CMakeFiles/ex4.dir/utilities.cpp.i: cmake_force
@@ -233,8 +285,12 @@ ex4_OBJECTS = \
 "CMakeFiles/ex4.dir/Cards/Pitfall.cpp.o" \
 "CMakeFiles/ex4.dir/Cards/Treasure.cpp.o" \
 "CMakeFiles/ex4.dir/Cards/Vampire.cpp.o" \
+"CMakeFiles/ex4.dir/Mtmchkin.cpp.o" \
 "CMakeFiles/ex4.dir/test.cpp.o" \
 "CMakeFiles/ex4.dir/Player.cpp.o" \
+"CMakeFiles/ex4.dir/Wizard.cpp.o" \
+"CMakeFiles/ex4.dir/Fighter.cpp.o" \
+"CMakeFiles/ex4.dir/Rogue.cpp.o" \
 "CMakeFiles/ex4.dir/utilities.cpp.o"
 
 # External object files for target ex4
@@ -249,12 +305,16 @@ ex4: CMakeFiles/ex4.dir/Cards/Merchant.cpp.o
 ex4: CMakeFiles/ex4.dir/Cards/Pitfall.cpp.o
 ex4: CMakeFiles/ex4.dir/Cards/Treasure.cpp.o
 ex4: CMakeFiles/ex4.dir/Cards/Vampire.cpp.o
+ex4: CMakeFiles/ex4.dir/Mtmchkin.cpp.o
 ex4: CMakeFiles/ex4.dir/test.cpp.o
 ex4: CMakeFiles/ex4.dir/Player.cpp.o
+ex4: CMakeFiles/ex4.dir/Wizard.cpp.o
+ex4: CMakeFiles/ex4.dir/Fighter.cpp.o
+ex4: CMakeFiles/ex4.dir/Rogue.cpp.o
 ex4: CMakeFiles/ex4.dir/utilities.cpp.o
 ex4: CMakeFiles/ex4.dir/build.make
 ex4: CMakeFiles/ex4.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable ex4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable ex4"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ex4.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
