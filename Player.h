@@ -80,7 +80,7 @@ public:
      * @return
      *      the name of the player as string
      */
-    std::string getHName() const;
+    std::string getName() const;
     
     /*
      * returns the coins of the Player

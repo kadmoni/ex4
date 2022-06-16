@@ -4,15 +4,15 @@
 
 
 #include "Card.h"
+#include "Dragon.h"
 #include "Player.h"
 #include "utilities.h"
 #include <iostream>
 using std::cout;
 using std::endl;
-void negativeCheck(int& a);
 
 
-Dragon::Dragon() : Card()
+Dragon::Dragon(std::string m_name, int m_force, int m_loot) : Card()
 {}
 
 Card* Dragon::clone() const
@@ -41,16 +41,10 @@ void Dragon::applyEncounter(Player& player) const {
 std::ostream& Dragon::print(std::ostream &out) const
 {
     printCardDetails(out,m_name);
-    printMonsterDetails(out, m_force, 0, m_loot, 1);
+    printMonsterDetails(out, m_force, 0, m_loot, true);
     printEndOfCardDetails(out);
     return out;
 }
 
 
 
-void negativeCheck(int& a) {
-    if (a < 0)
-    {
-        a = 0;
-    }
-}

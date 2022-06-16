@@ -1,15 +1,15 @@
 //
 // Created by Daniel_Meents on 07/04/2022.
 //
-#ifndef EX2_Card_H
-#define EX2_Card_H
+#ifndef EX2_Vampire_H
+#define EX2_Vampire_H
 
 #include <string>
 #include "Player.h"
 #include "utilities.h"
 
 
-class Vampire ; public Card {
+class Vampire : public Card {
 public:
     /*
      * C'tor of Card class
@@ -47,12 +47,13 @@ public:
     /*
      * Here we are explicitly telling the compiler to use the default methods
     */
-    Vampire(const Card&) = default;
-    ~Vampire() = default;
-    Vampire& operator=(const Card& other) = default;
+    Vampire(const Vampire&) = default;
+    ~Vampire() override = default;
+    Vampire& operator=(const Vampire& other) = default;
 
 
 private:
+    std::string m_name;
     int m_force;
     int m_loot;
     int m_damage;
@@ -61,4 +62,4 @@ private:
 };
 
 
-#endif //EX2_Card_H
+#endif //EX2_Vampire_H

@@ -1,8 +1,8 @@
 //
 // Created by Daniel_Meents on 07/04/2022.
 //
-#ifndef EX2_Card_H
-#define EX2_Card_H
+#ifndef EX2_Dragon_H
+#define EX2_Dragon_H
 
 #include <string>
 #include "Player.h"
@@ -48,15 +48,16 @@ public:
     /*
      * Here we are explicitly telling the compiler to use the default methods
     */
-    Dragon(const Card&) = default;
+    Dragon(const Dragon&) = default;
     ~Dragon() = default;
-    Dragon& operator=(const Card& other) = default;
+    Dragon& operator=(const Dragon& other) = default;
 
 
 private:
+    std::string m_name;
     int m_force;
     int m_loot;
 };
 
 
-#endif //EX2_Card_H
+#endif //EX2_Dragon_H

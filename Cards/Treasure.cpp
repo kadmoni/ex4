@@ -4,15 +4,15 @@
 
 
 #include "Card.h"
+#include "Treasure.h"
 #include "Player.h"
 #include "utilities.h"
 #include <iostream>
 using std::cout;
 using std::endl;
-void negativeCheck(int& a);
 
 
-Treasure::Treasure() : card()
+Treasure::Treasure(std::string m_name, int m_loot) : Card()
 {}
 
 Card* Treasure::clone() const
@@ -33,10 +33,3 @@ std::ostream& Treasure::print(std::ostream &out) const
     return out;
 }
 
-
-void negativeCheck(int& a) {
-    if (a < 0)
-    {
-        a = 0;
-    }
-}

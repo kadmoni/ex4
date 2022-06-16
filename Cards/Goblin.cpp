@@ -4,15 +4,15 @@
 
 
 #include "Card.h"
+#include "Goblin.h"
 #include "Player.h"
 #include "utilities.h"
 #include <iostream>
 using std::cout;
 using std::endl;
-void negativeCheck(int& a);
 
 
-Goblin::Goblin() : Card()
+Goblin::Goblin(std::string m_name, int m_force, int m_loot, int m_damage) : Card()
 {}
 
 
@@ -21,7 +21,7 @@ Card* Goblin::clone() const
     return new Goblin(*this);
 }
 
-void Dragon::applyEncounter(Player& player) const {
+void Goblin::applyEncounter(Player& player) const {
     bool win = player.getAttackStrength() >= m_force;
     if (win)
     {
@@ -42,14 +42,7 @@ void Dragon::applyEncounter(Player& player) const {
 std::ostream& Goblin::print(std::ostream &out) const
 {
     printCardDetails(out,m_name);
-    printMonsterDetails(out, m_force, m_damage, m_loot, 0);
+    printMonsterDetails(out, m_force, m_damage, m_loot, false);
     printEndOfCardDetails(out);
     return out;
-}
-
-void negativeCheck(int& a) {
-    if (a < 0)
-    {
-        a = 0;
-    }
 }

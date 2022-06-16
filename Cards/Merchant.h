@@ -1,8 +1,8 @@
 //
 // Created by Daniel_Meents on 07/04/2022.
 //
-#ifndef EX2_Card_H
-#define EX2_Card_H
+#ifndef EX2_Merchant_H
+#define EX2_Merchant_H
 
 #include <string>
 #include "Player.h"
@@ -48,12 +48,13 @@ public:
     /*
      * Here we are explicitly telling the compiler to use the default methods
     */
-    Merchant(const Card&) = default;
-    ~Merchant() = default;
-    Merchant& operator=(const Card& other) = default;
+    Merchant(const Merchant&) = default;
+    ~Merchant() override = default;
+    Merchant& operator=(const Merchant& other) = default;
 
 
 private:
+    std::string m_name;
     int m_heal;
     int m_buff;
     int m_healCost;
@@ -61,4 +62,4 @@ private:
 };
 
 
-#endif //EX2_Card_H
+#endif //EX2_Merchant_H

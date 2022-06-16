@@ -4,15 +4,17 @@
 
 
 #include "Card.h"
+#include "Pitfall.h"
 #include "Player.h"
+#include "Rogue.h"
+////^^^^^^ more
 #include "utilities.h"
 #include <iostream>
 using std::cout;
 using std::endl;
-void negativeCheck(int& a);
 
 
-Pitfall::Pitfall() : card() {}
+Pitfall::Pitfall(std::string m_name, int m_damage) : Card() {}
 
 Card* Pitfall::clone() const
 {
@@ -36,9 +38,3 @@ std::ostream& Pitfall::print(std::ostream &out) const
     return out;
 }
 
-void negativeCheck(int& a) {
-    if (a < 0)
-    {
-        a = 0;
-    }
-}

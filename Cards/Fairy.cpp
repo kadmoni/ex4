@@ -4,15 +4,16 @@
 
 
 #include "Card.h"
+#include "Fairy.h"
 #include "Player.h"
+#include "Wizard.h"
 #include "utilities.h"
 #include <iostream>
 using std::cout;
 using std::endl;
-void negativeCheck(int& a);
 
 
-Fairy::Fairy() : Card()
+Fairy::Fairy(std::string m_name, int m_heal) : Card()
 {}
 
 Card* Fairy::clone() const
@@ -37,9 +38,3 @@ std::ostream& Fairy::print(std::ostream &out) const
     return out;
 }
 
-void negativeCheck(int& a) {
-    if (a < 0)
-    {
-        a = 0;
-    }
-}

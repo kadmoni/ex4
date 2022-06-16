@@ -4,15 +4,15 @@
 
 
 #include "Card.h"
+#include "Merchant.h"
 #include "Player.h"
 #include "utilities.h"
 #include <iostream>
 using std::cout;
 using std::endl;
-void negativeCheck(int& a);
 
 
-Merchant::Merchant() : Card()
+Merchant::Merchant(std::string m_name, int m_heal, int m_buff, int m_healCost, int m_buffCost) : Card()
 {}
 
 
@@ -26,7 +26,7 @@ void Merchant::applyEncounter(Player& player) const {
     printMerchantInitialMessageForInteractiveEncounter(cout, player.getName(), player.getCoins());
     
     std::string choice;
-    getline(cin, stoi(choice));
+    std::getline(std::cin, stoi(choice));
     int type;
     int cost;
 
@@ -69,9 +69,3 @@ std::ostream& Merchant::print(std::ostream &out) const
     return out;
 }
 
-void negativeCheck(int& a) {
-    if (a < 0)
-    {
-        a = 0;
-    }
-}

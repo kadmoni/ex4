@@ -4,15 +4,15 @@
 
 
 #include "Card.h"
+#include "Vampire.h"
 #include "Player.h"
 #include "utilities.h"
 #include <iostream>
 using std::cout;
 using std::endl;
-void negativeCheck(int& a);
 
 
-Vampire::Vampire() : Card()
+Vampire::Vampire(std::string m_name, int m_force, int m_loot, int m_damage, int m_debuff) : Card()
 {}
 
 
@@ -43,16 +43,10 @@ void Vampire::applyEncounter(Player& player) const {
 std::ostream& Vampire::print(std::ostream &out) const
 {
     printCardDetails(out,m_name);
-    printMonsterDetails(out, m_force, m_damage, m_loot, 0);
+    printMonsterDetails(out, m_force, m_damage, m_loot, false);
     printEndOfCardDetails(out);
     return out;
 }
 
 
 
-void negativeCheck(int& a) {
-    if (a < 0)
-    {
-        a = 0;
-    }
-}

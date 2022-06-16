@@ -4,14 +4,15 @@
 
 
 #include "Card.h"
+#include "Barfight.h"
 #include "Player.h"
+#include "Fighter.h"
 #include "utilities.h"
 #include <iostream>
 using std::cout;
 using std::endl;
-void negativeCheck(int& a);
 
-Barfight::Barfight() : Card()
+Barfight::Barfight(std::string m_name, int m_damage) : Card()
 {}
 
 
@@ -37,9 +38,3 @@ std::ostream& Barfight::print(std::ostream &out) const
     return out;
 }
 
-void negativeCheck(int& a) {
-    if (a < 0)
-    {
-        a = 0;
-    }
-}

@@ -1,8 +1,8 @@
 //
 // Created by Daniel_Meents on 07/04/2022.
 //
-#ifndef EX2_Card_H
-#define EX2_Card_H
+#ifndef EX2_Batfight_H
+#define EX2_Batfight_H
 
 #include <string>
 #include "Player.h"
@@ -56,14 +56,15 @@ public:
     /*
      * Here we are explicitly telling the compiler to use the default methods
     */
-    Barfight(const Card&) = default;
-    ~Barfight() = default;
-    Barfight& operator=(const Card& other) = default;
+    Barfight(const Barfight&) = default;
+    ~Barfight() override = default;
+    Barfight& operator=(const Barfight& other) = default;
 
 
 private:
+    std::string m_name;
     int m_damage;
 };
 
 
-#endif //EX2_Card_H
+#endif //EX2_Batfight_H

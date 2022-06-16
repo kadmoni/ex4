@@ -1,14 +1,14 @@
 //
 // Created by Daniel_Meents on 07/04/2022.
 //
-#ifndef EX2_Card_H
-#define EX2_Card_H
+#ifndef EX2_Goblin_H
+#define EX2_Goblin_H
 
 #include <string>
 #include "Player.h"
 #include "utilities.h"
 
-class Goblin ; public Card {
+class Goblin : public Card {
 public:
     /*
      * C'tor of Card class
@@ -48,12 +48,13 @@ public:
     /*
      * Here we are explicitly telling the compiler to use the default methods
     */
-    Goblin(const Card&) = default;
-    ~Goblin() = default;
-    Goblin& operator=(const Card& other) = default;
+    Goblin(const Goblin&) = default;
+    ~Goblin() override = default;
+    Goblin& operator=(const Goblin& other) = default;
 
 
 private:
+    std::string m_name;
     int m_force;
     int m_loot;
     int m_damage;
@@ -61,4 +62,4 @@ private:
 };
 
 
-#endif //EX2_Card_H
+#endif //EX2_Goblin_H

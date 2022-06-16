@@ -8,14 +8,6 @@
 #include "Player.h"
 #include "utilities.h"
 
-/*
- *  CardType:
- *  Each card has an type:
- *  BATTLE - Battle against a monster.
- *  BUFF - Increase your player's force by 'm_force' points of CardStats.
- *  HEAL - Increase your player's HP by 'm_heal' points  of CardStats (no more than maxHP points).
- *  TREASURE - Get 'm_profit' coins of CardStats.
-*/
 
 class Card {
 public:
@@ -30,6 +22,13 @@ public:
     Card();
 
 
+    Card& operator=(const Card& other) = default;
+
+    virtual ~Card() = default;
+
+    Card(const Card&) = default;
+
+
     /*
      * Handling the player's applyEncounter with the card:
      *
@@ -40,42 +39,41 @@ public:
     virtual void applyEncounter(Player& player) const = 0;
 
 
+//    /*
+//     * Prints the card info:
+//     *
+//     * @return
+//     *      void
+//    */
+//    virtual void printCardDetails() const;
+//  I think it belonged to ex2 or my bad
+
     /*
      * Prints the card info:
      *
      * @return
      *      void
     */
-    virtual void printCardDetails() const;
-    
-    /*
-     * Prints the card info:
-     *
-     * @return
-     *      void
-    */
-    void printEndOfCardDetails() const;
+//    void printEndOfCardDetails() const;
     
 
 
-    /*
-     * C'tor to the "default card" - Treasure card that gives 0 coins
-    */
-    Card(): m_effect(CardType::Treasure), m_stats() {}
+//    /*
+//     * C'tor to the "default card" - Treasure card that gives 0 coins
+//    */
+//    Card(): m_effect(CardType::Treasure), m_stats() {}
 
+    virtual std::ostream& print(std::ostream& out) const = 0;
+
+    friend std::ostream &operator<<(std::ostream &out, const Card& card);
 
     /*
      * Here we are explicitly telling the compiler to use the default methods
     */
-    Card(const Card&) = default;
-    virtual ~Card() = default;
-    Card& operator=(const Card& other) = default;
-    
+
+
     virtual Card* clone() const = 0;
 
-
-protected:
-    std::string m_name;
 
 };
 
