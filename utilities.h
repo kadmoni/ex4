@@ -56,7 +56,7 @@ void printCardDetails( std::ostream &os,  std::string name);
  * @return
  *      void
  */
-void printEndOfCardDetails(ostream &os);
+void printEndOfCardDetails(std::ostream &os);
 /*
  * Prints the details of a merchant card:
  
@@ -66,7 +66,7 @@ void printEndOfCardDetails(ostream &os);
  * @return
  *      void
  */
-void printMerchantInitialMessageForInteractiveEncounter(std::ostream &os, string playerName, int coins);
+void printMerchantInitialMessageForInteractiveEncounter(std::ostream &os, std::string playerName, int coins);
 
 
 /*
@@ -144,7 +144,7 @@ void printTreasureMessage();
  *      void
  *
  */
-void printMerchantSummary(ostream &os, string playerName, int type, int cost);
+void printMerchantSummary(std::ostream &os, string playerName, int type, int cost);
 
 /* ---------------------------------------------------------------------------------------------- */
 

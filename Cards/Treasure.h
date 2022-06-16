@@ -19,7 +19,7 @@ public:
      * @return
      *      A new instance of Card.
     */
-    Treasure(std::string m_name = "Treasure", int m_loot = 10);
+    Treasure();
 
     Card* clone() const override;
 

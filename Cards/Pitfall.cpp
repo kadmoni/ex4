@@ -14,7 +14,10 @@ using std::cout;
 using std::endl;
 
 
-Pitfall::Pitfall(std::string m_name, int m_damage) : Card() {}
+Pitfall::Pitfall() : Card(),
+    m_name("Pitfall"),
+    m_damage(10)
+{}
 
 Card* Pitfall::clone() const
 {

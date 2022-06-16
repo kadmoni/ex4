@@ -20,7 +20,7 @@ public:
      * @return
      *      A new instance of Card.
     */
-    Pitfall(std::string m_name = "Pitfall", int m_damage = 10);
+    Pitfall();
 
     Card* clone() const override;
 

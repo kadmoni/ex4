@@ -12,7 +12,12 @@ using std::cout;
 using std::endl;
 
 
-Merchant::Merchant(std::string m_name, int m_heal, int m_buff, int m_healCost, int m_buffCost) : Card()
+Merchant::Merchant() : Card(),
+    m_name("Merchant"),
+    m_heal(1),
+    m_buff(1),
+    m_healCost(5),
+    m_buffCost(10)
 {}
 
 
@@ -25,8 +30,10 @@ Card* Merchant::clone() const
 void Merchant::applyEncounter(Player& player) const {
     printMerchantInitialMessageForInteractiveEncounter(cout, player.getName(), player.getCoins());
     
-    std::string choice;
-    std::getline(std::cin, stoi(choice));
+    std::string answer;
+    std::getline(std::cin, answer);
+    int choice = stoi(answer);
+
     int type;
     int cost;
 

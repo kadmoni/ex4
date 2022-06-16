@@ -12,7 +12,12 @@ using std::cout;
 using std::endl;
 
 
-Vampire::Vampire(std::string m_name, int m_force, int m_loot, int m_damage, int m_debuff) : Card()
+Vampire::Vampire() : Card(),
+    m_name("Vampire"),
+    m_force(10),
+    m_loot(2),
+    m_damage(10),
+    m_debuff(1)
 {}
 
 

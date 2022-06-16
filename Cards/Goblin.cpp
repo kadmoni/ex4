@@ -12,7 +12,11 @@ using std::cout;
 using std::endl;
 
 
-Goblin::Goblin(std::string m_name, int m_force, int m_loot, int m_damage) : Card()
+Goblin::Goblin() : Card(),
+    m_name("Goblin"),
+    m_force(6),
+    m_loot(2),
+    m_damage(10)
 {}
 
 

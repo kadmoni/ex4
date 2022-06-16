@@ -12,7 +12,9 @@ using std::cout;
 using std::endl;
 
 
-Treasure::Treasure(std::string m_name, int m_loot) : Card()
+Treasure::Treasure() : Card(),
+    m_name("Treasure"),
+    m_loot(10)
 {}
 
 Card* Treasure::clone() const

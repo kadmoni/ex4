@@ -27,7 +27,7 @@ public:
      * @return
      *      A new instance of Card.
     */
-    Barfight(std::string m_name = "Barfight", int m_damage = 10);
+    Barfight();
     
     
     Card* clone() const override;

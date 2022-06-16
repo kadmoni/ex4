@@ -12,7 +12,10 @@ using std::cout;
 using std::endl;
 
 
-Dragon::Dragon(std::string m_name, int m_force, int m_loot) : Card()
+Dragon::Dragon() : Card(),
+    m_name("Dragon"),
+    m_force(25),
+    m_loot(1000)
 {}
 
 Card* Dragon::clone() const

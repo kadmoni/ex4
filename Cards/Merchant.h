@@ -19,7 +19,7 @@ public:
      * @return
      *      A new instance of Card.
     */
-    Merchant(std::string m_name = "Merchant", int m_heal = 1, int m_buff = 1, int m_healCost = 5, int m_buffCost = 10);
+    Merchant();
 
     Card* clone() const override;
 

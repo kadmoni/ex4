@@ -18,7 +18,7 @@ public:
      * @return
      *      A new instance of Card.
     */
-    Goblin(std::string m_name = "Goblin", int m_force = 6, int m_loot = 2, int m_damage = 10);
+    Goblin();
 
 
     Card* clone() const override;

@@ -19,7 +19,7 @@ public:
      * @return
      *      A new instance of Card.
     */
-    Vampire(std::string m_name = "Vampire", int m_force = 10, int m_loot = 2, int m_damage = 10, int m_debuff = 1);
+    Vampire();
 
     Card* clone() const override;
 

@@ -12,7 +12,9 @@
 using std::cout;
 using std::endl;
 
-Barfight::Barfight(std::string m_name, int m_damage) : Card()
+Barfight::Barfight() : Card(),
+    m_name("Barfight"),
+    m_damage(10)
 {}
 
 

@@ -13,7 +13,9 @@ using std::cout;
 using std::endl;
 
 
-Fairy::Fairy(std::string m_name, int m_heal) : Card()
+Fairy::Fairy() : Card(),
+    m_name("Fairy"),
+    m_heal(10)
 {}
 
 Card* Fairy::clone() const
