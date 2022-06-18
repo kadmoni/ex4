@@ -5,7 +5,7 @@
 #define EX2_Barfight_H
 
 #include <string>
-#include "Player.h"
+#include "Players/Player.h"
 #include "utilities.h"
 
 /*
@@ -27,7 +27,7 @@ public:
      * @return
      *      A new instance of Card.
     */
-    Barfight();
+    explicit Barfight(std::string name);
     
     
     Card* clone() const override;

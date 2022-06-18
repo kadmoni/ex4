@@ -29,14 +29,14 @@ add_executable(ex4
         Mtmchkin.h
         Mtmchkin.cpp
         test.cpp
-        Player.cpp
-        Player.h
-        Wizard.cpp
-        Wizard.h
-        Fighter.cpp
-        Fighter.h
-        Rogue.cpp
-        Rogue.h
+        Players/Player.cpp
+        Players/Player.h
+        Players/Wizard.cpp
+        Players/Wizard.h
+        Players/Fighter.cpp
+        Players/Fighter.h
+        Players/Rogue.cpp
+        Players/Rogue.h
         Exception.h
         utilities.cpp
         utilities.h)

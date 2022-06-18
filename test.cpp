@@ -29,27 +29,28 @@ using std::cout;
 // --------------------------------       General Helper Functions          ------------------------------
 
 
-void createTextFile(const string filename, const string input){
+void createTextFile(const std::string filename, const std::string input){
     std::ofstream file(filename);
     if(file){
         file << input;
     }
 }
 
-void deleteTextFile(const string filename){
+void deleteTextFile(const std::string filename){
     std::remove(filename.c_str());
 }
 
-bool compareFiles(string filename1, string filename2)
+bool compareFiles(std::string filename1, std::string filename2)
 {
-    string line1,line2;
-    fstream file1(filename1),file2(filename2);
+    std::string line1,line2;
+    std::fstream file1(filename1),file2(filename2);
+    const char *cerr;
     if( !file2){
-         cerr<<"Error opening file 2"<<endl;
+         std::cerr <<"Error opening file 2"<<std::endl;
          return false;
     }
 	if(!file1 ){
-         cerr<<"Error opening file 1"<<endl;
+         std::cerr<<"Error opening file 1"<<std::endl;
          return false;
     }
     while(!file1.eof()){ //read file until you reach the end
@@ -66,14 +67,14 @@ bool compareFiles(string filename1, string filename2)
     return true;
 }
 
-bool GeneralGameSimulationTest(const string tempDeckFilename, string input, string deck, string expectedOutputFileName){
+bool GeneralGameSimulationTest(const std::string tempDeckFilename, std::string input, std::string deck, std::string expectedOutputFileName){
 //   init cin from file
     createTextFile(tempDeckFilename+".txt",deck);
-    istringstream in(input);
+    std::istringstream in(input);
     std::streambuf *cinbuf = std::cin.rdbuf(); //save old buf
     std::cin.rdbuf(in.rdbuf());
 
-    ofstream outfile(tempDeckFilename+"out.txt");
+    std::ofstream outfile(tempDeckFilename+"out.txt");
     std::streambuf *coutbuf = std::cout.rdbuf(); //save old buf
     std::cout.rdbuf(outfile.rdbuf());
     Mtmchkin game(tempDeckFilename+".txt");
@@ -149,7 +150,7 @@ bool cardsPrintsTest(){
 
 
 bool playersPrintsTest(){
-    
+
     Rogue player1("Itay");
     Fighter player2("Efrat");
     Wizard player3("Jimmy");
@@ -160,7 +161,7 @@ bool playersPrintsTest(){
 
 bool testCard()
 {
-    vector<unique_ptr<Card>> cards;
+    std::vector<unique_ptr<Card>> cards;
     cards.push_back(unique_ptr<Card>(new Goblin()));
     cards.push_back(unique_ptr<Card>(new Vampire()));
     cards.push_back(unique_ptr<Card>(new Dragon()));
@@ -200,78 +201,78 @@ bool gameRunTest(){
 
 bool dragonDenTest()
 {
-    const string tmp_file("dragonDen_test");
-    string input("2\nJimmy Wizard\nPikachu Fighter");
-    string deck("Dragon\nDragon\nDragon\nDragon\nDragon");
-    string expectedOutputFilename("tests/dragonDen_test_expected.txt");
+    const std::string tmp_file("dragonDen_test");
+    std::string input("2\nJimmy Wizard\nPikachu Fighter");
+    std::string deck("Dragon\nDragon\nDragon\nDragon\nDragon");
+    std::string expectedOutputFilename("tests/dragonDen_test_expected.txt");
     return GeneralGameSimulationTest(tmp_file, input, deck, expectedOutputFilename);
 }
 
 bool vampireLairTest()
 {
-    const string tmp_file("vampireLiar_test");
-    string input("2\nItay Fighter\nPikachu Rogue");
-    string deck("Vampire\nVampire\nVampire\nVampire\nVampire");
-    string expectedOutputFilename("tests/vampireLair_test_expected.txt");
+    const std::string tmp_file("vampireLiar_test");
+    std::string input("2\nItay Fighter\nPikachu Rogue");
+    std::string deck("Vampire\nVampire\nVampire\nVampire\nVampire");
+    std::string expectedOutputFilename("tests/vampireLair_test_expected.txt");
     return GeneralGameSimulationTest(tmp_file, input, deck, expectedOutputFilename);
 }
 
 bool goblinCaveTest()
 {
-    const string tmp_file("goblinCave_test");
-    string input("2\nItay Wizard\nPikachu Rogue");
-    string deck("Goblin\nGoblin\nGoblin\nGoblin\nGoblin");
-    string expectedOutputFilename("tests/goblinCave_test_expected.txt");
+    const std::string tmp_file("goblinCave_test");
+    std::string input("2\nItay Wizard\nPikachu Rogue");
+    std::string deck("Goblin\nGoblin\nGoblin\nGoblin\nGoblin");
+    std::string expectedOutputFilename("tests/goblinCave_test_expected.txt");
     return GeneralGameSimulationTest(tmp_file, input, deck, expectedOutputFilename);
 }
 
 bool nonMostersTest()
 {
-    const string tmp_file("noMonster_test");
-    string input("2\nItay Wizard\nPikachu Rogue");
-    string deck("Fairy\nBarfight\nPitfall\nTreasure\nFairy");
-    string expectedOutputFilename("tests/noMonster_test_expected.txt");
+    const std::string tmp_file("noMonster_test");
+    std::string input("2\nItay Wizard\nPikachu Rogue");
+    std::string deck("Fairy\nBarfight\nPitfall\nTreasure\nFairy");
+    std::string expectedOutputFilename("tests/noMonster_test_expected.txt");
     return GeneralGameSimulationTest(tmp_file, input, deck, expectedOutputFilename);
 }
 
 bool roundLimitTest()
 {
-    const string tmp_file("roundLimit_test");
-    string input("2\nmatamDalf Wizard\nrocky Fighter");
-    string deck("Fairy\nFairy\nFairy\nFairy\nFairy");
-    string expectedOutputFilename("tests/roundLimit_test_expected.txt");
+    const std::string tmp_file("roundLimit_test");
+    std::string input("2\nmatamDalf Wizard\nrocky Fighter");
+    std::string deck("Fairy\nFairy\nFairy\nFairy\nFairy");
+    std::string expectedOutputFilename("tests/roundLimit_test_expected.txt");
     return GeneralGameSimulationTest(tmp_file, input, deck, expectedOutputFilename);
 }
 
 bool allTenTest()
 {
-    const string tmp_file("allTen_test");
-    string input("2\nmatamDalf Wizard\nrocky Fighter");
-    string deck("Goblin\nGoblin\nGoblin\nGoblin\nGoblin");
-    string expectedOutputFilename("tests/allTen_test_expected.txt");
+    const std::string tmp_file("allTen_test");
+    std::string input("2\nmatamDalf Wizard\nrocky Fighter");
+    std::string deck("Goblin\nGoblin\nGoblin\nGoblin\nGoblin");
+    std::string expectedOutputFilename("tests/allTen_test_expected.txt");
     return GeneralGameSimulationTest(tmp_file, input, deck, expectedOutputFilename);
 }
 
 bool badPlayerInputTest()
 {
-    const string tmp_file("badPlayerInput_test");
-    string input("2\nmatamDalf Wizardd \nmatamDalf rogoe\n matamDalf Wizard\nrocky Fighter");
-    string deck("Goblin\nVampire\nGoblin\nGoblin\nDragon");
-    string expectedOutputFilename("tests/badPlayerInput_test_expected.txt");
+    const std::string tmp_file("badPlayerInput_test");
+    std::string input("2\nmatamDalf Wizardd \nmatamDalf rogoe\n matamDalf Wizard\nrocky Fighter");
+    std::string deck("Goblin\nVampire\nGoblin\nGoblin\nDragon");
+    std::string expectedOutputFilename("tests/badPlayerInput_test_expected.txt");
     return GeneralGameSimulationTest(tmp_file, input, deck, expectedOutputFilename);
 }
 
 bool merchantInputTest()
 {
-    const string tmp_file("merchantInput_test");
-    string input("2\nmatamDalf Wizardd \nmatamDalf rogoe\n matamDalf Wizard\nrocky Fighter\n"
+    const std::string tmp_file("merchantInput_test");
+    std::string input("2\nmatamDalf Wizardd \nmatamDalf rogoe\n matamDalf Wizard\nrocky Fighter\n"
                  "1\n"
                  "1\n"
                  "0\n"
                  "2\n"
                  "0\n");
-    string deck("Goblin\nGoblin\nMerchant\nMerchant\nDragon");
-    string expectedOutputFilename("tests/merchantInput_test_expected.txt");
+    std::string deck("Goblin\nGoblin\nMerchant\nMerchant\nDragon");
+    std::string expectedOutputFilename("tests/merchantInput_test_expected.txt");
     return GeneralGameSimulationTest(tmp_file, input, deck, expectedOutputFilename);
 }
 
@@ -281,10 +282,10 @@ bool merchantInputTest()
 
 bool badSizeTest()
 {
-    const string tmp_file("badSize_test");
-    string input("4\nBarbieGirl Wizard\nInABarbieWorld Rogue\n MadeOfPlastic Rogue\nITSFANTASTIC Wizard");
-    string deck("Fairy");
-    string expectedOutputFilename("notneeded.txt");
+    const std::string tmp_file("badSize_test");
+    std::string input("4\nBarbieGirl Wizard\nInABarbieWorld Rogue\n MadeOfPlastic Rogue\nITSFANTASTIC Wizard");
+    std::string deck("Fairy");
+    std::string expectedOutputFilename("notneeded.txt");
 	bool flag= false;
     try{
         Mtmchkin("inputs/empty.txt");
@@ -296,10 +297,10 @@ bool badSizeTest()
 }
 bool noFileTest()
 {
-    const string tmp_file("noFile_test");
-    string input("2\nItay Wizard\nPikachu Rogue");
-    string expectedOutputFilename("notneeded.txt");
-    string deck("This_is_not_the_file_your_looking_for");
+    const std::string tmp_file("noFile_test");
+    std::string input("2\nItay Wizard\nPikachu Rogue");
+    std::string expectedOutputFilename("notneeded.txt");
+    std::string deck("This_is_not_the_file_your_looking_for");
     bool flag = false;
     try{
         Mtmchkin("noFile.txt");
@@ -311,10 +312,10 @@ bool noFileTest()
 }
 bool badFormatTest()
 {
-    const string tmp_file("badFormat_test");
-    string input("2\nItay Wizard\nPikachu Rogue");
-    string deck("SomeBody Once told me the world is gonna roll me\nVampire\n");
-    string expectedOutputFilename("notneeded.txt");
+    const std::string tmp_file("badFormat_test");
+    std::string input("2\nItay Wizard\nPikachu Rogue");
+    std::string deck("SomeBody Once told me the world is gonna roll me\nVampire\n");
+    std::string expectedOutputFilename("notneeded.txt");
     bool flag = false;
     try {
         Mtmchkin("inputs/badFormat_test.txt");
@@ -329,10 +330,10 @@ bool badFormatTest()
 }
 bool badFormatStartTest()
 {
-    const string tmp_file("badFormat_test");
-    string input("2\nItay Wizard\nPikachu Rogue");
-    string deck("I aint the sharpest tool in the shed\nVampire");
-    string expectedOutputFilename("notneeded.txt");
+    const std::string tmp_file("badFormat_test");
+    std::string input("2\nItay Wizard\nPikachu Rogue");
+    std::string deck("I aint the sharpest tool in the shed\nVampire");
+    std::string expectedOutputFilename("notneeded.txt");
     bool flag = false;
     try {
         Mtmchkin("badFormat_test_start_of_file.txt");

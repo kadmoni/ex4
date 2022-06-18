@@ -5,7 +5,7 @@
 #define EX2_Fairy_H
 
 #include <string>
-#include "Player.h"
+#include "Players/Player.h"
 #include "utilities.h"
 
 
@@ -19,7 +19,7 @@ public:
      * @return
      *      A new instance of Card.
     */
-    Fairy();
+    Fairy(std::string name);
     
     Card* clone() const override;
 

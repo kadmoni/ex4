@@ -5,7 +5,7 @@
 #define EX2_Goblin_H
 
 #include <string>
-#include "Player.h"
+#include "Players/Player.h"
 #include "utilities.h"
 
 class Goblin : public Card {
@@ -18,7 +18,7 @@ public:
      * @return
      *      A new instance of Card.
     */
-    Goblin();
+    Goblin(std::string name);
 
 
     Card* clone() const override;

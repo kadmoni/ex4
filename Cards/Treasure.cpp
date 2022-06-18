@@ -5,7 +5,7 @@
 
 #include "Card.h"
 #include "Treasure.h"
-#include "Player.h"
+#include "Players/Player.h"
 #include "utilities.h"
 #include <iostream>
 using std::cout;
@@ -14,7 +14,7 @@ using std::endl;
 const std::string Treasure::TYPE = "Treasure";
 
 
-Treasure::Treasure() : Card(),
+Treasure::Treasure(std::string name) : Card(name),
     m_loot(10)
 {}
 

@@ -219,61 +219,61 @@ CMakeFiles/ex4.dir/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/test.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\barke\ex4\test.cpp -o CMakeFiles\ex4.dir\test.cpp.s
 
-CMakeFiles/ex4.dir/Player.cpp.obj: CMakeFiles/ex4.dir/flags.make
-CMakeFiles/ex4.dir/Player.cpp.obj: CMakeFiles/ex4.dir/includes_CXX.rsp
-CMakeFiles/ex4.dir/Player.cpp.obj: ../Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ex4.dir/Player.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ex4.dir\Player.cpp.obj -c C:\Users\barke\ex4\Player.cpp
+CMakeFiles/ex4.dir/Players/Player.cpp.obj: CMakeFiles/ex4.dir/flags.make
+CMakeFiles/ex4.dir/Players/Player.cpp.obj: CMakeFiles/ex4.dir/includes_CXX.rsp
+CMakeFiles/ex4.dir/Players/Player.cpp.obj: ../Players/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ex4.dir/Players/Player.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ex4.dir\Players\Player.cpp.obj -c C:\Users\barke\ex4\Players\Player.cpp
 
-CMakeFiles/ex4.dir/Player.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex4.dir/Player.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\barke\ex4\Player.cpp > CMakeFiles\ex4.dir\Player.cpp.i
+CMakeFiles/ex4.dir/Players/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex4.dir/Players/Player.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\barke\ex4\Players\Player.cpp > CMakeFiles\ex4.dir\Players\Player.cpp.i
 
-CMakeFiles/ex4.dir/Player.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/Player.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\barke\ex4\Player.cpp -o CMakeFiles\ex4.dir\Player.cpp.s
+CMakeFiles/ex4.dir/Players/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/Players/Player.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\barke\ex4\Players\Player.cpp -o CMakeFiles\ex4.dir\Players\Player.cpp.s
 
-CMakeFiles/ex4.dir/Wizard.cpp.obj: CMakeFiles/ex4.dir/flags.make
-CMakeFiles/ex4.dir/Wizard.cpp.obj: CMakeFiles/ex4.dir/includes_CXX.rsp
-CMakeFiles/ex4.dir/Wizard.cpp.obj: ../Wizard.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ex4.dir/Wizard.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ex4.dir\Wizard.cpp.obj -c C:\Users\barke\ex4\Wizard.cpp
+CMakeFiles/ex4.dir/Players/Wizard.cpp.obj: CMakeFiles/ex4.dir/flags.make
+CMakeFiles/ex4.dir/Players/Wizard.cpp.obj: CMakeFiles/ex4.dir/includes_CXX.rsp
+CMakeFiles/ex4.dir/Players/Wizard.cpp.obj: ../Players/Wizard.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ex4.dir/Players/Wizard.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ex4.dir\Players\Wizard.cpp.obj -c C:\Users\barke\ex4\Players\Wizard.cpp
 
-CMakeFiles/ex4.dir/Wizard.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex4.dir/Wizard.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\barke\ex4\Wizard.cpp > CMakeFiles\ex4.dir\Wizard.cpp.i
+CMakeFiles/ex4.dir/Players/Wizard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex4.dir/Players/Wizard.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\barke\ex4\Players\Wizard.cpp > CMakeFiles\ex4.dir\Players\Wizard.cpp.i
 
-CMakeFiles/ex4.dir/Wizard.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/Wizard.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\barke\ex4\Wizard.cpp -o CMakeFiles\ex4.dir\Wizard.cpp.s
+CMakeFiles/ex4.dir/Players/Wizard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/Players/Wizard.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\barke\ex4\Players\Wizard.cpp -o CMakeFiles\ex4.dir\Players\Wizard.cpp.s
 
-CMakeFiles/ex4.dir/Fighter.cpp.obj: CMakeFiles/ex4.dir/flags.make
-CMakeFiles/ex4.dir/Fighter.cpp.obj: CMakeFiles/ex4.dir/includes_CXX.rsp
-CMakeFiles/ex4.dir/Fighter.cpp.obj: ../Fighter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ex4.dir/Fighter.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ex4.dir\Fighter.cpp.obj -c C:\Users\barke\ex4\Fighter.cpp
+CMakeFiles/ex4.dir/Players/Fighter.cpp.obj: CMakeFiles/ex4.dir/flags.make
+CMakeFiles/ex4.dir/Players/Fighter.cpp.obj: CMakeFiles/ex4.dir/includes_CXX.rsp
+CMakeFiles/ex4.dir/Players/Fighter.cpp.obj: ../Players/Fighter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ex4.dir/Players/Fighter.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ex4.dir\Players\Fighter.cpp.obj -c C:\Users\barke\ex4\Players\Fighter.cpp
 
-CMakeFiles/ex4.dir/Fighter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex4.dir/Fighter.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\barke\ex4\Fighter.cpp > CMakeFiles\ex4.dir\Fighter.cpp.i
+CMakeFiles/ex4.dir/Players/Fighter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex4.dir/Players/Fighter.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\barke\ex4\Players\Fighter.cpp > CMakeFiles\ex4.dir\Players\Fighter.cpp.i
 
-CMakeFiles/ex4.dir/Fighter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/Fighter.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\barke\ex4\Fighter.cpp -o CMakeFiles\ex4.dir\Fighter.cpp.s
+CMakeFiles/ex4.dir/Players/Fighter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/Players/Fighter.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\barke\ex4\Players\Fighter.cpp -o CMakeFiles\ex4.dir\Players\Fighter.cpp.s
 
-CMakeFiles/ex4.dir/Rogue.cpp.obj: CMakeFiles/ex4.dir/flags.make
-CMakeFiles/ex4.dir/Rogue.cpp.obj: CMakeFiles/ex4.dir/includes_CXX.rsp
-CMakeFiles/ex4.dir/Rogue.cpp.obj: ../Rogue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ex4.dir/Rogue.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ex4.dir\Rogue.cpp.obj -c C:\Users\barke\ex4\Rogue.cpp
+CMakeFiles/ex4.dir/Players/Rogue.cpp.obj: CMakeFiles/ex4.dir/flags.make
+CMakeFiles/ex4.dir/Players/Rogue.cpp.obj: CMakeFiles/ex4.dir/includes_CXX.rsp
+CMakeFiles/ex4.dir/Players/Rogue.cpp.obj: ../Players/Rogue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ex4.dir/Players/Rogue.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ex4.dir\Players\Rogue.cpp.obj -c C:\Users\barke\ex4\Players\Rogue.cpp
 
-CMakeFiles/ex4.dir/Rogue.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex4.dir/Rogue.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\barke\ex4\Rogue.cpp > CMakeFiles\ex4.dir\Rogue.cpp.i
+CMakeFiles/ex4.dir/Players/Rogue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex4.dir/Players/Rogue.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\barke\ex4\Players\Rogue.cpp > CMakeFiles\ex4.dir\Players\Rogue.cpp.i
 
-CMakeFiles/ex4.dir/Rogue.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/Rogue.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\barke\ex4\Rogue.cpp -o CMakeFiles\ex4.dir\Rogue.cpp.s
+CMakeFiles/ex4.dir/Players/Rogue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/Players/Rogue.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\barke\ex4\Players\Rogue.cpp -o CMakeFiles\ex4.dir\Players\Rogue.cpp.s
 
 CMakeFiles/ex4.dir/utilities.cpp.obj: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/utilities.cpp.obj: CMakeFiles/ex4.dir/includes_CXX.rsp
@@ -302,10 +302,10 @@ ex4_OBJECTS = \
 "CMakeFiles/ex4.dir/Cards/Vampire.cpp.obj" \
 "CMakeFiles/ex4.dir/Mtmchkin.cpp.obj" \
 "CMakeFiles/ex4.dir/test.cpp.obj" \
-"CMakeFiles/ex4.dir/Player.cpp.obj" \
-"CMakeFiles/ex4.dir/Wizard.cpp.obj" \
-"CMakeFiles/ex4.dir/Fighter.cpp.obj" \
-"CMakeFiles/ex4.dir/Rogue.cpp.obj" \
+"CMakeFiles/ex4.dir/Players/Player.cpp.obj" \
+"CMakeFiles/ex4.dir/Players/Wizard.cpp.obj" \
+"CMakeFiles/ex4.dir/Players/Fighter.cpp.obj" \
+"CMakeFiles/ex4.dir/Players/Rogue.cpp.obj" \
 "CMakeFiles/ex4.dir/utilities.cpp.obj"
 
 # External object files for target ex4
@@ -322,10 +322,10 @@ ex4.exe: CMakeFiles/ex4.dir/Cards/Treasure.cpp.obj
 ex4.exe: CMakeFiles/ex4.dir/Cards/Vampire.cpp.obj
 ex4.exe: CMakeFiles/ex4.dir/Mtmchkin.cpp.obj
 ex4.exe: CMakeFiles/ex4.dir/test.cpp.obj
-ex4.exe: CMakeFiles/ex4.dir/Player.cpp.obj
-ex4.exe: CMakeFiles/ex4.dir/Wizard.cpp.obj
-ex4.exe: CMakeFiles/ex4.dir/Fighter.cpp.obj
-ex4.exe: CMakeFiles/ex4.dir/Rogue.cpp.obj
+ex4.exe: CMakeFiles/ex4.dir/Players/Player.cpp.obj
+ex4.exe: CMakeFiles/ex4.dir/Players/Wizard.cpp.obj
+ex4.exe: CMakeFiles/ex4.dir/Players/Fighter.cpp.obj
+ex4.exe: CMakeFiles/ex4.dir/Players/Rogue.cpp.obj
 ex4.exe: CMakeFiles/ex4.dir/utilities.cpp.obj
 ex4.exe: CMakeFiles/ex4.dir/build.make
 ex4.exe: CMakeFiles/ex4.dir/linklibs.rsp

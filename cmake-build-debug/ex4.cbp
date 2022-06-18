@@ -141,34 +141,34 @@
 		<Unit filename="C:/Users/barke/ex4/Exception.h">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/barke/ex4/Fighter.cpp">
-			<Option target="ex4"/>
-		</Unit>
-		<Unit filename="C:/Users/barke/ex4/Fighter.h">
-			<Option target="ex4"/>
-		</Unit>
 		<Unit filename="C:/Users/barke/ex4/Mtmchkin.cpp">
 			<Option target="ex4"/>
 		</Unit>
 		<Unit filename="C:/Users/barke/ex4/Mtmchkin.h">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/barke/ex4/Player.cpp">
+		<Unit filename="C:/Users/barke/ex4/Players/Fighter.cpp">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/barke/ex4/Player.h">
+		<Unit filename="C:/Users/barke/ex4/Players/Fighter.h">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/barke/ex4/Rogue.cpp">
+		<Unit filename="C:/Users/barke/ex4/Players/Player.cpp">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/barke/ex4/Rogue.h">
+		<Unit filename="C:/Users/barke/ex4/Players/Player.h">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/barke/ex4/Wizard.cpp">
+		<Unit filename="C:/Users/barke/ex4/Players/Rogue.cpp">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/barke/ex4/Wizard.h">
+		<Unit filename="C:/Users/barke/ex4/Players/Rogue.h">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="C:/Users/barke/ex4/Players/Wizard.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="C:/Users/barke/ex4/Players/Wizard.h">
 			<Option target="ex4"/>
 		</Unit>
 		<Unit filename="C:/Users/barke/ex4/test.cpp">

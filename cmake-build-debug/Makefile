@@ -344,30 +344,6 @@ Cards/Vampire.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Cards/Vampire.cpp.s
 .PHONY : Cards/Vampire.cpp.s
 
-Fighter.obj: Fighter.cpp.obj
-.PHONY : Fighter.obj
-
-# target to build an object file
-Fighter.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Fighter.cpp.obj
-.PHONY : Fighter.cpp.obj
-
-Fighter.i: Fighter.cpp.i
-.PHONY : Fighter.i
-
-# target to preprocess a source file
-Fighter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Fighter.cpp.i
-.PHONY : Fighter.cpp.i
-
-Fighter.s: Fighter.cpp.s
-.PHONY : Fighter.s
-
-# target to generate assembly for a file
-Fighter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Fighter.cpp.s
-.PHONY : Fighter.cpp.s
-
 Mtmchkin.obj: Mtmchkin.cpp.obj
 .PHONY : Mtmchkin.obj
 
@@ -392,77 +368,101 @@ Mtmchkin.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Mtmchkin.cpp.s
 .PHONY : Mtmchkin.cpp.s
 
-Player.obj: Player.cpp.obj
-.PHONY : Player.obj
+Players/Fighter.obj: Players/Fighter.cpp.obj
+.PHONY : Players/Fighter.obj
 
 # target to build an object file
-Player.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Player.cpp.obj
-.PHONY : Player.cpp.obj
+Players/Fighter.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Players/Fighter.cpp.obj
+.PHONY : Players/Fighter.cpp.obj
 
-Player.i: Player.cpp.i
-.PHONY : Player.i
+Players/Fighter.i: Players/Fighter.cpp.i
+.PHONY : Players/Fighter.i
 
 # target to preprocess a source file
-Player.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Player.cpp.i
-.PHONY : Player.cpp.i
+Players/Fighter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Players/Fighter.cpp.i
+.PHONY : Players/Fighter.cpp.i
 
-Player.s: Player.cpp.s
-.PHONY : Player.s
+Players/Fighter.s: Players/Fighter.cpp.s
+.PHONY : Players/Fighter.s
 
 # target to generate assembly for a file
-Player.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Player.cpp.s
-.PHONY : Player.cpp.s
+Players/Fighter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Players/Fighter.cpp.s
+.PHONY : Players/Fighter.cpp.s
 
-Rogue.obj: Rogue.cpp.obj
-.PHONY : Rogue.obj
+Players/Player.obj: Players/Player.cpp.obj
+.PHONY : Players/Player.obj
 
 # target to build an object file
-Rogue.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Rogue.cpp.obj
-.PHONY : Rogue.cpp.obj
+Players/Player.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Players/Player.cpp.obj
+.PHONY : Players/Player.cpp.obj
 
-Rogue.i: Rogue.cpp.i
-.PHONY : Rogue.i
+Players/Player.i: Players/Player.cpp.i
+.PHONY : Players/Player.i
 
 # target to preprocess a source file
-Rogue.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Rogue.cpp.i
-.PHONY : Rogue.cpp.i
+Players/Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Players/Player.cpp.i
+.PHONY : Players/Player.cpp.i
 
-Rogue.s: Rogue.cpp.s
-.PHONY : Rogue.s
+Players/Player.s: Players/Player.cpp.s
+.PHONY : Players/Player.s
 
 # target to generate assembly for a file
-Rogue.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Rogue.cpp.s
-.PHONY : Rogue.cpp.s
+Players/Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Players/Player.cpp.s
+.PHONY : Players/Player.cpp.s
 
-Wizard.obj: Wizard.cpp.obj
-.PHONY : Wizard.obj
+Players/Rogue.obj: Players/Rogue.cpp.obj
+.PHONY : Players/Rogue.obj
 
 # target to build an object file
-Wizard.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Wizard.cpp.obj
-.PHONY : Wizard.cpp.obj
+Players/Rogue.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Players/Rogue.cpp.obj
+.PHONY : Players/Rogue.cpp.obj
 
-Wizard.i: Wizard.cpp.i
-.PHONY : Wizard.i
+Players/Rogue.i: Players/Rogue.cpp.i
+.PHONY : Players/Rogue.i
 
 # target to preprocess a source file
-Wizard.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Wizard.cpp.i
-.PHONY : Wizard.cpp.i
+Players/Rogue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Players/Rogue.cpp.i
+.PHONY : Players/Rogue.cpp.i
 
-Wizard.s: Wizard.cpp.s
-.PHONY : Wizard.s
+Players/Rogue.s: Players/Rogue.cpp.s
+.PHONY : Players/Rogue.s
 
 # target to generate assembly for a file
-Wizard.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Wizard.cpp.s
-.PHONY : Wizard.cpp.s
+Players/Rogue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Players/Rogue.cpp.s
+.PHONY : Players/Rogue.cpp.s
+
+Players/Wizard.obj: Players/Wizard.cpp.obj
+.PHONY : Players/Wizard.obj
+
+# target to build an object file
+Players/Wizard.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Players/Wizard.cpp.obj
+.PHONY : Players/Wizard.cpp.obj
+
+Players/Wizard.i: Players/Wizard.cpp.i
+.PHONY : Players/Wizard.i
+
+# target to preprocess a source file
+Players/Wizard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Players/Wizard.cpp.i
+.PHONY : Players/Wizard.cpp.i
+
+Players/Wizard.s: Players/Wizard.cpp.s
+.PHONY : Players/Wizard.s
+
+# target to generate assembly for a file
+Players/Wizard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Players/Wizard.cpp.s
+.PHONY : Players/Wizard.cpp.s
 
 test.obj: test.cpp.obj
 .PHONY : test.obj
@@ -548,21 +548,21 @@ help:
 	@echo ... Cards/Vampire.obj
 	@echo ... Cards/Vampire.i
 	@echo ... Cards/Vampire.s
-	@echo ... Fighter.obj
-	@echo ... Fighter.i
-	@echo ... Fighter.s
 	@echo ... Mtmchkin.obj
 	@echo ... Mtmchkin.i
 	@echo ... Mtmchkin.s
-	@echo ... Player.obj
-	@echo ... Player.i
-	@echo ... Player.s
-	@echo ... Rogue.obj
-	@echo ... Rogue.i
-	@echo ... Rogue.s
-	@echo ... Wizard.obj
-	@echo ... Wizard.i
-	@echo ... Wizard.s
+	@echo ... Players/Fighter.obj
+	@echo ... Players/Fighter.i
+	@echo ... Players/Fighter.s
+	@echo ... Players/Player.obj
+	@echo ... Players/Player.i
+	@echo ... Players/Player.s
+	@echo ... Players/Rogue.obj
+	@echo ... Players/Rogue.i
+	@echo ... Players/Rogue.s
+	@echo ... Players/Wizard.obj
+	@echo ... Players/Wizard.i
+	@echo ... Players/Wizard.s
 	@echo ... test.obj
 	@echo ... test.i
 	@echo ... test.s
