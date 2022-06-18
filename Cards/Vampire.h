@@ -5,7 +5,7 @@
 #define EX2_Vampire_H
 
 #include <string>
-#include "Player.h"
+#include "Players/Player.h"
 #include "utilities.h"
 
 
@@ -19,7 +19,7 @@ public:
      * @return
      *      A new instance of Card.
     */
-    Vampire();
+    explicit Vampire(std::string name);
 
     Card* clone() const override;
 

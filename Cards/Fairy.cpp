@@ -5,8 +5,8 @@
 
 #include "Card.h"
 #include "Fairy.h"
-#include "Player.h"
-#include "Wizard.h"
+#include "Players/Player.h"
+#include "Players/Wizard.h"
 #include "utilities.h"
 #include <iostream>
 using std::cout;
@@ -15,7 +15,7 @@ using std::endl;
 const std::string Fairy::TYPE = "Fairy";
 
 
-Fairy::Fairy() : Card(),
+Fairy::Fairy(std::string name) : Card(name),
     m_heal(10)
 {}
 

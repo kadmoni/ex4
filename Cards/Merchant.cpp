@@ -5,7 +5,7 @@
 
 #include "Card.h"
 #include "Merchant.h"
-#include "Player.h"
+#include "Players/Player.h"
 #include "utilities.h"
 #include <iostream>
 using std::cout;
@@ -14,7 +14,7 @@ using std::endl;
 const std::string Merchant::TYPE = "Merchant";
 
 
-Merchant::Merchant() : Card(),
+Merchant::Merchant(std::string name) : Card(name),
     m_heal(1),
     m_buff(1),
     m_healCost(5),

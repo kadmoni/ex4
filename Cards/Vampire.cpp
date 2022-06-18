@@ -5,7 +5,7 @@
 
 #include "Card.h"
 #include "Vampire.h"
-#include "Player.h"
+#include "Players/Player.h"
 #include "utilities.h"
 #include <iostream>
 using std::cout;
@@ -13,12 +13,13 @@ using std::endl;
 
 const std::string Vampire::TYPE = "Vampire";
 
-Vampire::Vampire() : Card(),
+Vampire::Vampire(std::string name) : Card(name),
     m_force(10),
     m_loot(2),
     m_damage(10),
     m_debuff(1)
 {}
+
 
 
 Card* Vampire::clone() const

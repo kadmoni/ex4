@@ -5,7 +5,7 @@
 #define EX2_Card_H
 
 #include <string>
-#include "Player.h"
+#include "Players/Player.h"
 #include "utilities.h"
 
 
@@ -19,7 +19,7 @@ public:
      * @return
      *      A new instance of Card.
     */
-    Card();
+    Card(std::string cardName);
 
 
     Card& operator=(const Card& other) = default;
@@ -74,6 +74,8 @@ public:
 
     virtual Card* clone() const = 0;
 
+protected:
+    std::string m_name;
 
 };
 

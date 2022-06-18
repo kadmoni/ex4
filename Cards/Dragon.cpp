@@ -5,7 +5,7 @@
 
 #include "Card.h"
 #include "Dragon.h"
-#include "Player.h"
+#include "Players/Player.h"
 #include "utilities.h"
 #include <iostream>
 using std::cout;
@@ -14,7 +14,7 @@ using std::endl;
 const std::string Dragon::TYPE = "Dragon";
 
 
-Dragon::Dragon() : Card(),
+Dragon::Dragon(std::string name) : Card(name),
     m_force(25),
     m_loot(1000)
 {}
