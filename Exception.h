@@ -12,7 +12,9 @@ public:
 
 
     class DeckFileNotFound{};
-    class DeckFileFormatError{};
+    class DeckFileFormatError{
+        DeckFileFormatError(int i)
+    };
     class DeckFileInvalidSize{};
 
     const char* what() const override {
