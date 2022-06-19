@@ -329,7 +329,7 @@ int main(){
     
 	run_test(cardsPrintsTest,"cardsPrintsTest");
 	run_test(testCard,"Deck creation test");
-	//run_test(dragonDenTest,"Dragon Den simulation test");
+	run_test(dragonDenTest,"Dragon Den simulation test");
 	run_test(goblinCaveTest,"Goblin Cave simulation test");
 	run_test(vampireLairTest,"Vampire Lair simulation test");
 	run_test(nonMostersTest,"Non monsters cards simulation test");
