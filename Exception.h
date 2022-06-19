@@ -5,33 +5,12 @@
 #include "Players/Player.h"
 #include "Mtmchkin.h"
 #include <string>
-using std::cout;
-using std::string;
-
-//class exception : public std::exception {
-//public:
-//
-//    /** Constructor (C strings).
-//     *  @param message C-style string error message.
-//     *                 The string contents are copied upon construction.
-//     *                 Hence, responsibility for deleting the char* lies
-//     *                 with the caller.
-//     */
-//    exception(){}
-//
-//
-//
-//
-//    /** Destructor.
-//    * Virtual to allow for subclassing.
-//    */
-//    ~exception() noexcept {}
-//
-//};
 
 
 
-class DeckFileNotFound : public std::exception {
+
+
+class DeckFileNotFound : public std::runtime_error {
 public:
 
 //    /** Constructor (C strings).
@@ -40,20 +19,24 @@ public:
 //     *                 Hence, responsibility for deleting the char* lies
 //     *                 with the caller.
 //     */
-    DeckFileNotFound() = default;
+    DeckFileNotFound() : std::runtime_error("Deck File Error: File not found") {};
+};
 
 
 
-    const char* what() const noexcept override {
-        return "Deck File Error: File not found";
-    }
 
 
-    /** Destructor.
-    * Virtual to allow for subclassing.
-    */
-   // ~DeckFileNotFound() override = default;
 
+class DeckFileInvalidSize : public std::runtime_error {
+public:
+
+//    /** Constructor (C strings).
+//     *  @param message C-style string error message.
+//     *                 The string contents are copied upon construction.
+//     *                 Hence, responsibility for deleting the char* lies
+//     *                 with the caller.
+//     */
+    DeckFileInvalidSize() : std::runtime_error("Deck File Error: Deck size is invalid") {};
 
 };
 
@@ -61,59 +44,12 @@ public:
 
 
 
-class DeckFileInvalidSize : public std::exception {
+class DeckFileFormatError : public std::runtime_error {
 public:
 
-//    /** Constructor (C strings).
-//     *  @param message C-style string error message.
-//     *                 The string contents are copied upon construction.
-//     *                 Hence, responsibility for deleting the char* lies
-//     *                 with the caller.
-//     */
-    DeckFileInvalidSize() = default;
 
+    explicit DeckFileFormatError(int line) : std::runtime_error("Deck File Error: File format error in line", std::to_string(line)){};
 
-
-
-
-    /** Destructor.
-    * Virtual to allow for subclassing.
-    */
- //   ~DeckFileInvalidSize() override = default;
-
-
-    const char* what() const noexcept override {
-        return "Deck File Error: Deck size is invalid";
-    }
-
-};
-
-
-
-class DeckFileFormatError : public std::exception {
-public:
-    explicit DeckFileFormatError(int line) : m_lineError(line) {}
-
-    ~DeckFileFormatError() override = default;
-
-
-
-    // DeckFileFormatError(int line) : Exception(int line){};
-
-
-    /** Returns a pointer to the (constant) error description.
-     *  @return A pointer to a const char*. The underlying memory
-     *          is in posession of the Exception object. Callers must
-     *          not attempt to free the memory.
-     */
-    const char* what() const noexcept override {
-    }
-
-
-private:
-    /** Line of error.
-     */
-    int m_lineError;
 };
 
 
