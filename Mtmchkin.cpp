@@ -33,6 +33,7 @@ Mtmchkin::Mtmchkin(const std::string fileName): m_numOfRounds(0)
 void Mtmchkin::playRound()
 {
     printRoundStartMessage(this->getNumberOfRounds());
+    int playersInRound = m_activePlayers.size();
     for (int i = 0; i<m_activePlayers.size();i++)
     {
         printTurnStartMessage(m_activePlayers[i]->getName());
@@ -41,11 +42,13 @@ void Mtmchkin::playRound()
         {
             m_winners.push_back(std::move(m_activePlayers[i]));
             m_activePlayers.erase(m_activePlayers.begin()+i);
+            i--;
         }
         if(m_activePlayers[i]->isKnockedOut())
         {
             m_losers.push_front(std::move(m_activePlayers[i]));
             m_activePlayers.erase(m_activePlayers.begin()+i);
+            i--;
         }
         std::unique_ptr<Card> tempCard(std::move(m_deck.front()));
         m_deck.pop();
@@ -205,8 +208,10 @@ void createDeck (std::queue<std::unique_ptr<Card>>& m_deck,const std::string fil
 
 void teamSizeInput (int& teamSize)
 {
+    std::string temp;
     printEnterTeamSizeMessage();
-    std::cin>>teamSize;
+    std::getline(std::cin,temp);
+    teamSize = std::stoi(temp);
     while ((teamSize>6)||(teamSize<2))
     {
         printInvalidTeamSize();
