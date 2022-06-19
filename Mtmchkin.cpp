@@ -32,11 +32,13 @@ Mtmchkin::Mtmchkin(const std::string fileName): m_numOfRounds(0)
 
 void Mtmchkin::playRound()
 {
+    m_numOfRounds++;
     printRoundStartMessage(this->getNumberOfRounds());
     int playersInRound = m_activePlayers.size();
     for (int i = 0; i<m_activePlayers.size();i++)
     {
         printTurnStartMessage(m_activePlayers[i]->getName());
+        std::string name = m_activePlayers[i]->getName();
         m_deck.front()->applyEncounter(*(m_activePlayers[i]));
         if (m_activePlayers[i]->getLevel()>=10)
         {
@@ -44,7 +46,7 @@ void Mtmchkin::playRound()
             m_activePlayers.erase(m_activePlayers.begin()+i);
             i--;
         }
-        if(m_activePlayers[i]->isKnockedOut())
+        else if(m_activePlayers[i]->isKnockedOut())
         {
             m_losers.push_front(std::move(m_activePlayers[i]));
             m_activePlayers.erase(m_activePlayers.begin()+i);
@@ -86,16 +88,29 @@ void Mtmchkin::printLeaderBoard() const
     for (int i=0;i<m_winners.size();i++)
     {
         rank++;
+        int level = m_winners[i]->getLevel();
+        int force = m_winners[i]->getAttackStrength();
+        int hp = m_winners[i]->getHp();
+        int coins = m_winners[i]->getCoins();
         printPlayerLeaderBoard(rank,*(m_winners[i]));
     }
     for (int i = 0;i<m_activePlayers.size();i++)
     {
         rank++;
+        int level = m_activePlayers[i]->getLevel();
+        int force = m_activePlayers[i]->getAttackStrength();
+        int hp = m_activePlayers[i]->getHp();
+        int coins = m_activePlayers[i]->getCoins();
         printPlayerLeaderBoard(rank,*(m_activePlayers[i]));
     }
     for (int i = 0;i<m_losers.size();i++)
     {
         rank++;
+        std::string name = m_losers[i]->getName();
+        int level = m_losers[i]->getLevel();
+        int force = m_losers[i]->getAttackStrength();
+        int hp = m_losers[i]->getHp();
+        int coins = m_losers[i]->getCoins();
         printPlayerLeaderBoard(rank,*(m_losers[i]));
     }
 }
