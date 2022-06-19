@@ -8,30 +8,30 @@
 using std::cout;
 using std::string;
 
-class exception : public std::exception {
-public:
+//class exception : public std::exception {
+//public:
+//
+//    /** Constructor (C strings).
+//     *  @param message C-style string error message.
+//     *                 The string contents are copied upon construction.
+//     *                 Hence, responsibility for deleting the char* lies
+//     *                 with the caller.
+//     */
+//    exception(){}
+//
+//
+//
+//
+//    /** Destructor.
+//    * Virtual to allow for subclassing.
+//    */
+//    ~exception() noexcept {}
+//
+//};
 
-    /** Constructor (C strings).
-     *  @param message C-style string error message.
-     *                 The string contents are copied upon construction.
-     *                 Hence, responsibility for deleting the char* lies
-     *                 with the caller.
-     */
-    exception(){}
 
 
-
-
-    /** Destructor.
-    * Virtual to allow for subclassing.
-    */
-    ~exception() noexcept {}
-
-};
-
-
-
-class DeckFileNotFound : public exception {
+class DeckFileNotFound : public std::exception {
 public:
 
 //    /** Constructor (C strings).
@@ -61,7 +61,7 @@ public:
 
 
 
-class DeckFileInvalidSize : public exception {
+class DeckFileInvalidSize : public std::exception {
 public:
 
 //    /** Constructor (C strings).
@@ -90,7 +90,7 @@ public:
 
 
 
-class DeckFileFormatError : public exception {
+class DeckFileFormatError : public std::exception {
 public:
     explicit DeckFileFormatError(int line) : m_lineError(line) {}
 
@@ -107,7 +107,7 @@ public:
      *          not attempt to free the memory.
      */
     const char* what() const noexcept override {
-        cout << "Deck File Error: File format error in line" << m_lineError << std::endl;
+        return "Deck File Error: File format error in line" m_lineError;
     }
 
 

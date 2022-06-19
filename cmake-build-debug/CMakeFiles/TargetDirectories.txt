@@ -1,3 +1,3 @@
-/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/ex4.dir
+C:/Users/barke/ex4/cmake-build-debug/CMakeFiles/ex4.dir
+C:/Users/barke/ex4/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/barke/ex4/cmake-build-debug/CMakeFiles/rebuild_cache.dir

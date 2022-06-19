@@ -8,24 +8,24 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/adi/Technion/matam/HW/ex4/Cards/Barfight.cpp" "/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Barfight.cpp.o"
-  "/Users/adi/Technion/matam/HW/ex4/Cards/Card.cpp" "/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Card.cpp.o"
-  "/Users/adi/Technion/matam/HW/ex4/Cards/Dragon.cpp" "/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Dragon.cpp.o"
-  "/Users/adi/Technion/matam/HW/ex4/Cards/Fairy.cpp" "/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Fairy.cpp.o"
-  "/Users/adi/Technion/matam/HW/ex4/Cards/Goblin.cpp" "/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Goblin.cpp.o"
-  "/Users/adi/Technion/matam/HW/ex4/Cards/Merchant.cpp" "/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Merchant.cpp.o"
-  "/Users/adi/Technion/matam/HW/ex4/Cards/Pitfall.cpp" "/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Pitfall.cpp.o"
-  "/Users/adi/Technion/matam/HW/ex4/Cards/Treasure.cpp" "/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Treasure.cpp.o"
-  "/Users/adi/Technion/matam/HW/ex4/Cards/Vampire.cpp" "/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Vampire.cpp.o"
-  "/Users/adi/Technion/matam/HW/ex4/Mtmchkin.cpp" "/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Mtmchkin.cpp.o"
-  "/Users/adi/Technion/matam/HW/ex4/Players/Fighter.cpp" "/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Players/Fighter.cpp.o"
-  "/Users/adi/Technion/matam/HW/ex4/Players/Player.cpp" "/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Players/Player.cpp.o"
-  "/Users/adi/Technion/matam/HW/ex4/Players/Rogue.cpp" "/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Players/Rogue.cpp.o"
-  "/Users/adi/Technion/matam/HW/ex4/Players/Wizard.cpp" "/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Players/Wizard.cpp.o"
-  "/Users/adi/Technion/matam/HW/ex4/test.cpp" "/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/ex4.dir/test.cpp.o"
-  "/Users/adi/Technion/matam/HW/ex4/utilities.cpp" "/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles/ex4.dir/utilities.cpp.o"
+  "C:/Users/barke/ex4/Cards/Barfight.cpp" "C:/Users/barke/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Barfight.cpp.obj"
+  "C:/Users/barke/ex4/Cards/Card.cpp" "C:/Users/barke/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Card.cpp.obj"
+  "C:/Users/barke/ex4/Cards/Dragon.cpp" "C:/Users/barke/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Dragon.cpp.obj"
+  "C:/Users/barke/ex4/Cards/Fairy.cpp" "C:/Users/barke/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Fairy.cpp.obj"
+  "C:/Users/barke/ex4/Cards/Goblin.cpp" "C:/Users/barke/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Goblin.cpp.obj"
+  "C:/Users/barke/ex4/Cards/Merchant.cpp" "C:/Users/barke/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Merchant.cpp.obj"
+  "C:/Users/barke/ex4/Cards/Pitfall.cpp" "C:/Users/barke/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Pitfall.cpp.obj"
+  "C:/Users/barke/ex4/Cards/Treasure.cpp" "C:/Users/barke/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Treasure.cpp.obj"
+  "C:/Users/barke/ex4/Cards/Vampire.cpp" "C:/Users/barke/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Vampire.cpp.obj"
+  "C:/Users/barke/ex4/Mtmchkin.cpp" "C:/Users/barke/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Mtmchkin.cpp.obj"
+  "C:/Users/barke/ex4/Players/Fighter.cpp" "C:/Users/barke/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Players/Fighter.cpp.obj"
+  "C:/Users/barke/ex4/Players/Player.cpp" "C:/Users/barke/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Players/Player.cpp.obj"
+  "C:/Users/barke/ex4/Players/Rogue.cpp" "C:/Users/barke/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Players/Rogue.cpp.obj"
+  "C:/Users/barke/ex4/Players/Wizard.cpp" "C:/Users/barke/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Players/Wizard.cpp.obj"
+  "C:/Users/barke/ex4/test.cpp" "C:/Users/barke/ex4/cmake-build-debug/CMakeFiles/ex4.dir/test.cpp.obj"
+  "C:/Users/barke/ex4/utilities.cpp" "C:/Users/barke/ex4/cmake-build-debug/CMakeFiles/ex4.dir/utilities.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

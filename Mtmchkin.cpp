@@ -17,6 +17,7 @@
 
 Mtmchkin::Mtmchkin(const std::string fileName): m_numOfRounds(0)
 {
+    createDeck(m_deck,fileName);
     int teamSize=0;
     std::string tempCard;
     std::ifstream deck(fileName);
@@ -26,35 +27,35 @@ Mtmchkin::Mtmchkin(const std::string fileName): m_numOfRounds(0)
     {
         if (tempCard == Dragon::TYPE)
         {
-            m_deck.push_back(std::make_unique<Dragon>());
+            m_deck.push(std::make_unique<Dragon>());
         }
         else if (tempCard == Vampire::TYPE)
         {
-            m_deck.push_back(std::make_unique<Vampire>());
+            m_deck.push(std::make_unique<Vampire>());
         }
         else if (tempCard == Goblin::TYPE)
         {
-            m_deck.push_back(std::make_unique<Goblin>());
+            m_deck.push(std::make_unique<Goblin>());
         }
         else if (tempCard == Barfight::TYPE)
         {
-            m_deck.push_back(std::make_unique<Barfight>());
+            m_deck.push(std::make_unique<Barfight>());
         }
         else if (tempCard == Pitfall::TYPE)
         {
-            m_deck.push_back(std::make_unique<Pitfall>());
+            m_deck.push(std::make_unique<Pitfall>());
         }
         else if (tempCard == Fairy::TYPE)
         {
-            m_deck.push_back(std::make_unique<Fairy>());
+            m_deck.push(std::make_unique<Fairy>());
         }
         else if (tempCard == Merchant::TYPE)
         {
-            m_deck.push_back(std::make_unique<Merchant>());
+            m_deck.push(std::make_unique<Merchant>());
         }
         else if (tempCard == Treasure::TYPE)
         {
-            m_deck.push_back(std::make_unique<Treasure>());
+            m_deck.push(std::make_unique<Treasure>());
         }
     }
 
@@ -83,6 +84,33 @@ Mtmchkin::Mtmchkin(const std::string fileName): m_numOfRounds(0)
     }
 }
 
+void Mtmchkin::playRound()
+{
+    printRoundStartMessage(this->getNumberOfRounds());
+    for (int i = 0; i<m_activePlayers.size();i++)
+    {
+        printTurnStartMessage(m_activePlayers[i]->getName());
+        m_deck.front()->applyEncounter(*(m_activePlayers[i]));
+        if (m_activePlayers[i]->getLevel()>=10)
+        {
+            m_winners.push_back(std::move(m_activePlayers[i]));
+            m_activePlayers.erase(m_activePlayers.begin()+i);
+        }
+        if(m_activePlayers[i]->isKnockedOut())
+        {
+            m_losers.push_front(std::move(m_activePlayers[i]));
+            m_activePlayers.erase(m_activePlayers.begin()+i);
+        }
+        std::unique_ptr<Card> tempCard(std::move(m_deck.front()));
+        m_deck.pop();
+        m_deck.push(std::move(tempCard));
+        if (isGameOver())
+        {
+            printGameEndMessage();
+            break;
+        }
+    }
+}
 
 
 
@@ -161,6 +189,32 @@ bool createPlayer(std::string name, std::string job, std::vector<std::unique_ptr
     }
     return true;
 
+}
+
+void createDeck (std::queue<std::unique_ptr<Card>>& m_deck,const std::string filename)
+{
+    std::string tempCard;
+    std::ifstream deck(filename);
+    //custom exceptions here
+    while (std::getline(deck,tempCard))
+    {
+        if (tempCard == Dragon::TYPE)
+        {
+            m_deck.push(std::make_unique<Dragon>());
+        }
+        else if (tempCard == Vampire::TYPE)
+        {
+            m_deck.push(std::make_unique<Vampire>());
+        }
+        else if (tempCard == Goblin::TYPE)
+        {
+            m_deck.push(std::make_unique<Goblin>());
+        }
+        else
+        {
+            //invalid card throw
+        }
+    }
 }
 
 
