@@ -48,14 +48,6 @@ public:
      * @return
      *      void
      */
-    void printInfo() const;
-
-    /*
-     * adds 1 to the Player's level
-     *
-     * @return
-     *      void
-     */
     void levelUp();
 
     /*

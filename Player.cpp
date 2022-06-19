@@ -17,11 +17,6 @@ m_maxHp(maxHp),m_hp(m_maxHp),m_force(force), m_level(IN_LEVEL),m_coins(IN_COINS)
     }
 }
 
-void Player::printInfo() const
-{
-    printPlayerInfo(m_name.c_str(),m_level,m_force,m_hp,m_coins);
-}
-
 void Player::levelUp()
 {
     if (m_level < 10)

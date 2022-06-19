@@ -2,14 +2,12 @@ cmake_minimum_required(VERSION 3.20)
 project(ex4)
 
 set(CMAKE_CXX_STANDARD 14)
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} --std==c++11 -Werror -Wall -pedantic-errors -DNDEBUG")
 
 include_directories(.)
 include_directories(Cards)
+include_directories(Players)
 
 add_executable(ex4
-        Mtmchkin.cpp
-        Mtmchkin.h
         Cards/Barfight.cpp
         Cards/Barfight.h
         Cards/Card.cpp
@@ -28,15 +26,25 @@ add_executable(ex4
         Cards/Treasure.h
         Cards/Vampire.cpp
         Cards/Vampire.h
-        test.cpp
-        Players/Player.cpp
-        Players/Player.h
-        Players/Wizard.cpp
-        Players/Wizard.h
         Players/Fighter.cpp
         Players/Fighter.h
+        Players/Player.cpp
+        Players/Player.h
         Players/Rogue.cpp
         Players/Rogue.h
+        Players/Wizard.cpp
+        Players/Wizard.h
         Exception.h
+        Fighter.cpp
+        Fighter.h
+        Mtmchkin.cpp
+        Mtmchkin.h
+        Player.cpp
+        Player.h
+        Rogue.cpp
+        Rogue.h
+        test.cpp
         utilities.cpp
-        utilities.h)
+        utilities.h
+        Wizard.cpp
+        Wizard.h)

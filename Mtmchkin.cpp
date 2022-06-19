@@ -19,46 +19,6 @@ Mtmchkin::Mtmchkin(const std::string fileName): m_numOfRounds(0)
 {
     createDeck(m_deck,fileName);
     int teamSize=0;
-    std::string tempCard;
-    std::ifstream deck(fileName);
-    //custom exceptions here
-
-    while (std::getline(deck,tempCard))
-    {
-        if (tempCard == Dragon::TYPE)
-        {
-            m_deck.push(std::make_unique<Dragon>());
-        }
-        else if (tempCard == Vampire::TYPE)
-        {
-            m_deck.push(std::make_unique<Vampire>());
-        }
-        else if (tempCard == Goblin::TYPE)
-        {
-            m_deck.push(std::make_unique<Goblin>());
-        }
-        else if (tempCard == Barfight::TYPE)
-        {
-            m_deck.push(std::make_unique<Barfight>());
-        }
-        else if (tempCard == Pitfall::TYPE)
-        {
-            m_deck.push(std::make_unique<Pitfall>());
-        }
-        else if (tempCard == Fairy::TYPE)
-        {
-            m_deck.push(std::make_unique<Fairy>());
-        }
-        else if (tempCard == Merchant::TYPE)
-        {
-            m_deck.push(std::make_unique<Merchant>());
-        }
-        else if (tempCard == Treasure::TYPE)
-        {
-            m_deck.push(std::make_unique<Treasure>());
-        }
-    }
-
     printStartGameMessage();
     printEnterTeamSizeMessage();
     std::cin >> teamSize;
@@ -209,6 +169,26 @@ void createDeck (std::queue<std::unique_ptr<Card>>& m_deck,const std::string fil
         else if (tempCard == Goblin::TYPE)
         {
             m_deck.push(std::make_unique<Goblin>());
+        }
+        else if (tempCard == Barfight::TYPE)
+        {
+            m_deck.push(std::make_unique<Barfight>());
+        }
+        else if (tempCard == Pitfall::TYPE)
+        {
+            m_deck.push(std::make_unique<Pitfall>());
+        }
+        else if (tempCard == Fairy::TYPE)
+        {
+            m_deck.push(std::make_unique<Fairy>());
+        }
+        else if (tempCard == Merchant::TYPE)
+        {
+            m_deck.push(std::make_unique<Merchant>());
+        }
+        else if (tempCard == Treasure::TYPE)
+        {
+            m_deck.push(std::make_unique<Treasure>());
         }
         else
         {

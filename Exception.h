@@ -107,7 +107,6 @@ public:
      *          not attempt to free the memory.
      */
     const char* what() const noexcept override {
-        return "Deck File Error: File format error in line" m_lineError;
     }
 
 
