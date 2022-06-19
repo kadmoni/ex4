@@ -1,14 +1,19 @@
 #include <fstream>
 #include "Mtmchkin.h"
 #include "utilities.h"
-#include "Wizard.h"
-#include "Fighter.h"
-#include "Player.h"
-#include "Rogue.h"
-#include "Card.h"
-#include "Dragon.h"
-#include "Vampire.h"
-#include "Goblin.h"
+#include "Players/Wizard.h"
+#include "Players/Fighter.h"
+#include "Players/Player.h"
+#include "Players/Rogue.h"
+
+#include "Cards/Dragon.h"
+#include "Cards/Vampire.h"
+#include "Cards/Goblin.h"
+#include "Cards/Barfight.h"
+#include "Cards/Treasure.h"
+#include "Cards/Merchant.h"
+#include "Cards/Fairy.h"
+#include "Cards/Pitfall.h"
 
 Mtmchkin::Mtmchkin(const std::string fileName): m_numOfRounds(0)
 {
@@ -31,7 +36,28 @@ Mtmchkin::Mtmchkin(const std::string fileName): m_numOfRounds(0)
         {
             m_deck.push_back(std::make_unique<Goblin>());
         }
+        else if (tempCard == Barfight::TYPE)
+        {
+            m_deck.push_back(std::make_unique<Barfight>());
+        }
+        else if (tempCard == Pitfall::TYPE)
+        {
+            m_deck.push_back(std::make_unique<Pitfall>());
+        }
+        else if (tempCard == Fairy::TYPE)
+        {
+            m_deck.push_back(std::make_unique<Fairy>());
+        }
+        else if (tempCard == Merchant::TYPE)
+        {
+            m_deck.push_back(std::make_unique<Merchant>());
+        }
+        else if (tempCard == Treasure::TYPE)
+        {
+            m_deck.push_back(std::make_unique<Treasure>());
+        }
     }
+
     printStartGameMessage();
     printEnterTeamSizeMessage();
     std::cin >> teamSize;
@@ -41,6 +67,7 @@ Mtmchkin::Mtmchkin(const std::string fileName): m_numOfRounds(0)
         printEnterTeamSizeMessage();
         std::cin>>teamSize;
     }
+
     for (int i=0;i<teamSize;i++)
     {
         std::string temp,name,job;
@@ -59,7 +86,7 @@ Mtmchkin::Mtmchkin(const std::string fileName): m_numOfRounds(0)
 
 
 
-}
+
 int Mtmchkin::getNumberOfRounds() const
 {
     return m_numOfRounds;

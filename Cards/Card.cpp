@@ -11,7 +11,7 @@ using std::cout;
 using std::endl;
 
 
-Card::Card(std::string Name) : m_name(Name) {};
+Card::Card() {};
 
 
 std::ostream& operator<<(std::ostream &out, const Card& card)

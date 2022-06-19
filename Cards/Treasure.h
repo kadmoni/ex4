@@ -5,8 +5,11 @@
 #define EX2_Treasure_H
 
 #include <string>
-#include "Players/Player.h"
-#include "utilities.h"
+#include "Card.h"
+
+
+//#include "Players/Player.h"
+//#include "utilities.h"
 
 
 class Treasure : public Card {
@@ -19,7 +22,7 @@ public:
      * @return
      *      A new instance of Card.
     */
-    Treasure(std::string name);
+    Treasure();
 
     Card* clone() const override;
 

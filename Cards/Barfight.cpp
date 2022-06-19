@@ -3,9 +3,9 @@
 //
 
 
-#include "Card.h"
+//#include "Card.h"
 #include "Barfight.h"
-#include "Players/Player.h"
+//#include "Players/Player.h"
 #include "Players/Fighter.h"
 #include "utilities.h"
 #include <iostream>
@@ -15,7 +15,7 @@ using std::endl;
 const std::string Barfight::TYPE = "Barfight";
 
 
-Barfight::Barfight(std::string name) : Card(name),
+Barfight::Barfight() : Card(),
     m_damage(10)
 {}
 

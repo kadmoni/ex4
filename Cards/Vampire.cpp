@@ -3,9 +3,9 @@
 //
 
 
-#include "Card.h"
+//#include "Card.h"
 #include "Vampire.h"
-#include "Players/Player.h"
+//#include "Players/Player.h"
 #include "utilities.h"
 #include <iostream>
 using std::cout;
@@ -13,7 +13,7 @@ using std::endl;
 
 const std::string Vampire::TYPE = "Vampire";
 
-Vampire::Vampire(std::string name) : Card(name),
+Vampire::Vampire() : Card(),
     m_force(10),
     m_loot(2),
     m_damage(10),

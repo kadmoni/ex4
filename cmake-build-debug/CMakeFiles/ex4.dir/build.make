@@ -66,9 +66,22 @@ include CMakeFiles/ex4.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ex4.dir/flags.make
 
+CMakeFiles/ex4.dir/Mtmchkin.cpp.o: CMakeFiles/ex4.dir/flags.make
+CMakeFiles/ex4.dir/Mtmchkin.cpp.o: ../Mtmchkin.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ex4.dir/Mtmchkin.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex4.dir/Mtmchkin.cpp.o -c /Users/adi/Technion/matam/HW/ex4/Mtmchkin.cpp
+
+CMakeFiles/ex4.dir/Mtmchkin.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex4.dir/Mtmchkin.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/adi/Technion/matam/HW/ex4/Mtmchkin.cpp > CMakeFiles/ex4.dir/Mtmchkin.cpp.i
+
+CMakeFiles/ex4.dir/Mtmchkin.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/Mtmchkin.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/adi/Technion/matam/HW/ex4/Mtmchkin.cpp -o CMakeFiles/ex4.dir/Mtmchkin.cpp.s
+
 CMakeFiles/ex4.dir/Cards/Barfight.cpp.o: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/Cards/Barfight.cpp.o: ../Cards/Barfight.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ex4.dir/Cards/Barfight.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ex4.dir/Cards/Barfight.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex4.dir/Cards/Barfight.cpp.o -c /Users/adi/Technion/matam/HW/ex4/Cards/Barfight.cpp
 
 CMakeFiles/ex4.dir/Cards/Barfight.cpp.i: cmake_force
@@ -81,7 +94,7 @@ CMakeFiles/ex4.dir/Cards/Barfight.cpp.s: cmake_force
 
 CMakeFiles/ex4.dir/Cards/Card.cpp.o: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/Cards/Card.cpp.o: ../Cards/Card.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ex4.dir/Cards/Card.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ex4.dir/Cards/Card.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex4.dir/Cards/Card.cpp.o -c /Users/adi/Technion/matam/HW/ex4/Cards/Card.cpp
 
 CMakeFiles/ex4.dir/Cards/Card.cpp.i: cmake_force
@@ -94,7 +107,7 @@ CMakeFiles/ex4.dir/Cards/Card.cpp.s: cmake_force
 
 CMakeFiles/ex4.dir/Cards/Dragon.cpp.o: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/Cards/Dragon.cpp.o: ../Cards/Dragon.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ex4.dir/Cards/Dragon.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ex4.dir/Cards/Dragon.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex4.dir/Cards/Dragon.cpp.o -c /Users/adi/Technion/matam/HW/ex4/Cards/Dragon.cpp
 
 CMakeFiles/ex4.dir/Cards/Dragon.cpp.i: cmake_force
@@ -107,7 +120,7 @@ CMakeFiles/ex4.dir/Cards/Dragon.cpp.s: cmake_force
 
 CMakeFiles/ex4.dir/Cards/Fairy.cpp.o: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/Cards/Fairy.cpp.o: ../Cards/Fairy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ex4.dir/Cards/Fairy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ex4.dir/Cards/Fairy.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex4.dir/Cards/Fairy.cpp.o -c /Users/adi/Technion/matam/HW/ex4/Cards/Fairy.cpp
 
 CMakeFiles/ex4.dir/Cards/Fairy.cpp.i: cmake_force
@@ -120,7 +133,7 @@ CMakeFiles/ex4.dir/Cards/Fairy.cpp.s: cmake_force
 
 CMakeFiles/ex4.dir/Cards/Goblin.cpp.o: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/Cards/Goblin.cpp.o: ../Cards/Goblin.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ex4.dir/Cards/Goblin.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ex4.dir/Cards/Goblin.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex4.dir/Cards/Goblin.cpp.o -c /Users/adi/Technion/matam/HW/ex4/Cards/Goblin.cpp
 
 CMakeFiles/ex4.dir/Cards/Goblin.cpp.i: cmake_force
@@ -133,7 +146,7 @@ CMakeFiles/ex4.dir/Cards/Goblin.cpp.s: cmake_force
 
 CMakeFiles/ex4.dir/Cards/Merchant.cpp.o: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/Cards/Merchant.cpp.o: ../Cards/Merchant.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ex4.dir/Cards/Merchant.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ex4.dir/Cards/Merchant.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex4.dir/Cards/Merchant.cpp.o -c /Users/adi/Technion/matam/HW/ex4/Cards/Merchant.cpp
 
 CMakeFiles/ex4.dir/Cards/Merchant.cpp.i: cmake_force
@@ -146,7 +159,7 @@ CMakeFiles/ex4.dir/Cards/Merchant.cpp.s: cmake_force
 
 CMakeFiles/ex4.dir/Cards/Pitfall.cpp.o: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/Cards/Pitfall.cpp.o: ../Cards/Pitfall.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ex4.dir/Cards/Pitfall.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ex4.dir/Cards/Pitfall.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex4.dir/Cards/Pitfall.cpp.o -c /Users/adi/Technion/matam/HW/ex4/Cards/Pitfall.cpp
 
 CMakeFiles/ex4.dir/Cards/Pitfall.cpp.i: cmake_force
@@ -159,7 +172,7 @@ CMakeFiles/ex4.dir/Cards/Pitfall.cpp.s: cmake_force
 
 CMakeFiles/ex4.dir/Cards/Treasure.cpp.o: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/Cards/Treasure.cpp.o: ../Cards/Treasure.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ex4.dir/Cards/Treasure.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ex4.dir/Cards/Treasure.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex4.dir/Cards/Treasure.cpp.o -c /Users/adi/Technion/matam/HW/ex4/Cards/Treasure.cpp
 
 CMakeFiles/ex4.dir/Cards/Treasure.cpp.i: cmake_force
@@ -172,7 +185,7 @@ CMakeFiles/ex4.dir/Cards/Treasure.cpp.s: cmake_force
 
 CMakeFiles/ex4.dir/Cards/Vampire.cpp.o: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/Cards/Vampire.cpp.o: ../Cards/Vampire.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ex4.dir/Cards/Vampire.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ex4.dir/Cards/Vampire.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex4.dir/Cards/Vampire.cpp.o -c /Users/adi/Technion/matam/HW/ex4/Cards/Vampire.cpp
 
 CMakeFiles/ex4.dir/Cards/Vampire.cpp.i: cmake_force
@@ -182,19 +195,6 @@ CMakeFiles/ex4.dir/Cards/Vampire.cpp.i: cmake_force
 CMakeFiles/ex4.dir/Cards/Vampire.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/Cards/Vampire.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/adi/Technion/matam/HW/ex4/Cards/Vampire.cpp -o CMakeFiles/ex4.dir/Cards/Vampire.cpp.s
-
-CMakeFiles/ex4.dir/Mtmchkin.cpp.o: CMakeFiles/ex4.dir/flags.make
-CMakeFiles/ex4.dir/Mtmchkin.cpp.o: ../Mtmchkin.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adi/Technion/matam/HW/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ex4.dir/Mtmchkin.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex4.dir/Mtmchkin.cpp.o -c /Users/adi/Technion/matam/HW/ex4/Mtmchkin.cpp
-
-CMakeFiles/ex4.dir/Mtmchkin.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex4.dir/Mtmchkin.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/adi/Technion/matam/HW/ex4/Mtmchkin.cpp > CMakeFiles/ex4.dir/Mtmchkin.cpp.i
-
-CMakeFiles/ex4.dir/Mtmchkin.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/Mtmchkin.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/adi/Technion/matam/HW/ex4/Mtmchkin.cpp -o CMakeFiles/ex4.dir/Mtmchkin.cpp.s
 
 CMakeFiles/ex4.dir/test.cpp.o: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/test.cpp.o: ../test.cpp
@@ -276,6 +276,7 @@ CMakeFiles/ex4.dir/utilities.cpp.s: cmake_force
 
 # Object files for target ex4
 ex4_OBJECTS = \
+"CMakeFiles/ex4.dir/Mtmchkin.cpp.o" \
 "CMakeFiles/ex4.dir/Cards/Barfight.cpp.o" \
 "CMakeFiles/ex4.dir/Cards/Card.cpp.o" \
 "CMakeFiles/ex4.dir/Cards/Dragon.cpp.o" \
@@ -285,7 +286,6 @@ ex4_OBJECTS = \
 "CMakeFiles/ex4.dir/Cards/Pitfall.cpp.o" \
 "CMakeFiles/ex4.dir/Cards/Treasure.cpp.o" \
 "CMakeFiles/ex4.dir/Cards/Vampire.cpp.o" \
-"CMakeFiles/ex4.dir/Mtmchkin.cpp.o" \
 "CMakeFiles/ex4.dir/test.cpp.o" \
 "CMakeFiles/ex4.dir/Players/Player.cpp.o" \
 "CMakeFiles/ex4.dir/Players/Wizard.cpp.o" \
@@ -296,6 +296,7 @@ ex4_OBJECTS = \
 # External object files for target ex4
 ex4_EXTERNAL_OBJECTS =
 
+ex4: CMakeFiles/ex4.dir/Mtmchkin.cpp.o
 ex4: CMakeFiles/ex4.dir/Cards/Barfight.cpp.o
 ex4: CMakeFiles/ex4.dir/Cards/Card.cpp.o
 ex4: CMakeFiles/ex4.dir/Cards/Dragon.cpp.o
@@ -305,7 +306,6 @@ ex4: CMakeFiles/ex4.dir/Cards/Merchant.cpp.o
 ex4: CMakeFiles/ex4.dir/Cards/Pitfall.cpp.o
 ex4: CMakeFiles/ex4.dir/Cards/Treasure.cpp.o
 ex4: CMakeFiles/ex4.dir/Cards/Vampire.cpp.o
-ex4: CMakeFiles/ex4.dir/Mtmchkin.cpp.o
 ex4: CMakeFiles/ex4.dir/test.cpp.o
 ex4: CMakeFiles/ex4.dir/Players/Player.cpp.o
 ex4: CMakeFiles/ex4.dir/Players/Wizard.cpp.o

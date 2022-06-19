@@ -5,11 +5,13 @@
 #define EX2_Card_H
 
 #include <string>
+
+
 #include "Players/Player.h"
-#include "utilities.h"
+//#include "utilities.h"
 
 
-class Card {
+class Card{
 public:
     /*
      * C'tor of Card class
@@ -19,15 +21,15 @@ public:
      * @return
      *      A new instance of Card.
     */
-    Card(std::string cardName);
+    Card();
 
 
-    Card& operator=(const Card& other) = default;
 
     virtual ~Card() = default;
 
-    Card(const Card&) = default;
+    Card(const Card& card) = default;
 
+    Card& operator=(const Card& other) = default;
 
     /*
      * Handling the player's applyEncounter with the card:
@@ -71,11 +73,13 @@ public:
      * Here we are explicitly telling the compiler to use the default methods
     */
 
-
     virtual Card* clone() const = 0;
 
-protected:
-    std::string m_name;
+
+
+
+//protected:
+//    std::string m_name;
 
 };
 

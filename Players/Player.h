@@ -24,6 +24,7 @@ public:
      *      A new instance of Player
      */
     Player(std::string playerName, int maxHp = IN_HP, int force = IN_FORCE);
+
     /*
      * Copy C'tor for class Player
      * default is used

@@ -3,9 +3,9 @@
 //
 
 
-#include "Card.h"
+//#include "Card.h"
 #include "Merchant.h"
-#include "Players/Player.h"
+//#include "Players/Player.h"
 #include "utilities.h"
 #include <iostream>
 using std::cout;
@@ -14,7 +14,7 @@ using std::endl;
 const std::string Merchant::TYPE = "Merchant";
 
 
-Merchant::Merchant(std::string name) : Card(name),
+Merchant::Merchant() : Card(),
     m_heal(1),
     m_buff(1),
     m_healCost(5),

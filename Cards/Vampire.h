@@ -5,8 +5,10 @@
 #define EX2_Vampire_H
 
 #include <string>
-#include "Players/Player.h"
-#include "utilities.h"
+#include "Card.h"
+
+//#include "Players/Player.h"
+//#include "utilities.h"
 
 
 class Vampire : public Card {
@@ -19,7 +21,7 @@ public:
      * @return
      *      A new instance of Card.
     */
-    explicit Vampire(std::string name);
+    explicit Vampire();
 
     Card* clone() const override;
 

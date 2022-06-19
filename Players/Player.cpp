@@ -64,6 +64,10 @@ void Player::debuff(int amount)
     {
         m_force -= amount;
     }
+    if (m_force> 0)
+    {
+        m_force = 0;
+    }
 }
 
 void Player::heal(int amount)

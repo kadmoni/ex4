@@ -5,8 +5,10 @@
 #define EX2_Pitfall_H
 
 #include <string>
-#include "Players/Player.h"
-#include "utilities.h"
+#include "Card.h"
+
+//#include "Players/Player.h"
+//#include "utilities.h"
 
 
 
@@ -20,7 +22,7 @@ public:
      * @return
      *      A new instance of Card.
     */
-    Pitfall(std::string name);
+    Pitfall();
 
     Card* clone() const override;
 

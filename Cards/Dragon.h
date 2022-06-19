@@ -5,8 +5,11 @@
 #define EX2_Dragon_H
 
 #include <string>
-#include "Players/Player.h"
-#include "utilities.h"
+#include "Card.h"
+
+
+//#include "Players/Player.h"
+//#include "utilities.h"
 
 
 class Dragon : public Card {
@@ -19,7 +22,7 @@ public:
      * @return
      *      A new instance of Card.
     */
-    Dragon(std::string name);
+    Dragon();
 
     Card* clone() const override;
 

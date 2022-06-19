@@ -3,11 +3,10 @@
 //
 
 
-#include "Card.h"
+//#include "Card.h"
 #include "Pitfall.h"
-#include "Players/Player.h"
+//#include "Players/Player.h"
 #include "Players/Rogue.h"
-////^^^^^^ more
 #include "utilities.h"
 #include <iostream>
 using std::cout;
@@ -16,7 +15,7 @@ using std::endl;
 const std::string Pitfall::TYPE = "Pitfall";
 
 
-Pitfall::Pitfall(std::string name) : Card(name),
+Pitfall::Pitfall() : Card(),
     m_damage(10)
 {}
 

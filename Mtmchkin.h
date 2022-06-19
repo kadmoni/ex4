@@ -1,13 +1,14 @@
 #ifndef MTMCHKIN_H_
 #define MTMCHKIN_H_
-#include "Player.h"
+
+#include "Players/Player.h"
+#include "Cards/Card.h"
 #include <deque>
 #include <queue>
 #include <memory>
-#include "Card.h"
+
 
 class Mtmchkin{
-
 public:
     
     /*
@@ -25,7 +26,7 @@ public:
     * @return
     *      void
     */
-    void playRound();
+  //  void playRound();
     
     /*
     * Prints the leaderBoard of the game at a given stage of the game - according to the instruction in the exercise document.
@@ -57,7 +58,7 @@ private:
     std::vector<std::unique_ptr<Player>> m_activePlayers;
     std::vector<std::unique_ptr<Player>> m_winners;
     std::deque<std::unique_ptr<Player>> m_losers;
-    std::queue<std::unique_ptr<Cards>> m_deck;
+    std::vector<std::unique_ptr<Card>> m_deck;
     int m_numOfRounds;
 };
 
