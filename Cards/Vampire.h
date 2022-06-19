@@ -5,8 +5,7 @@
 #define EX2_Vampire_H
 
 #include <string>
-#include "Players/Player.h"
-#include "utilities.h"
+#include "Card.h"
 
 
 class Vampire : public Card {

@@ -3,9 +3,8 @@
 //
 
 
-#include "Card.h"
+
 #include "Barfight.h"
-#include "Players/Player.h"
 #include "Players/Fighter.h"
 #include "utilities.h"
 #include <iostream>
