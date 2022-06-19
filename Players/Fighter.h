@@ -2,7 +2,7 @@
 #ifndef EX4_FIGHTER_H
 #define EX4_FIGHTER_H
 
-#include "Player.h"
+#include "Players/Player.h"
 
 class Fighter: public Player{
 public:

@@ -344,30 +344,6 @@ Cards/Vampire.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Cards/Vampire.cpp.s
 .PHONY : Cards/Vampire.cpp.s
 
-Fighter.obj: Fighter.cpp.obj
-.PHONY : Fighter.obj
-
-# target to build an object file
-Fighter.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Fighter.cpp.obj
-.PHONY : Fighter.cpp.obj
-
-Fighter.i: Fighter.cpp.i
-.PHONY : Fighter.i
-
-# target to preprocess a source file
-Fighter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Fighter.cpp.i
-.PHONY : Fighter.cpp.i
-
-Fighter.s: Fighter.cpp.s
-.PHONY : Fighter.s
-
-# target to generate assembly for a file
-Fighter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Fighter.cpp.s
-.PHONY : Fighter.cpp.s
-
 Mtmchkin.obj: Mtmchkin.cpp.obj
 .PHONY : Mtmchkin.obj
 
@@ -391,30 +367,6 @@ Mtmchkin.s: Mtmchkin.cpp.s
 Mtmchkin.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Mtmchkin.cpp.s
 .PHONY : Mtmchkin.cpp.s
-
-Player.obj: Player.cpp.obj
-.PHONY : Player.obj
-
-# target to build an object file
-Player.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Player.cpp.obj
-.PHONY : Player.cpp.obj
-
-Player.i: Player.cpp.i
-.PHONY : Player.i
-
-# target to preprocess a source file
-Player.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Player.cpp.i
-.PHONY : Player.cpp.i
-
-Player.s: Player.cpp.s
-.PHONY : Player.s
-
-# target to generate assembly for a file
-Player.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Player.cpp.s
-.PHONY : Player.cpp.s
 
 Players/Fighter.obj: Players/Fighter.cpp.obj
 .PHONY : Players/Fighter.obj
@@ -512,54 +464,6 @@ Players/Wizard.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Players/Wizard.cpp.s
 .PHONY : Players/Wizard.cpp.s
 
-Rogue.obj: Rogue.cpp.obj
-.PHONY : Rogue.obj
-
-# target to build an object file
-Rogue.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Rogue.cpp.obj
-.PHONY : Rogue.cpp.obj
-
-Rogue.i: Rogue.cpp.i
-.PHONY : Rogue.i
-
-# target to preprocess a source file
-Rogue.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Rogue.cpp.i
-.PHONY : Rogue.cpp.i
-
-Rogue.s: Rogue.cpp.s
-.PHONY : Rogue.s
-
-# target to generate assembly for a file
-Rogue.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Rogue.cpp.s
-.PHONY : Rogue.cpp.s
-
-Wizard.obj: Wizard.cpp.obj
-.PHONY : Wizard.obj
-
-# target to build an object file
-Wizard.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Wizard.cpp.obj
-.PHONY : Wizard.cpp.obj
-
-Wizard.i: Wizard.cpp.i
-.PHONY : Wizard.i
-
-# target to preprocess a source file
-Wizard.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Wizard.cpp.i
-.PHONY : Wizard.cpp.i
-
-Wizard.s: Wizard.cpp.s
-.PHONY : Wizard.s
-
-# target to generate assembly for a file
-Wizard.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Wizard.cpp.s
-.PHONY : Wizard.cpp.s
-
 test.obj: test.cpp.obj
 .PHONY : test.obj
 
@@ -644,15 +548,9 @@ help:
 	@echo ... Cards/Vampire.obj
 	@echo ... Cards/Vampire.i
 	@echo ... Cards/Vampire.s
-	@echo ... Fighter.obj
-	@echo ... Fighter.i
-	@echo ... Fighter.s
 	@echo ... Mtmchkin.obj
 	@echo ... Mtmchkin.i
 	@echo ... Mtmchkin.s
-	@echo ... Player.obj
-	@echo ... Player.i
-	@echo ... Player.s
 	@echo ... Players/Fighter.obj
 	@echo ... Players/Fighter.i
 	@echo ... Players/Fighter.s
@@ -665,12 +563,6 @@ help:
 	@echo ... Players/Wizard.obj
 	@echo ... Players/Wizard.i
 	@echo ... Players/Wizard.s
-	@echo ... Rogue.obj
-	@echo ... Rogue.i
-	@echo ... Rogue.s
-	@echo ... Wizard.obj
-	@echo ... Wizard.i
-	@echo ... Wizard.s
 	@echo ... test.obj
 	@echo ... test.i
 	@echo ... test.s

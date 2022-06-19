@@ -2,7 +2,7 @@
 #include "Wizard.h"
 #include "utilities.h"
 
-const std::string Wizard::JOB = "WIZARD";
+const std::string Wizard::JOB = "Wizard";
 
 Wizard::Wizard(std::string name): Player(name)
 {

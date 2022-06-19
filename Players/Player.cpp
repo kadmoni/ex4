@@ -97,6 +97,7 @@ void Player::damage(int amount)
 std::ostream& operator<<(std::ostream &out, const Player& player)
 {
     player.print(out);
+    return out;
 }
 
 bool Player::isKnockedOut() const
@@ -136,9 +137,5 @@ int Player::getAttackStrength() const
 {
     return m_force+m_level;
 }
-
-//std::ostream &Player::print(std::ostream &out) {
-//    int hello;
-//}
 
 

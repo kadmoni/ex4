@@ -80,15 +80,6 @@ CMakeFiles/ex4.dir/Cards/Vampire.cpp.obj: \
  ../Cards/Card.h \
  ../Cards/Vampire.cpp \
  ../Cards/Vampire.h
-CMakeFiles/ex4.dir/Fighter.cpp.obj: \
- ../Cards/Card.h \
- ../Exception.h \
- ../Fighter.cpp \
- ../Fighter.h \
- ../Mtmchkin.h \
- ../Player.h \
- ../Players/Player.h \
- ../utilities.h
 CMakeFiles/ex4.dir/Mtmchkin.cpp.obj: \
  ../Cards/Barfight.h \
  ../Cards/Card.h \
@@ -107,14 +98,6 @@ CMakeFiles/ex4.dir/Mtmchkin.cpp.obj: \
  ../Players/Rogue.h \
  ../Players/Wizard.h \
  ../utilities.h
-CMakeFiles/ex4.dir/Player.cpp.obj: \
- ../Cards/Card.h \
- ../Exception.h \
- ../Mtmchkin.h \
- ../Player.cpp \
- ../Player.h \
- ../Players/Player.h \
- ../utilities.h
 CMakeFiles/ex4.dir/Players/Fighter.cpp.obj: \
  ../Cards/Card.h \
  ../Exception.h \
@@ -122,8 +105,7 @@ CMakeFiles/ex4.dir/Players/Fighter.cpp.obj: \
  ../Players/Player.h \
  ../utilities.h \
  ../Players/Fighter.cpp \
- ../Players/Fighter.h \
- ../Players/Player.h
+ ../Players/Fighter.h
 CMakeFiles/ex4.dir/Players/Player.cpp.obj: \
  ../Cards/Card.h \
  ../Exception.h \
@@ -138,7 +120,6 @@ CMakeFiles/ex4.dir/Players/Rogue.cpp.obj: \
  ../Mtmchkin.h \
  ../Players/Player.h \
  ../utilities.h \
- ../Players/Player.h \
  ../Players/Rogue.cpp \
  ../Players/Rogue.h
 CMakeFiles/ex4.dir/Players/Wizard.cpp.obj: \
@@ -147,27 +128,8 @@ CMakeFiles/ex4.dir/Players/Wizard.cpp.obj: \
  ../Mtmchkin.h \
  ../Players/Player.h \
  ../utilities.h \
- ../Players/Player.h \
  ../Players/Wizard.cpp \
  ../Players/Wizard.h
-CMakeFiles/ex4.dir/Rogue.cpp.obj: \
- ../Cards/Card.h \
- ../Exception.h \
- ../Mtmchkin.h \
- ../Player.h \
- ../Players/Player.h \
- ../Rogue.cpp \
- ../Rogue.h \
- ../utilities.h
-CMakeFiles/ex4.dir/Wizard.cpp.obj: \
- ../Cards/Card.h \
- ../Exception.h \
- ../Mtmchkin.h \
- ../Player.h \
- ../Players/Player.h \
- ../Wizard.cpp \
- ../Wizard.h \
- ../utilities.h
 CMakeFiles/ex4.dir/test.cpp.obj: \
  ../Cards/Barfight.h \
  ../Cards/Card.h \

@@ -10,10 +10,11 @@ using std::cout;
 using std::endl;
 
 
-Card::Card() {};
+Card::Card() {}; //add print function for future code usability
 
 
 std::ostream& operator<<(std::ostream &out, const Card& card)
 {
     card.print(out);
+    return out;
 }

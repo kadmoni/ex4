@@ -17,27 +17,13 @@
 
 Mtmchkin::Mtmchkin(const std::string fileName): m_numOfRounds(0)
 {
-    createDeck(m_deck,fileName);
     int teamSize=0;
+    createDeck(m_deck,fileName);
     printStartGameMessage();
-    printEnterTeamSizeMessage();
-    std::cin >> teamSize;
-    while ((teamSize>6)||(teamSize<2))
-    {
-        printInvalidTeamSize();
-        printEnterTeamSizeMessage();
-        std::cin>>teamSize;
-    }
-
+    teamSizeInput(teamSize);
     for (int i=0;i<teamSize;i++)
     {
-        std::string temp,name,job;
-        printInsertPlayerMessage();
-        std::cin >> temp;
-        std::stringstream input(temp);
-        std::getline(input,name,' ');
-        std::getline(input,job);
-        if (createPlayer(name,job,m_activePlayers)==false)
+        if (createPlayer(m_activePlayers)==false)
         {
             i--;
         }
@@ -124,8 +110,12 @@ bool checkName (std::string name)
     return true;
 }
 
-bool createPlayer(std::string name, std::string job, std::vector<std::unique_ptr<Player>>& m_activePlayers)
+bool createPlayer(std::vector<std::unique_ptr<Player>>& m_activePlayers)
 {
+    std::string name,job;
+    printInsertPlayerMessage();
+    std::getline(std::cin,name,' ');
+    std::getline(std::cin,job);
     if (checkName(name) == false)
     {
         return false;
@@ -153,47 +143,75 @@ bool createPlayer(std::string name, std::string job, std::vector<std::unique_ptr
 
 void createDeck (std::queue<std::unique_ptr<Card>>& m_deck,const std::string filename)
 {
+    int deckCount =0;
     std::string tempCard;
     std::ifstream deck(filename);
-    //custom exceptions here
+    if (!deck)
+    {
+        throw DeckFileNotFound();
+    }
     while (std::getline(deck,tempCard))
     {
         if (tempCard == Dragon::TYPE)
         {
             m_deck.push(std::make_unique<Dragon>());
+            deckCount ++;
         }
         else if (tempCard == Vampire::TYPE)
         {
             m_deck.push(std::make_unique<Vampire>());
+            deckCount ++;
         }
         else if (tempCard == Goblin::TYPE)
         {
             m_deck.push(std::make_unique<Goblin>());
+            deckCount ++;
         }
         else if (tempCard == Barfight::TYPE)
         {
             m_deck.push(std::make_unique<Barfight>());
+            deckCount ++;
         }
         else if (tempCard == Pitfall::TYPE)
         {
             m_deck.push(std::make_unique<Pitfall>());
+            deckCount ++;
         }
         else if (tempCard == Fairy::TYPE)
         {
             m_deck.push(std::make_unique<Fairy>());
+            deckCount ++;
         }
         else if (tempCard == Merchant::TYPE)
         {
             m_deck.push(std::make_unique<Merchant>());
+            deckCount ++;
         }
         else if (tempCard == Treasure::TYPE)
         {
             m_deck.push(std::make_unique<Treasure>());
+            deckCount ++;
         }
         else
         {
-            //invalid card throw
+            throw DeckFileFormatError(deckCount+1);
         }
+    }
+    if (deckCount<5)
+    {
+        throw DeckFileInvalidSize();
+    }
+}
+
+void teamSizeInput (int& teamSize)
+{
+    printEnterTeamSizeMessage();
+    std::cin>>teamSize;
+    while ((teamSize>6)||(teamSize<2))
+    {
+        printInvalidTeamSize();
+        printEnterTeamSizeMessage();
+        std::cin>>teamSize;
     }
 }
 

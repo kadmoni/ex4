@@ -62,8 +62,9 @@ private:
 };
 
 bool checkName (std::string name);
-bool createPlayer(std::string name, std::string job, const std::vector<std::unique_ptr<Player>>& activePlayers);
+bool createPlayer(std::vector<std::unique_ptr<Player>>& activePlayers);
 void createDeck(std::queue<std::unique_ptr<Card>>& m_deck, const std::string fileName);
+void teamSizeInput (int& teamSize);
 
 
 
