@@ -38,6 +38,33 @@ Mtmchkin::Mtmchkin(const std::string fileName): m_numOfRounds(0)
     }
 }
 
+void Mtmchkin::playRound()
+{
+    printRoundStartMessage(this->getNumberOfRounds());
+    for (int i = 0; i<m_activePlayers.size();i++)
+    {
+        printTurnStartMessage(m_activePlayers[i]->getName());
+        m_deck.front()->applyEncounter(*(m_activePlayers[i]));
+        if (m_activePlayers[i]->getLevel()>=10)
+        {
+            m_winners.push_back(std::move(m_activePlayers[i]));
+            m_activePlayers.erase(m_activePlayers.begin()+i);
+        }
+        if(m_activePlayers[i]->isKnockedOut())
+        {
+            m_losers.push_front(std::move(m_activePlayers[i]));
+            m_activePlayers.erase(m_activePlayers.begin()+i);
+        }
+        std::unique_ptr<Card> tempCard(std::move(m_deck.front()));
+        m_deck.pop();
+        m_deck.push(std::move(tempCard));
+        if (isGameOver())
+        {
+            printGameEndMessage();
+            break;
+        }
+    }
+}
 
 
 
