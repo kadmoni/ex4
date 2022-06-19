@@ -23,10 +23,8 @@ Mtmchkin::Mtmchkin(const std::string fileName): m_numOfRounds(0)
     teamSizeInput(teamSize);
     for (int i=0;i<teamSize;i++)
     {
-        if (createPlayer(m_activePlayers)==false)
-        {
-            i--;
-        }
+        printInsertPlayerMessage();
+        while (createPlayer(m_activePlayers)==false);
     }
 }
 
@@ -131,7 +129,6 @@ bool checkName (std::string name)
 bool createPlayer(std::vector<std::unique_ptr<Player>>& m_activePlayers)
 {
     std::string name,job;
-    printInsertPlayerMessage();
     std::getline(std::cin,name,' ');
     std::getline(std::cin,job);
     if (checkName(name) == false)

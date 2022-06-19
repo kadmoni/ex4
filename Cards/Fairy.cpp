@@ -26,11 +26,11 @@ Card* Fairy::clone() const
 void Fairy::applyEncounter(Player& player) const {
     Wizard* ptr = dynamic_cast<Wizard*>(&player);
     bool isWizard = ptr != nullptr;
+    printFairyMessage(isWizard);
     if (!isWizard) {
         return;
     }
     player.heal(m_heal);
-    printFairyMessage(isWizard);
 }
 
 std::ostream& Fairy::print(std::ostream &out) const

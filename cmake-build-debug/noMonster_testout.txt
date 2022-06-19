@@ -35,6 +35,7 @@ Start of round 3:
 Start of Itay's turn: 
 Fairies like wizards, you've gained 10 health points.
 Start of Pikachu's turn: 
+Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
@@ -60,6 +61,7 @@ Start of round 5:
 Start of Itay's turn: 
 You've stumbled into a pile of coins! you've gained 10 gold.
 Start of Pikachu's turn: 
+Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
@@ -98,6 +100,7 @@ Start of round 8:
 Start of Itay's turn: 
 Fairies like wizards, you've gained 10 health points.
 Start of Pikachu's turn: 
+Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
@@ -123,6 +126,7 @@ Start of round 10:
 Start of Itay's turn: 
 You've stumbled into a pile of coins! you've gained 10 gold.
 Start of Pikachu's turn: 
+Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
@@ -161,6 +165,7 @@ Start of round 13:
 Start of Itay's turn: 
 Fairies like wizards, you've gained 10 health points.
 Start of Pikachu's turn: 
+Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
@@ -186,6 +191,7 @@ Start of round 15:
 Start of Itay's turn: 
 You've stumbled into a pile of coins! you've gained 10 gold.
 Start of Pikachu's turn: 
+Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
@@ -224,6 +230,7 @@ Start of round 18:
 Start of Itay's turn: 
 Fairies like wizards, you've gained 10 health points.
 Start of Pikachu's turn: 
+Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
@@ -249,6 +256,7 @@ Start of round 20:
 Start of Itay's turn: 
 You've stumbled into a pile of coins! you've gained 10 gold.
 Start of Pikachu's turn: 
+Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
@@ -287,6 +295,7 @@ Start of round 23:
 Start of Itay's turn: 
 Fairies like wizards, you've gained 10 health points.
 Start of Pikachu's turn: 
+Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
@@ -312,6 +321,7 @@ Start of round 25:
 Start of Itay's turn: 
 You've stumbled into a pile of coins! you've gained 10 gold.
 Start of Pikachu's turn: 
+Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
@@ -350,6 +360,7 @@ Start of round 28:
 Start of Itay's turn: 
 Fairies like wizards, you've gained 10 health points.
 Start of Pikachu's turn: 
+Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
@@ -375,6 +386,7 @@ Start of round 30:
 Start of Itay's turn: 
 You've stumbled into a pile of coins! you've gained 10 gold.
 Start of Pikachu's turn: 
+Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
@@ -413,6 +425,7 @@ Start of round 33:
 Start of Itay's turn: 
 Fairies like wizards, you've gained 10 health points.
 Start of Pikachu's turn: 
+Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
@@ -438,6 +451,7 @@ Start of round 35:
 Start of Itay's turn: 
 You've stumbled into a pile of coins! you've gained 10 gold.
 Start of Pikachu's turn: 
+Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
@@ -476,6 +490,7 @@ Start of round 38:
 Start of Itay's turn: 
 Fairies like wizards, you've gained 10 health points.
 Start of Pikachu's turn: 
+Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
@@ -501,6 +516,7 @@ Start of round 40:
 Start of Itay's turn: 
 You've stumbled into a pile of coins! you've gained 10 gold.
 Start of Pikachu's turn: 
+Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
@@ -539,6 +555,7 @@ Start of round 43:
 Start of Itay's turn: 
 Fairies like wizards, you've gained 10 health points.
 Start of Pikachu's turn: 
+Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
@@ -564,6 +581,7 @@ Start of round 45:
 Start of Itay's turn: 
 You've stumbled into a pile of coins! you've gained 10 gold.
 Start of Pikachu's turn: 
+Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
