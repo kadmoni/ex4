@@ -8,29 +8,35 @@
 #include "Card.h"
 
 
-
+/*
+ * heals Wizards when encountered
+ */
 class Fairy : public Card {
 public:
     /*
-     * C'tor of Card class
+     * C'tor of Fairy class
      *
-     * @param type - The type of the card.
-     * @param stats - The numeral stats of the card.
      * @return
-     *      A new instance of Card.
+     *      A new instance of Fairy.
     */
     Fairy();
     
+    /*
+ * "virtual copy constructor" for the class
+ * 
+ * @return
+ *      pointer of type Card* to Fairy (subclass of Card)
+ */
     Card* clone() const override;
 
-    
+
     /*
-     * Handling the player's applyEncounter with the card:
-     *
-     * @param player - The player.
-     * @return
-     *      void
-    */
+      * Handling the player's applyEncounter with the card:
+      *
+      * @param player - The player to which the result of the encounter will be dealt.
+      * @return
+      *      void
+     */
     void applyEncounter(Player& player) const override;
 
 
@@ -50,7 +56,10 @@ public:
     Fairy(const Fairy&) = default;
     ~Fairy() override = default;
     Fairy& operator=(const Fairy& other) = default;
-
+    
+    /*
+     * the type of the Card (Fairy)
+     */
     static const std::string TYPE;
 
 

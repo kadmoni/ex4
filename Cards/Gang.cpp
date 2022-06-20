@@ -3,10 +3,21 @@
 //
 
 
-
+#include <fstream>
 #include "Gang.h"
 #include "utilities.h"
 #include <iostream>
+
+#include "Cards/Dragon.h"
+#include "Cards/Vampire.h"
+#include "Cards/Goblin.h"
+#include "Cards/Barfight.h"
+#include "Cards/Treasure.h"
+#include "Cards/Merchant.h"
+#include "Cards/Fairy.h"
+#include "Cards/Pitfall.h"
+#include "Cards/Gang.h"
+
 using std::cout;
 using std::endl;
 
@@ -78,31 +89,5 @@ Gang::Gang(std::ifstream& deck, int& deckLine) : Card()
 Card* Gang::clone() const
 {
     return new Gang(*this);
-}
-
-void Gang::applyEncounter(Player& player) const {
-    bool win = player.getAttackStrength() >= m_force;
-    if (win)
-    {
-        player.levelUp();
-        player.addCoins(m_loot);
-        printWinBattle(player.getName(), Gang::TYPE);
-
-    }
-    else
-    {
-        player.damage(m_damage);
-        printLossBattle(player.getName(), Gang::TYPE);
-
-    }
-}
-
-
-std::ostream& Gang::print(std::ostream &out) const
-{
-    printCardDetails(out,Gang::TYPE);
-    printMonsterDetails(out, m_force, m_damage, m_loot, false);
-    printEndOfCardDetails(out);
-    return out;
 }
 

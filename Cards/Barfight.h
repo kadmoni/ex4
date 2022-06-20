@@ -9,34 +9,31 @@
 
 
 /*
- *  CardType:
- *  Each card has an type:
- *  BATTLE - Battle against a monster.
- *  BUFF - Increase your player's force by 'm_force' points of CardStats.
- *  HEAL - Increase your player's HP by 'm_heal' points  of CardStats (no more than maxHP points).
- *  TREASURE - Get 'm_profit' coins of CardStats.
-*/
-
+ * damages every type of Player except Fighter
+ */
 class Barfight : public Card {
 public:
     /*
-     * C'tor of Card class
+     * C'tor of Barfight class
      *
-     * @param type - The type of the card.
-     * @param stats - The numeral stats of the card.
      * @return
-     *      A new instance of Card.
+     *      A new instance of Barfight.
     */
     Barfight();
     
-    
+    /*
+     * "virtual copy constructor" for the class
+     *
+     * @return
+     *      pointer of type Card* to Barfight (subclass of Card)
+     */
     Card* clone() const override;
 
 
     /*
      * Handling the player's applyEncounter with the card:
      *
-     * @param player - The player.
+     * @param player - The player to which the result of the encounter will be dealt.
      * @return
      *      void
     */
@@ -49,7 +46,6 @@ public:
      * @return
      *      void
     */
- //   void printInfo() const;
 
     std::ostream & print(std::ostream &out) const override;
 
@@ -60,6 +56,9 @@ public:
     ~Barfight() override = default;
     Barfight& operator=(const Barfight& other) = default;
 
+    /*
+     * the type of the Card (Barfight)
+     */
     static const std::string TYPE;
 
 

@@ -13,12 +13,9 @@
 class DeckFileNotFound : public std::runtime_error {
 public:
 
-//    /** Constructor (C strings).
-//     *  @param message C-style string error message.
-//     *                 The string contents are copied upon construction.
-//     *                 Hence, responsibility for deleting the char* lies
-//     *                 with the caller.
-//     */
+/*
+ * thrown if a file can't be file using the provided path
+ */
     DeckFileNotFound() : std::runtime_error("Deck File Error: File not found") {};
 };
 
@@ -30,12 +27,9 @@ public:
 class DeckFileInvalidSize : public std::runtime_error {
 public:
 
-//    /** Constructor (C strings).
-//     *  @param message C-style string error message.
-//     *                 The string contents are copied upon construction.
-//     *                 Hence, responsibility for deleting the char* lies
-//     *                 with the caller.
-//     */
+/*
+ * thrown if the deck has less than five cards
+ */
     DeckFileInvalidSize() : std::runtime_error("Deck File Error: Deck size is invalid") {};
 
 };
@@ -47,7 +41,9 @@ public:
 class DeckFileFormatError : public std::runtime_error {
 public:
 
-
+/*
+ * thrown if one of the lines in the file foes not correspond to a card in the game
+ */
     explicit DeckFileFormatError(int line) : std::runtime_error("Deck File Error: File format error in line " + std::to_string(line)){};
 
 };

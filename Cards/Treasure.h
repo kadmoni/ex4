@@ -7,26 +7,31 @@
 #include <string>
 #include "Card.h"
 
-
+/*
+ * adds coins to a Player
+ */
 class Treasure : public Card {
 public:
     /*
-     * C'tor of Card class
-     *
-     * @param type - The type of the card.
-     * @param stats - The numeral stats of the card.
-     * @return
-     *      A new instance of Card.
-    */
+      * C'tor of Treasure class
+      *
+      * @return
+      *      A new instance of Treasure.
+     */
     Treasure();
-
+    /*
+     * "virtual copy constructor" for the class
+     *
+     * @return
+     *      pointer of type Card* to Treasure (subclass of Card)
+     */
     Card* clone() const override;
 
-    
+
     /*
      * Handling the player's applyEncounter with the card:
      *
-     * @param player - The player.
+     * @param player - The player to which the result of the encounter will be dealt.
      * @return
      *      void
     */
@@ -40,10 +45,7 @@ public:
      *      void
     */
     std::ostream & print(std::ostream &out) const override;
-
-
-
-
+    
     /*
      * Here we are explicitly telling the compiler to use the default methods
     */
@@ -51,6 +53,9 @@ public:
     ~Treasure() override = default;
     Treasure& operator=(const Treasure& other) = default;
 
+    /*
+     * the type of the Card (Treasure)
+     */
     static const std::string TYPE;
 
 

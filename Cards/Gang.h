@@ -59,7 +59,7 @@ public:
 
 
 private:
-    std::queue<std::unique_ptr<Card>> m_theGang;
+    std::vector<std::unique_ptr<Card>> m_theGang;
 };
 
 
