@@ -6,6 +6,9 @@
 #include <memory>
 #include "Cards/Card.h"
 
+/*
+ * manages the game Mtmchkin
+ */
 class Mtmchkin{
 
 public:
@@ -60,10 +63,42 @@ private:
     std::queue<std::unique_ptr<Card>> m_deck;
     int m_numOfRounds;
 };
-
+/*
+ * checks if the name provided follows the provided rules (english letters only, up to 15 characters)
+ *
+ * @param name - the name scanned from the user
+ * @return
+ *      true - the name follows the rules
+ *      false - the name does not follow the rules
+ */
 bool checkName (std::string name);
+
+/*
+ * creates a unique pointer to an appropriate subclass of Player according to user input, and places it in a vector
+ *
+ * @param activePlayers - a vector to which Player subclass unique pointers will be added
+ * @return
+ *      true - the Player cannot be created according to the rules
+ *      false - the Player was created according to the rules
+ */
 bool createPlayer(std::vector<std::unique_ptr<Player>>& activePlayers);
+
+/*
+ * creates a queue of unique pointers to Card subclasses from a provided file
+ * (in each line in the file there should be a single word corresponding to a Card subclass, otherwise an exception is thrown)
+ *
+ * @param m_deck - a queue of unique pointers to the Cards in the game
+ * @param fileName - the name of the file from which the Card types will be drawn
+ * @return
+ *      void
+ */
 void createDeck(std::queue<std::unique_ptr<Card>>& m_deck, const std::string fileName);
+
+/*
+ * gets the team size from the user and checks if it follows the provided rules (2-6 players)
+ *
+ * @param teamSize - the teamSize scanned from the user
+ */
 void teamSizeInput (int& teamSize);
 
 

@@ -3,10 +3,21 @@
 //
 
 
-
+#include <fstream>
 #include "Gang.h"
 #include "utilities.h"
 #include <iostream>
+
+
+#include "Cards/Dragon.h"
+#include "Cards/Vampire.h"
+#include "Cards/Goblin.h"
+#include "Cards/Barfight.h"
+#include "Cards/Treasure.h"
+#include "Cards/Merchant.h"
+#include "Cards/Fairy.h"
+#include "Cards/Pitfall.h"
+#include "Cards/Gang.h"
 
 using std::cout;
 using std::endl;
@@ -74,6 +85,7 @@ Card* Gang::clone() const
     return new Gang(*this);
 }
 
+
 void Gang::applyEncounter(Player& player) {
     int size = m_theGang.size();
     int level = player.getLevel();
@@ -113,4 +125,5 @@ std::ostream& Gang::print(std::ostream &out) const
     cout << "The battle has ended all blood has been shed" endl;
 
 }
+
 

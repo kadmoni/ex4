@@ -204,8 +204,8 @@ void createDeck (std::queue<std::unique_ptr<Card>>& m_deck,const std::string fil
         }
         else if (tempCard == Gang::TYPE)
         {
-            m_deck.push(std::make_unique<Gang>(deck,deckLine))
-            deckSize++;
+            m_deck.push(std::make_unique<Gang>(deck,++deckLine));
+            deckLine++;
         }
         else
         {

@@ -8,25 +8,31 @@
 #include "Card.h"
 
 
-
+/*
+ * damages every type of Player except Rogue
+ */
 class Pitfall : public Card {
 public:
     /*
-     * C'tor of Card class
+     * C'tor of Pitfall class
      *
-     * @param type - The type of the card.
-     * @param stats - The numeral stats of the card.
      * @return
-     *      A new instance of Card.
+     *      A new instance of Pitfall.
     */
     Pitfall();
-
+    
+    /*
+     * "virtual copy constructor" for the class
+     * 
+     * @return
+     *      pointer of type Card* to Pitfall (subclass of Card)
+     */
     Card* clone() const override;
 
     /*
      * Handling the player's applyEncounter with the card:
      *
-     * @param player - The player.
+     * @param player - The player to which the result of the encounter will be dealt.
      * @return
      *      void
     */
@@ -50,7 +56,10 @@ public:
     Pitfall(const Pitfall&) = default;
     ~Pitfall() override = default;
     Pitfall& operator=(const Pitfall& other) = default;
-
+    
+    /*
+     * the type of the Card (Pitfall)
+     */
     static const std::string TYPE;
 
 private:
