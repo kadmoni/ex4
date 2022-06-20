@@ -110,6 +110,12 @@
 		<Unit filename="C:/Users/barke/ex4/Cards/Fairy.h">
 			<Option target="ex4"/>
 		</Unit>
+		<Unit filename="C:/Users/barke/ex4/Cards/Gang.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="C:/Users/barke/ex4/Cards/Gang.h">
+			<Option target="ex4"/>
+		</Unit>
 		<Unit filename="C:/Users/barke/ex4/Cards/Goblin.cpp">
 			<Option target="ex4"/>
 		</Unit>

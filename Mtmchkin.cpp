@@ -14,6 +14,7 @@
 #include "Cards/Merchant.h"
 #include "Cards/Fairy.h"
 #include "Cards/Pitfall.h"
+#include "Cards/Gang.h"
 
 Mtmchkin::Mtmchkin(const std::string fileName): m_numOfRounds(0)
 {
