@@ -1,3 +1,4 @@
+
 #ifndef EX2_Fairy_H
 #define EX2_Fairy_H
 

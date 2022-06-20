@@ -1,3 +1,4 @@
+
 #include "Vampire.h"
 #include "utilities.h"
 #include <iostream>

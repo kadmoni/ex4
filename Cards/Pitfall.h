@@ -1,3 +1,4 @@
+
 #ifndef EX2_Pitfall_H
 #define EX2_Pitfall_H
 

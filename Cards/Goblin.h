@@ -1,3 +1,4 @@
+
 #ifndef EX2_Goblin_H
 #define EX2_Goblin_H
 
@@ -7,16 +8,14 @@
 class Goblin : public Card {
 public:
     /*
-     * C'tor of Card class
+     * C'tor of Goblin class
      *
-     * @param type - The type of the card.
-     * @param stats - The numeral stats of the card.
      * @return
-     *      A new instance of Card.
+     *      A new instance of Goblin.
     */
     Goblin();
 
-    
+
     /*
      * Handling the player's applyEncounter with the card:
      *
@@ -45,6 +44,9 @@ public:
     ~Goblin() override = default;
     Goblin& operator=(const Goblin& other) = default;
 
+    /*
+     * the type of the Card (Goblin)
+     */
     static const std::string TYPE;
     static const int gobForce = 6;
     static const int gobLoot = 2;
