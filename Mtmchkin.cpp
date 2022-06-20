@@ -143,7 +143,8 @@ bool createPlayer(std::vector<std::unique_ptr<Player>>& m_activePlayers)
 
 void createDeck (std::queue<std::unique_ptr<Card>>& m_deck,const std::string filename)
 {
-    int deckCount =0;
+    int deckSize =0;
+    int deckLine =1;
     std::string tempCard;
     std::ifstream deck(filename);
     if (!deck)
@@ -155,54 +156,62 @@ void createDeck (std::queue<std::unique_ptr<Card>>& m_deck,const std::string fil
         if (tempCard == Dragon::TYPE)
         {
             m_deck.push(std::make_unique<Dragon>());
-            deckCount ++;
+            deckSize ++;
+            deckLine++;
         }
         else if (tempCard == Vampire::TYPE)
         {
             m_deck.push(std::make_unique<Vampire>());
-            deckCount ++;
+            deckSize ++;
+            deckLine++;
         }
         else if (tempCard == Goblin::TYPE)
         {
             m_deck.push(std::make_unique<Goblin>());
-            deckCount ++;
+            deckSize ++;
+            deckLine++;
         }
         else if (tempCard == Barfight::TYPE)
         {
             m_deck.push(std::make_unique<Barfight>());
-            deckCount ++;
+            deckSize ++;
+            deckLine++;
         }
         else if (tempCard == Pitfall::TYPE)
         {
             m_deck.push(std::make_unique<Pitfall>());
-            deckCount ++;
+            deckSize ++;
+            deckLine++;
         }
         else if (tempCard == Fairy::TYPE)
         {
             m_deck.push(std::make_unique<Fairy>());
-            deckCount ++;
+            deckSize ++;
+            deckLine++;
         }
         else if (tempCard == Merchant::TYPE)
         {
             m_deck.push(std::make_unique<Merchant>());
-            deckCount ++;
+            deckSize ++;
+            deckLine++;
         }
         else if (tempCard == Treasure::TYPE)
         {
             m_deck.push(std::make_unique<Treasure>());
-            deckCount ++;
+            deckSize ++;
+            deckLine++;
         }
         else if (tempCard == Gang::TYPE)
         {
-            m_deck.push(std::make_unique<Gang>())
-            deckCount++;
+            m_deck.push(std::make_unique<Gang>(deck,deckLine))
+            deckSize++;
         }
         else
         {
-            throw DeckFileFormatError(deckCount+1);
+            throw DeckFileFormatError(deckLine);
         }
     }
-    if (deckCount<5)
+    if (deckSize<5)
     {
         throw DeckFileInvalidSize();
     }
