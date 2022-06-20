@@ -21,8 +21,6 @@ public:
     */
     Merchant();
 
-    Card* clone() const override;
-
     /*
      * Handling the player's applyEncounter with the card:
      *

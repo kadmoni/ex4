@@ -20,11 +20,6 @@ Goblin::Goblin() : Card(),
 {}
 
 
-Card* Goblin::clone() const
-{
-    return new Goblin(*this);
-}
-
 void Goblin::applyEncounter(Player& player) const {
     bool win = player.getAttackStrength() >= m_force;
     if (win)

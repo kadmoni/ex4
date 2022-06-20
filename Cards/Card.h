@@ -73,7 +73,7 @@ public:
      * Here we are explicitly telling the compiler to use the default methods
     */
 
-    virtual Card* clone() const = 0;
+    //virtual Card* clone() const = 0;
 
 
 

@@ -21,8 +21,6 @@ public:
     */
     explicit Vampire();
 
-    Card* clone() const override;
-
     
     /*
      * Handling the player's applyEncounter with the card:

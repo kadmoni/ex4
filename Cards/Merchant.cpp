@@ -21,11 +21,6 @@ Merchant::Merchant() : Card(),
 {}
 
 
-Card* Merchant::clone() const
-{
-    return new Merchant(*this);
-}
-
 
 void Merchant::applyEncounter(Player& player) const {
     printMerchantInitialMessageForInteractiveEncounter(cout, player.getName(), player.getCoins());

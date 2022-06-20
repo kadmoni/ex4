@@ -21,12 +21,6 @@ Vampire::Vampire() : Card(),
 
 
 
-Card* Vampire::clone() const
-{
-    return new Vampire(*this);
-}
-
-
 void Vampire::applyEncounter(Player& player) const {
     bool win = player.getAttackStrength() >= m_force;
     if (win)

@@ -24,8 +24,6 @@ public:
     Gang(std::ifstream& deck, int& deckLine);
 
 
-    Card* clone() const override;
-
 
     /*
      * Handling the player's applyEncounter with the card:
@@ -34,10 +32,10 @@ public:
      * @return
      *      void
     */
-    void applyEncounter(Player& player) override;
+    void applyEncounter(Player& player) const override;
 
 
-    void applyDamage(Player& player, int currentMonster);
+    void applyDamage(Player& player, int currentMonster) const;
 
 
     /*

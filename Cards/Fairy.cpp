@@ -18,10 +18,6 @@ Fairy::Fairy() : Card(),
     m_heal(10)
 {}
 
-Card* Fairy::clone() const
-{
-    return new Fairy(*this);
-}
 
 void Fairy::applyEncounter(Player& player) const {
     Wizard* ptr = dynamic_cast<Wizard*>(&player);

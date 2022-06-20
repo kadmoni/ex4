@@ -19,14 +19,6 @@ public:
       *      A new instance of Treasure.
      */
     Treasure();
-    /*
-     * "virtual copy constructor" for the class
-     *
-     * @return
-     *      pointer of type Card* to Treasure (subclass of Card)
-     */
-    Card* clone() const override;
-
 
     /*
      * Handling the player's applyEncounter with the card:

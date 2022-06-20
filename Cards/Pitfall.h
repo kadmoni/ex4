@@ -20,14 +20,7 @@ public:
      *      A new instance of Pitfall.
     */
     Pitfall();
-    
-    /*
-     * "virtual copy constructor" for the class
-     * 
-     * @return
-     *      pointer of type Card* to Pitfall (subclass of Card)
-     */
-    Card* clone() const override;
+
 
     /*
      * Handling the player's applyEncounter with the card:

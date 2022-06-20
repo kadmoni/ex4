@@ -20,14 +20,6 @@ public:
      *      A new instance of Barfight.
     */
     Barfight();
-    
-    /*
-     * "virtual copy constructor" for the class
-     *
-     * @return
-     *      pointer of type Card* to Barfight (subclass of Card)
-     */
-    Card* clone() const override;
 
 
     /*

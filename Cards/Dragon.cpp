@@ -18,10 +18,6 @@ Dragon::Dragon() : Card(),
     m_loot(1000)
 {}
 
-Card* Dragon::clone() const
-{
-    return new Dragon(*this);
-}
 
 void Dragon::applyEncounter(Player& player) const {
     bool win = player.getAttackStrength() >= m_force;

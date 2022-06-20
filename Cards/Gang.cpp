@@ -7,6 +7,7 @@
 #include "Gang.h"
 #include "utilities.h"
 #include <iostream>
+#include "Players/Player.h"
 
 
 #include "Cards/Dragon.h"
@@ -80,13 +81,8 @@ Gang::Gang(std::ifstream& deck, int& deckLine) : Card()
 }
 
 
-Card* Gang::clone() const
-{
-    return new Gang(*this);
-}
 
-
-void Gang::applyEncounter(Player& player) {
+void Gang::applyEncounter(Player& player) const {
     int size = m_theGang.size();
     int level = player.getLevel();
     for (int i = 0; i < size ; i++)
@@ -103,27 +99,27 @@ void Gang::applyEncounter(Player& player) {
 }
 
 
-void Gang::applyDamage(Player& player, int currentMonster) {
+void Gang::applyDamage(Player& player, int currentMonster) const {
     int size = m_theGang.size();
     player.weak(Gang::DEFEATED);
     for (int i = currentMonster; i < size ; i++)
     {
-        m_theGang[i]->applyEncounter(player)
+        m_theGang[i]->applyEncounter(player);
     }
 }
 
 
 std::ostream& Gang::print(std::ostream &out) const
 {
-    cout << "You have encountered a gang of monsters, watch out!" endl;
-    cout << "-------------------------------------------" << endl;
+    out << "You have encountered a gang of monsters, watch out!" << endl;
+    out << "-------------------------------------------" << endl;
     int size = m_theGang.size();
     for (int i = 0; i < size ; i++)
     {
         m_theGang[i]->print(cout);
     }
-    cout << "The battle has ended all blood has been shed" endl;
-
+    out << "The battle has ended all blood has been shed" << endl;
+    return out;
 }
 
 

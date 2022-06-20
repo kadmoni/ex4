@@ -20,14 +20,6 @@ public:
      *      A new instance of Fairy.
     */
     Fairy();
-    
-    /*
- * "virtual copy constructor" for the class
- * 
- * @return
- *      pointer of type Card* to Fairy (subclass of Card)
- */
-    Card* clone() const override;
 
 
     /*

@@ -20,11 +20,6 @@ Barfight::Barfight() : Card(),
 {}
 
 
-Card* Barfight::clone() const
-{
-    return new Barfight(*this);
-}
-
 
 void Barfight::applyEncounter(Player& player) const {
     Fighter* ptr = dynamic_cast<Fighter*>(&player);

@@ -18,10 +18,6 @@ Pitfall::Pitfall() : Card(),
     m_damage(10)
 {}
 
-Card* Pitfall::clone() const
-{
-    return new Pitfall(*this);
-}
 
 void Pitfall::applyEncounter(Player& player) const {
     Rogue* ptr = dynamic_cast<Rogue*>(&player);
