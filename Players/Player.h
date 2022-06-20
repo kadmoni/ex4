@@ -4,7 +4,7 @@
 #define IN_HP 100
 #define IN_FORCE 5
 #define IN_LEVEL 1
-#define IN_COINS 0
+#define IN_COINS 10
 
 #include <string>
 
@@ -131,6 +131,15 @@ public:
      *      void
      */
     void damage(int amount);
+
+    /*
+     * reduces Player force
+     *
+     * @param amount - a losing amount of force for the Player
+     * @return
+     *      void
+     */
+    void weak(int amount);
 
     /*
      * returns if the Player's hp reduced to 0

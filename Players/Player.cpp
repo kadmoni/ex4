@@ -58,13 +58,20 @@ void Player::buff(int amount)
     }
 }
 
+void Player::weak(int amount)
+{
+    m_force = amount;
+}
+
+
+
 void Player::debuff(int amount)
 {
     if (amount > 0)
     {
         m_force -= amount;
     }
-    if (m_force> 0)
+    if (m_force< 0)
     {
         m_force = 0;
     }
@@ -97,6 +104,7 @@ void Player::damage(int amount)
 std::ostream& operator<<(std::ostream &out, const Player& player)
 {
     player.print(out);
+    return out;
 }
 
 bool Player::isKnockedOut() const
@@ -136,9 +144,5 @@ int Player::getAttackStrength() const
 {
     return m_force+m_level;
 }
-
-//std::ostream &Player::print(std::ostream &out) {
-//    int hello;
-//}
 
 
