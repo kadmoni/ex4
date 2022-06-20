@@ -133,6 +133,15 @@ public:
     void damage(int amount);
 
     /*
+     * reduces Player force
+     *
+     * @param amount - a losing amount of force for the Player
+     * @return
+     *      void
+     */
+    void weak(int amount);
+
+    /*
      * returns if the Player's hp reduced to 0
      *
      * @return
@@ -167,8 +176,6 @@ public:
      *      the strength of attack
      */
     virtual int getAttackStrength() const;
-
-    void levelDown ();
 
     virtual std::ostream& print(std::ostream& out) const = 0;
 

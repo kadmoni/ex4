@@ -58,6 +58,13 @@ void Player::buff(int amount)
     }
 }
 
+void Player::weak(int amount)
+{
+    m_force = amount;
+}
+
+
+
 void Player::debuff(int amount)
 {
     if (amount > 0)
@@ -136,11 +143,6 @@ bool Player::pay(int amount)
 int Player::getAttackStrength() const
 {
     return m_force+m_level;
-}
-
-void Player::levelDown ()
-{
-    m_level--;
 }
 
 

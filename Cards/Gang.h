@@ -9,6 +9,8 @@
 #include <memory>
 #include "Card.h"
 
+
+
 class Gang : public Card {
 public:
     /*
@@ -24,7 +26,7 @@ public:
 
     Card* clone() const override;
 
-    
+
     /*
      * Handling the player's applyEncounter with the card:
      *
@@ -32,7 +34,10 @@ public:
      * @return
      *      void
     */
-    void applyEncounter(Player& player) const override;
+    void applyEncounter(Player& player) override;
+
+
+    void applyDamage(Player& player, int currentMonster);
 
 
     /*
@@ -59,7 +64,9 @@ public:
 
 
 private:
-    std::queue<std::unique_ptr<Card>> m_theGang;
+    std::vector<std::unique_ptr<Card>> m_theGang;
+    static const int DEFEATED = -11;
+
 };
 
 

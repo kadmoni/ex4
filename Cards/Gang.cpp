@@ -7,11 +7,12 @@
 #include "Gang.h"
 #include "utilities.h"
 #include <iostream>
+
 using std::cout;
 using std::endl;
 
 const std::string Gang::TYPE = "Gang";
-const std::string Gang::END= "EndGang";
+const std::string Gang::END = "EndGang";
 
 
 Gang::Gang(std::ifstream& deck, int& deckLine) : Card()
@@ -22,48 +23,41 @@ Gang::Gang(std::ifstream& deck, int& deckLine) : Card()
     {
         if (tempCard == Dragon::TYPE)
         {
-            m_theGang.push(std::make_unique<Dragon>());
+            m_theGang.push_back(std::make_unique<Dragon>());
             deckLine++;
         }
         else if (tempCard == Vampire::TYPE)
         {
-            m_theGang.push(std::make_unique<Vampire>());
+            m_theGang.push_back(std::make_unique<Vampire>());
             deckLine++;
         }
         else if (tempCard == Goblin::TYPE)
         {
-            m_theGang.push(std::make_unique<Goblin>());
+            m_theGang.push_back(std::make_unique<Goblin>());
             deckLine++;
         }
         else if (tempCard == Barfight::TYPE)
         {
-            deckLine++;
             throw DeckFileFormatError(deckLine);
         }
         else if (tempCard == Pitfall::TYPE)
         {
-            m_theGang.push(std::make_unique<Pitfall>());
-            deckLine++;
+            throw DeckFileFormatError(deckLine);
         }
         else if (tempCard == Fairy::TYPE)
         {
-            m_theGang.push(std::make_unique<Fairy>());
-            deckLine++;
+            throw DeckFileFormatError(deckLine);
         }
         else if (tempCard == Merchant::TYPE)
         {
-            m_theGang.push(std::make_unique<Merchant>());
-            deckLine++;
+            throw DeckFileFormatError(deckLine);
         }
         else if (tempCard == Treasure::TYPE)
         {
-            m_theGang.push(std::make_unique<Treasure>());
-            deckLine++;
+            throw DeckFileFormatError(deckLine);
         }
         else if (tempCard == Gang::END)
         {
-            m_theGang.push(std::make_unique<Treasure>());
-            deckLine++;
             return;
         }
         else
@@ -80,29 +74,43 @@ Card* Gang::clone() const
     return new Gang(*this);
 }
 
-void Gang::applyEncounter(Player& player) const {
-    bool win = player.getAttackStrength() >= m_force;
-    if (win)
+void Gang::applyEncounter(Player& player) {
+    int size = m_theGang.size();
+    int level = player.getLevel();
+    for (int i = 0; i < size ; i++)
     {
-        player.levelUp();
-        player.addCoins(m_loot);
-        printWinBattle(player.getName(), Gang::TYPE);
-
+        m_theGang[i]->applyEncounter(player);
+        if (level == player.getLevel())
+        {
+            this->applyDamage(player, i + 1);
+            return;
+        }
+        player.levelDown();
     }
-    else
-    {
-        player.damage(m_damage);
-        printLossBattle(player.getName(), Gang::TYPE);
+    player.levelUp();
+}
 
+
+void Gang::applyDamage(Player& player, int currentMonster) {
+    int size = m_theGang.size();
+    player.weak(Gang::DEFEATED);
+    for (int i = currentMonster; i < size ; i++)
+    {
+        m_theGang[i]->applyEncounter(player)
     }
 }
 
 
 std::ostream& Gang::print(std::ostream &out) const
 {
-    printCardDetails(out,Gang::TYPE);
-    printMonsterDetails(out, m_force, m_damage, m_loot, false);
-    printEndOfCardDetails(out);
-    return out;
+    cout << "You have encountered a gang of monsters, watch out!" endl;
+    cout << "-------------------------------------------" << endl;
+    int size = m_theGang.size();
+    for (int i = 0; i < size ; i++)
+    {
+        m_theGang[i]->print(cout);
+    }
+    cout << "The battle has ended all blood has been shed" endl;
+
 }
 
