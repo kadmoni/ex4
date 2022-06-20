@@ -14,9 +14,9 @@ const std::string Goblin::TYPE = "Goblin";
 
 
 Goblin::Goblin() : Card(),
-    m_force(6),
-    m_loot(2),
-    m_damage(10)
+    m_force(Goblin::gobForce),
+    m_loot(Goblin::gobLoot),
+    m_damage(Goblin::gobDamage)
 {}
 
 

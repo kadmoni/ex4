@@ -1,10 +1,6 @@
 
 #ifndef EX2_PLAYER_H
 #define EX2_PLAYER_H
-#define IN_HP 100
-#define IN_FORCE 5
-#define IN_LEVEL 1
-#define IN_COINS 10
 
 #include <string>
 
@@ -23,7 +19,7 @@ public:
      * @return
      *      A new instance of Player
      */
-    Player(std::string playerName, int maxHp = IN_HP, int force = IN_FORCE);
+    Player(std::string playerName, int maxHp = inHp, int force = inForce);
 
     /*
      * Copy C'tor for class Player
@@ -43,13 +39,6 @@ public:
      */
     Player& operator=(const Player&) = default;
 
-//    /*
-//     * prints the Player's info
-//     *
-//     * @return
-//     *      void
-//     */
-//    void printInfo() const;
 
     /*
      * adds 1 to the Player's level
@@ -177,14 +166,36 @@ public:
      */
     virtual int getAttackStrength() const;
 
+    /*
+     * lowers the Player's level
+     */
     void levelDown();
 
+    /*
+     * prints the Player's details according to the appropriate subclass
+     *
+     * @param out - output stream to which the function will print
+     * @return
+     *      output stream to which the function has printed
+     */
     virtual std::ostream& print(std::ostream& out) const = 0;
 
+    /*
+     * friended in order to overload printing operator
+     */
     friend std::ostream &operator<<(std::ostream &out, const Player& player);
 
+    /*
+     * "virtual copy constructor"
+     *
+     * @return
+     *      pointer of Player type to the appropriate subclass
+     */
     virtual Player* clone() const = 0;
 
+    /*
+     * multiplier for unique Player Subclasses abilities
+     */
     const int MULTIPLIER = 2;
 
 
@@ -195,6 +206,12 @@ protected:
     int m_force;
     int m_level;
     int m_coins;
+
+    static const int inHp = 100;
+    static const int inForce = 5;
+    static const int inLevel = 1;
+    static const int inCoins = 10;
+
 };
 
 

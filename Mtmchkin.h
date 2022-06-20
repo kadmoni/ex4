@@ -55,7 +55,11 @@ public:
     */
     int getNumberOfRounds() const;
 
-
+    static const int minTeamSize = 2;
+    static const int maxTeamSize = 6;
+    static const int minDeckSize = 5;
+    static const int maxNameLength = 15;
+    static const int maxLevel = 10;
 
 
 private:
@@ -64,6 +68,7 @@ private:
     std::deque<std::unique_ptr<Player>> m_losers;
     std::queue<std::unique_ptr<Card>> m_deck;
     int m_numOfRounds;
+
 };
 /*
  * checks if the name provided follows the provided rules (english letters only, up to 15 characters)

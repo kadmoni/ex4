@@ -43,6 +43,9 @@ public:
     Fighter& operator=(const Fighter&) = default;
     ~Fighter() override = default;
 
+    /*
+     * defined as Fighter (used in reading from file)
+     */
     static const std::string JOB;
 
 };

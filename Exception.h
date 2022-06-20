@@ -14,7 +14,7 @@ class DeckFileNotFound : public std::runtime_error {
 public:
 
 /*
- * thrown if a file can't be file using the provided path
+ * thrown if a file can't be opened using the provided path
  */
     DeckFileNotFound() : std::runtime_error("Deck File Error: File not found") {};
 };

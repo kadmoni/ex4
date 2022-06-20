@@ -15,7 +15,7 @@ const std::string Fairy::TYPE = "Fairy";
 
 
 Fairy::Fairy() : Card(),
-    m_heal(10)
+    m_heal(Fairy::fairyHeal)
 {}
 
 

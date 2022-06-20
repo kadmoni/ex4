@@ -1,9 +1,3 @@
-//
-// Created by Adi Tsach on 06/04/2022.
-//
-
-
-
 #include "Vampire.h"
 #include "utilities.h"
 #include <iostream>
@@ -13,10 +7,10 @@ using std::endl;
 const std::string Vampire::TYPE = "Vampire";
 
 Vampire::Vampire() : Card(),
-    m_force(10),
-    m_loot(2),
-    m_damage(10),
-    m_debuff(1)
+    m_force(Vampire::vampForce),
+    m_loot(Vampire::vampLoot),
+    m_damage(Vampire::vampDamage),
+    m_debuff(Vampire::vampDebuff)
 {}
 
 

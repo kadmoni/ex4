@@ -37,7 +37,7 @@ void Mtmchkin::playRound()
     {
         printTurnStartMessage(m_activePlayers[i]->getName());
         m_deck.front()->applyEncounter(*(m_activePlayers[i]));
-        if (m_activePlayers[i]->getLevel()>=10)
+        if (m_activePlayers[i]->getLevel()>=Mtmchkin::maxLevel)
         {
             m_winners.push_back(std::move(m_activePlayers[i]));
             m_activePlayers.erase(m_activePlayers.begin()+i);
@@ -103,7 +103,7 @@ bool checkName (std::string name)
 {
     for (int i=0;i<name.size();i++)
     {
-        if ((name.size() > 16) && (std::isalpha(name[i]) != 0))
+        if ((name.size() > Mtmchkin::maxNameLength) || (std::isalpha(name[i]) != 0))
         {
             printInvalidName();
             return false;
@@ -212,7 +212,7 @@ void createDeck (std::queue<std::unique_ptr<Card>>& m_deck,const std::string fil
             throw DeckFileFormatError(deckLine);
         }
     }
-    if (deckSize<5)
+    if (deckSize<Mtmchkin::minDeckSize)
     {
         throw DeckFileInvalidSize();
     }
@@ -224,7 +224,7 @@ void teamSizeInput (int& teamSize)
     printEnterTeamSizeMessage();
     std::getline(std::cin,temp);
     teamSize = std::stoi(temp);
-    while ((teamSize>6)||(teamSize<2))
+    while ((teamSize>Mtmchkin::maxTeamSize)||(teamSize<Mtmchkin::minTeamSize))
     {
         printInvalidTeamSize();
         printEnterTeamSizeMessage();

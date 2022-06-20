@@ -1,6 +1,3 @@
-//
-// Created by Daniel_Meents on 07/04/2022.
-//
 #ifndef EX2_Treasure_H
 #define EX2_Treasure_H
 
@@ -49,6 +46,7 @@ public:
      * the type of the Card (Treasure)
      */
     static const std::string TYPE;
+    static const int defLootAmout = 10;
 
 
 private:

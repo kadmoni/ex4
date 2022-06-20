@@ -1,6 +1,3 @@
-//
-// Created by Daniel_Meents on 07/04/2022.
-//
 #ifndef EX2_Fairy_H
 #define EX2_Fairy_H
 
@@ -53,6 +50,7 @@ public:
      * the type of the Card (Fairy)
      */
     static const std::string TYPE;
+    static const int fairyHeal = 10;
 
 
 private:

@@ -4,27 +4,22 @@
 #include <string>
 
 Player::Player(std::string playerName, int maxHp, int force): m_name(playerName),
-m_maxHp(maxHp),m_hp(m_maxHp),m_force(force), m_level(IN_LEVEL),m_coins(IN_COINS)
+m_maxHp(maxHp),m_hp(m_maxHp),m_force(force), m_level(inLevel),m_coins(inCoins)
 {
     if (m_hp <= 0)
     {
-        m_hp = IN_HP;
-        m_maxHp = IN_HP;
+        m_hp = inHp;
+        m_maxHp = inHp;
     }
     if (m_force <= 0)
     {
-        m_force = IN_FORCE;
+        m_force = inForce;
     }
 }
 
-//void Player::printInfo() const
-//{
-//    printPlayerInfo(m_name.c_str(),m_level,m_force,m_hp,m_coins);
-//}
-
 void Player::levelUp()
 {
-    if (m_level < 10)
+    if (m_level < Mtmchkin::maxLevel)
     {
         m_level++;
     }

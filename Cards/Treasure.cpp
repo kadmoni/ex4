@@ -1,9 +1,3 @@
-//
-// Created by Adi Tsach on 06/04/2022.
-//
-
-
-
 #include "Treasure.h"
 #include "utilities.h"
 #include <iostream>
@@ -15,7 +9,7 @@ const std::string Treasure::TYPE = "Treasure";
 
 
 Treasure::Treasure() : Card(),
-    m_loot(10)
+    m_loot(Treasure::defLootAmout)
 {}
 
 

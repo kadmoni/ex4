@@ -15,7 +15,7 @@ const std::string Pitfall::TYPE = "Pitfall";
 
 
 Pitfall::Pitfall() : Card(),
-    m_damage(10)
+    m_damage(Pitfall::defPitDamage)
 {}
 
 

@@ -45,6 +45,9 @@ public:
     Rogue &operator=(const Rogue &) = default;
     ~Rogue() override = default;
 
+    /*
+     * defined as Rogue (used in reading from file)
+     */
     static const std::string JOB;
 };
 

@@ -1,6 +1,3 @@
-//
-// Created by Daniel_Meents on 07/04/2022.
-//
 #ifndef EX2_Gang_H
 #define EX2_Gang_H
 

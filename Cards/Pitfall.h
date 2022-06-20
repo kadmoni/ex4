@@ -1,6 +1,3 @@
-//
-// Created by Daniel_Meents on 07/04/2022.
-//
 #ifndef EX2_Pitfall_H
 #define EX2_Pitfall_H
 
@@ -54,6 +51,7 @@ public:
      * the type of the Card (Pitfall)
      */
     static const std::string TYPE;
+    static const int defPitDamage = 10;
 
 private:
     int m_damage;

@@ -1,6 +1,3 @@
-//
-// Created by Daniel_Meents on 07/04/2022.
-//
 #ifndef EX2_Goblin_H
 #define EX2_Goblin_H
 
@@ -49,6 +46,9 @@ public:
     Goblin& operator=(const Goblin& other) = default;
 
     static const std::string TYPE;
+    static const int gobForce = 6;
+    static const int gobLoot = 2;
+    static const int gobDamage = 10;
 
 
 private:

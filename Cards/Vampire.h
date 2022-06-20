@@ -1,6 +1,3 @@
-//
-// Created by Daniel_Meents on 07/04/2022.
-//
 #ifndef EX2_Vampire_H
 #define EX2_Vampire_H
 
@@ -50,6 +47,10 @@ public:
     Vampire& operator=(const Vampire& other) = default;
 
     static const std::string TYPE;
+    static const int vampForce=10;
+    static const int vampLoot=2;
+    static const int vampDamage=10;
+    static const int vampDebuff=1;
 
 
 private:

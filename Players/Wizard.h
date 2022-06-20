@@ -42,6 +42,9 @@ public:
     Wizard& operator=(const Wizard&) = default;
     ~Wizard() override = default;
 
+    /*
+     * defined as Wizard (used in reading from file)
+     */
     static const std::string JOB;
 };
 
