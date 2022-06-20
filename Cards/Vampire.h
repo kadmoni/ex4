@@ -1,6 +1,4 @@
-//
-// Created by Daniel_Meents on 07/04/2022.
-//
+
 #ifndef EX2_Vampire_H
 #define EX2_Vampire_H
 
@@ -12,16 +10,14 @@
 class Vampire : public Card {
 public:
     /*
-     * C'tor of Card class
+     * C'tor of Vampire class
      *
-     * @param type - The type of the card.
-     * @param stats - The numeral stats of the card.
      * @return
-     *      A new instance of Card.
+     *      A new instance of Vampire.
     */
     explicit Vampire();
 
-    
+
     /*
      * Handling the player's applyEncounter with the card:
      *
@@ -49,6 +45,9 @@ public:
     ~Vampire() override = default;
     Vampire& operator=(const Vampire& other) = default;
 
+    /*
+     * the type of the Card (Goblin)
+     */
     static const std::string TYPE;
 
 

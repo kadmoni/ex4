@@ -1,6 +1,4 @@
-//
-// Created by Daniel_Meents on 07/04/2022.
-//
+
 #ifndef EX2_Merchant_H
 #define EX2_Merchant_H
 
@@ -12,12 +10,10 @@
 class Merchant : public Card {
 public:
     /*
-     * C'tor of Card class
+     * C'tor of Merchant class
      *
-     * @param type - The type of the card.
-     * @param stats - The numeral stats of the card.
      * @return
-     *      A new instance of Card.
+     *      A new instance of Merchant.
     */
     Merchant();
 
@@ -50,6 +46,10 @@ public:
     ~Merchant() override = default;
     Merchant& operator=(const Merchant& other) = default;
 
+
+    /*
+    * the type of the Card (Goblin)
+    */
     static const std::string TYPE;
 
 

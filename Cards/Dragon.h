@@ -1,6 +1,4 @@
-//
-// Created by Daniel_Meents on 07/04/2022.
-//
+
 #ifndef EX2_Dragon_H
 #define EX2_Dragon_H
 
@@ -12,16 +10,14 @@
 class Dragon : public Card {
 public:
     /*
-     * C'tor of Card class
+     * C'tor of Dragon class
      *
-     * @param type - The type of the card.
-     * @param stats - The numeral stats of the card.
      * @return
-     *      A new instance of Card.
+     *      A new instance of Dragon.
     */
     Dragon();
 
-    
+
     /*
      * Handling the player's applyEncounter with the card:
      *
@@ -45,11 +41,15 @@ public:
 
     /*
      * Here we are explicitly telling the compiler to use the default methods
-    */
+     */
     Dragon(const Dragon&) = default;
     ~Dragon() = default;
     Dragon& operator=(const Dragon& other) = default;
 
+
+    /*
+     * the type of the Card (Dragon)
+     */
     static const std::string TYPE;
 
 
