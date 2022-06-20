@@ -192,6 +192,11 @@ void createDeck (std::queue<std::unique_ptr<Card>>& m_deck,const std::string fil
             m_deck.push(std::make_unique<Treasure>());
             deckCount ++;
         }
+        else if (tempCard == Gang::TYPE)
+        {
+            m_deck.push(std::make_unique<Gang>())
+            deckCount++;
+        }
         else
         {
             throw DeckFileFormatError(deckCount+1);

@@ -168,6 +168,8 @@ public:
      */
     virtual int getAttackStrength() const;
 
+    void levelDown ();
+
     virtual std::ostream& print(std::ostream& out) const = 0;
 
     friend std::ostream &operator<<(std::ostream &out, const Player& player);
