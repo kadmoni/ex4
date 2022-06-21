@@ -2,7 +2,7 @@
 
 #include "Barfight.h"
 #include "../Players/Fighter.h"
-#include "utilities.h"
+#include "../utilities.h"
 #include <iostream>
 #include "Card.h"
 #include "../Players/Player.h"

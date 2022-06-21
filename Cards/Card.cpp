@@ -1,7 +1,7 @@
 
 
 #include "Card.h"
-#include "Players/Player.h"
+#include "../Players/Player.h"
 #include <iostream>
 using std::cout;
 using std::endl;

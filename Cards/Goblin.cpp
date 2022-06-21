@@ -1,6 +1,6 @@
 
 #include "Goblin.h"
-#include "utilities.h"
+#include "../utilities.h"
 #include <iostream>
 #include "Card.h"
 #include "../Players/Player.h"
