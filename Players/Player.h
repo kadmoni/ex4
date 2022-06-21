@@ -128,7 +128,7 @@ public:
      * @return
      *      void
      */
-    void weak(int amount);
+    void forceChange(int amount);
 
     /*
      * returns if the Player's hp reduced to 0
@@ -165,6 +165,14 @@ public:
      *      the strength of attack
      */
     virtual int getAttackStrength() const;
+
+    /*
+ * returns the combined strength of attack (level + force)
+ *
+ * @return
+ *      the strength of attack
+ */
+    int getForce() const;
 
     /*
      * lowers the Player's level

@@ -33,6 +33,10 @@ public:
     void applyEncounter(Player& player) const override;
 
 
+
+
+
+
     void applyDamage(Player& player, int currentMonster) const;
 
 

@@ -31,6 +31,21 @@ void Goblin::applyEncounter(Player& player) const {
 
     }
 }
+void Goblin::gangEncounter(Player& player) const {
+    bool win = player.getAttackStrength() >= m_force;
+    if (win)
+    {
+        player.levelUp();
+        player.addCoins(m_loot);
+    }
+    else
+    {
+        player.damage(m_damage);
+        printLossBattle(player.getName(), Goblin::TYPE);
+
+    }
+}
+
 
 
 std::ostream& Goblin::print(std::ostream &out) const

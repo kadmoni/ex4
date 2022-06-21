@@ -30,8 +30,25 @@ void Vampire::applyEncounter(Player& player) const {
         player.debuff(m_debuff);
         printLossBattle(player.getName(), Vampire::TYPE);
     }
-    
 }
+
+
+void Vampire::gangEncounter(Player& player) const {
+    bool win = player.getAttackStrength() >= m_force;
+    if (win)
+    {
+        player.levelUp();
+        player.addCoins(m_loot);
+    }
+    else
+    {
+        player.damage(m_damage);
+        player.debuff(m_debuff);
+        printLossBattle(player.getName(), Vampire::TYPE);
+    }
+}
+
+
 
 
 std::ostream& Vampire::print(std::ostream &out) const

@@ -27,6 +27,7 @@
 					<Add directory="C:/Users/barke/ex4/."/>
 					<Add directory="C:/Users/barke/ex4/Cards"/>
 					<Add directory="C:/Users/barke/ex4/Players"/>
+					<Add directory="C:/Users/barke/ex4/tool"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
@@ -51,6 +52,7 @@
 					<Add directory="C:/Users/barke/ex4/."/>
 					<Add directory="C:/Users/barke/ex4/Cards"/>
 					<Add directory="C:/Users/barke/ex4/Players"/>
+					<Add directory="C:/Users/barke/ex4/tool"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
@@ -108,6 +110,12 @@
 			<Option target="ex4"/>
 		</Unit>
 		<Unit filename="C:/Users/barke/ex4/Cards/Fairy.h">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="C:/Users/barke/ex4/Cards/Gang.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="C:/Users/barke/ex4/Cards/Gang.h">
 			<Option target="ex4"/>
 		</Unit>
 		<Unit filename="C:/Users/barke/ex4/Cards/Goblin.cpp">

@@ -1,6 +1,6 @@
 #ifndef MTMCHKIN_H_
 #define MTMCHKIN_H_
-#include "PLayers/Player.h"
+#include "Players/Player.h"
 #include <deque>
 #include <queue>
 #include <memory>

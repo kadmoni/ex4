@@ -29,6 +29,16 @@ public:
 
 
     /*
+    * Handling the player's gangEncounter with the card:
+    *
+    * @param player - The player.
+    * @return
+    *      void
+   */
+    void gangEncounter(Player& player) const;
+
+
+    /*
      * Prints the card info:
      *
      * @return

@@ -21,7 +21,6 @@ void Dragon::applyEncounter(Player& player) const {
         player.levelUp();
         player.addCoins(m_loot);
         printWinBattle(player.getName(), Dragon::TYPE);
-
     }
     else
     {
@@ -30,6 +29,8 @@ void Dragon::applyEncounter(Player& player) const {
         printLossBattle(player.getName(), Dragon::TYPE);
     }
 }
+
+
 
 
 std::ostream& Dragon::print(std::ostream &out) const

@@ -31,17 +31,17 @@ Gang::Gang(std::ifstream& deck, int& deckLine) : Card()
     {
         if (tempCard == Dragon::TYPE)
         {
-            m_theGang.push_back(std::make_unique<Dragon>());
+            m_theGang.push_back(std::unique_ptr<Card>(new Dragon()));
             deckLine++;
         }
         else if (tempCard == Vampire::TYPE)
         {
-            m_theGang.push_back(std::make_unique<Vampire>());
+            m_theGang.push_back(std::unique_ptr<Card>(new Vampire()));
             deckLine++;
         }
         else if (tempCard == Goblin::TYPE)
         {
-            m_theGang.push_back(std::make_unique<Goblin>());
+            m_theGang.push_back(std::unique_ptr<Card>(new Goblin()));
             deckLine++;
         }
         else if (tempCard == Barfight::TYPE)
@@ -81,27 +81,36 @@ Gang::Gang(std::ifstream& deck, int& deckLine) : Card()
 void Gang::applyEncounter(Player& player) const {
     int size = m_theGang.size();
     int level = player.getLevel();
+    std::streambuf* oldCoutStreamBuf = cout.rdbuf();
     for (int i = 0; i < size ; i++)
     {
+        std::ostringstream strCout;
+        cout.rdbuf( strCout.rdbuf() );
         m_theGang[i]->applyEncounter(player);
         if (level == player.getLevel())
         {
+            cout.rdbuf( oldCoutStreamBuf );
+            cout << strCout.str();
             this->applyDamage(player, i + 1);
             return;
         }
         player.levelDown();
     }
+    cout.rdbuf( oldCoutStreamBuf );
+    printWinBattle(player.getName(),Gang::TYPE);
     player.levelUp();
 }
 
 
 void Gang::applyDamage(Player& player, int currentMonster) const {
     int size = m_theGang.size();
-    player.weak(Gang::DEFEATED);
+    int currentForce =player.getForce();
+    player.forceChange(Gang::DEFEATED);
     for (int i = currentMonster; i < size ; i++)
     {
         m_theGang[i]->applyEncounter(player);
     }
+    player.forceChange(currentForce);
 }
 
 
