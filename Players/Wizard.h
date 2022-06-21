@@ -2,7 +2,7 @@
 #ifndef EX4_WIZARD_H
 #define EX4_WIZARD_H
 
-#include "Players/Player.h"
+#include "Player.h"
 #include <string>
 
 

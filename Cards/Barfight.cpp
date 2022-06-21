@@ -4,6 +4,8 @@
 #include "Players/Fighter.h"
 #include "utilities.h"
 #include <iostream>
+#include "Card.h"
+#include "../Players/Player.h"
 using std::cout;
 using std::endl;
 

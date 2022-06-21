@@ -1,5 +1,7 @@
 
 #include "Vampire.h"
+#include "Card.h"
+#include "../Players/Player.h"
 #include "utilities.h"
 #include <iostream>
 using std::cout;

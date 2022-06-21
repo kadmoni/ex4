@@ -2,7 +2,7 @@
 #ifndef EX4_ROGUE_H
 #define EX4_ROGUE_H
 
-#include "Players/Player.h"
+#include "Player.h"
 
 
 class Rogue: public Player {

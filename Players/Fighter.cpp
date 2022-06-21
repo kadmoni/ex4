@@ -1,5 +1,6 @@
 
 #include "Fighter.h"
+#include "Player.h"
 #include "utilities.h"
 
 const std::string Fighter::JOB = "Fighter";
