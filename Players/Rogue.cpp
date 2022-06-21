@@ -1,7 +1,7 @@
 
 #include "Rogue.h"
 #include "Player.h"
-#include "utilities.h"
+#include "../utilities.h"
 
 const std::string Rogue::JOB = "Rogue";
 

@@ -1,6 +1,6 @@
 
 #include "Player.h"
-#include "utilities.h"
+#include "../utilities.h"
 #include <string>
 
 Player::Player(std::string playerName, int maxHp, int force): m_name(playerName),

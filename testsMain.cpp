@@ -1,4 +1,4 @@
-#include "../Mtmchkin.h"
+#include "Mtmchkin.h"
 
 #include <string>
 #include <iostream>

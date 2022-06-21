@@ -1,7 +1,7 @@
 
 #include "Wizard.h"
 #include "Player.h"
-#include "utilities.h"
+#include "../utilities.h"
 
 const std::string Wizard::JOB = "Wizard";
 
