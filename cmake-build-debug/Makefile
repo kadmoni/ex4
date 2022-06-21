@@ -224,30 +224,6 @@ Cards/Fairy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Cards/Fairy.cpp.s
 .PHONY : Cards/Fairy.cpp.s
 
-Cards/Gang.obj: Cards/Gang.cpp.obj
-.PHONY : Cards/Gang.obj
-
-# target to build an object file
-Cards/Gang.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Cards/Gang.cpp.obj
-.PHONY : Cards/Gang.cpp.obj
-
-Cards/Gang.i: Cards/Gang.cpp.i
-.PHONY : Cards/Gang.i
-
-# target to preprocess a source file
-Cards/Gang.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Cards/Gang.cpp.i
-.PHONY : Cards/Gang.cpp.i
-
-Cards/Gang.s: Cards/Gang.cpp.s
-.PHONY : Cards/Gang.s
-
-# target to generate assembly for a file
-Cards/Gang.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Cards/Gang.cpp.s
-.PHONY : Cards/Gang.cpp.s
-
 Cards/Goblin.obj: Cards/Goblin.cpp.obj
 .PHONY : Cards/Goblin.obj
 
@@ -557,9 +533,6 @@ help:
 	@echo ... Cards/Fairy.obj
 	@echo ... Cards/Fairy.i
 	@echo ... Cards/Fairy.s
-	@echo ... Cards/Gang.obj
-	@echo ... Cards/Gang.i
-	@echo ... Cards/Gang.s
 	@echo ... Cards/Goblin.obj
 	@echo ... Cards/Goblin.i
 	@echo ... Cards/Goblin.s

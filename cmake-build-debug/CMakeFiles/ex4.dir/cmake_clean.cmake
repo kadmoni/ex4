@@ -3,7 +3,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/ex4.dir/Cards/Card.cpp.obj"
   "CMakeFiles/ex4.dir/Cards/Dragon.cpp.obj"
   "CMakeFiles/ex4.dir/Cards/Fairy.cpp.obj"
-  "CMakeFiles/ex4.dir/Cards/Gang.cpp.obj"
   "CMakeFiles/ex4.dir/Cards/Goblin.cpp.obj"
   "CMakeFiles/ex4.dir/Cards/Merchant.cpp.obj"
   "CMakeFiles/ex4.dir/Cards/Pitfall.cpp.obj"

@@ -121,24 +121,10 @@ CMakeFiles/ex4.dir/Cards/Fairy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/Cards/Fairy.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\barke\ex4\Cards\Fairy.cpp -o CMakeFiles\ex4.dir\Cards\Fairy.cpp.s
 
-CMakeFiles/ex4.dir/Cards/Gang.cpp.obj: CMakeFiles/ex4.dir/flags.make
-CMakeFiles/ex4.dir/Cards/Gang.cpp.obj: CMakeFiles/ex4.dir/includes_CXX.rsp
-CMakeFiles/ex4.dir/Cards/Gang.cpp.obj: ../Cards/Gang.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ex4.dir/Cards/Gang.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ex4.dir\Cards\Gang.cpp.obj -c C:\Users\barke\ex4\Cards\Gang.cpp
-
-CMakeFiles/ex4.dir/Cards/Gang.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex4.dir/Cards/Gang.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\barke\ex4\Cards\Gang.cpp > CMakeFiles\ex4.dir\Cards\Gang.cpp.i
-
-CMakeFiles/ex4.dir/Cards/Gang.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/Cards/Gang.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\barke\ex4\Cards\Gang.cpp -o CMakeFiles\ex4.dir\Cards\Gang.cpp.s
-
 CMakeFiles/ex4.dir/Cards/Goblin.cpp.obj: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/Cards/Goblin.cpp.obj: CMakeFiles/ex4.dir/includes_CXX.rsp
 CMakeFiles/ex4.dir/Cards/Goblin.cpp.obj: ../Cards/Goblin.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ex4.dir/Cards/Goblin.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ex4.dir/Cards/Goblin.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ex4.dir\Cards\Goblin.cpp.obj -c C:\Users\barke\ex4\Cards\Goblin.cpp
 
 CMakeFiles/ex4.dir/Cards/Goblin.cpp.i: cmake_force
@@ -152,7 +138,7 @@ CMakeFiles/ex4.dir/Cards/Goblin.cpp.s: cmake_force
 CMakeFiles/ex4.dir/Cards/Merchant.cpp.obj: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/Cards/Merchant.cpp.obj: CMakeFiles/ex4.dir/includes_CXX.rsp
 CMakeFiles/ex4.dir/Cards/Merchant.cpp.obj: ../Cards/Merchant.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ex4.dir/Cards/Merchant.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ex4.dir/Cards/Merchant.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ex4.dir\Cards\Merchant.cpp.obj -c C:\Users\barke\ex4\Cards\Merchant.cpp
 
 CMakeFiles/ex4.dir/Cards/Merchant.cpp.i: cmake_force
@@ -166,7 +152,7 @@ CMakeFiles/ex4.dir/Cards/Merchant.cpp.s: cmake_force
 CMakeFiles/ex4.dir/Cards/Pitfall.cpp.obj: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/Cards/Pitfall.cpp.obj: CMakeFiles/ex4.dir/includes_CXX.rsp
 CMakeFiles/ex4.dir/Cards/Pitfall.cpp.obj: ../Cards/Pitfall.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ex4.dir/Cards/Pitfall.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ex4.dir/Cards/Pitfall.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ex4.dir\Cards\Pitfall.cpp.obj -c C:\Users\barke\ex4\Cards\Pitfall.cpp
 
 CMakeFiles/ex4.dir/Cards/Pitfall.cpp.i: cmake_force
@@ -180,7 +166,7 @@ CMakeFiles/ex4.dir/Cards/Pitfall.cpp.s: cmake_force
 CMakeFiles/ex4.dir/Cards/Treasure.cpp.obj: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/Cards/Treasure.cpp.obj: CMakeFiles/ex4.dir/includes_CXX.rsp
 CMakeFiles/ex4.dir/Cards/Treasure.cpp.obj: ../Cards/Treasure.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ex4.dir/Cards/Treasure.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ex4.dir/Cards/Treasure.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ex4.dir\Cards\Treasure.cpp.obj -c C:\Users\barke\ex4\Cards\Treasure.cpp
 
 CMakeFiles/ex4.dir/Cards/Treasure.cpp.i: cmake_force
@@ -194,7 +180,7 @@ CMakeFiles/ex4.dir/Cards/Treasure.cpp.s: cmake_force
 CMakeFiles/ex4.dir/Cards/Vampire.cpp.obj: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/Cards/Vampire.cpp.obj: CMakeFiles/ex4.dir/includes_CXX.rsp
 CMakeFiles/ex4.dir/Cards/Vampire.cpp.obj: ../Cards/Vampire.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ex4.dir/Cards/Vampire.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ex4.dir/Cards/Vampire.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ex4.dir\Cards\Vampire.cpp.obj -c C:\Users\barke\ex4\Cards\Vampire.cpp
 
 CMakeFiles/ex4.dir/Cards/Vampire.cpp.i: cmake_force
@@ -208,7 +194,7 @@ CMakeFiles/ex4.dir/Cards/Vampire.cpp.s: cmake_force
 CMakeFiles/ex4.dir/Players/Fighter.cpp.obj: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/Players/Fighter.cpp.obj: CMakeFiles/ex4.dir/includes_CXX.rsp
 CMakeFiles/ex4.dir/Players/Fighter.cpp.obj: ../Players/Fighter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ex4.dir/Players/Fighter.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ex4.dir/Players/Fighter.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ex4.dir\Players\Fighter.cpp.obj -c C:\Users\barke\ex4\Players\Fighter.cpp
 
 CMakeFiles/ex4.dir/Players/Fighter.cpp.i: cmake_force
@@ -222,7 +208,7 @@ CMakeFiles/ex4.dir/Players/Fighter.cpp.s: cmake_force
 CMakeFiles/ex4.dir/Players/Player.cpp.obj: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/Players/Player.cpp.obj: CMakeFiles/ex4.dir/includes_CXX.rsp
 CMakeFiles/ex4.dir/Players/Player.cpp.obj: ../Players/Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ex4.dir/Players/Player.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ex4.dir/Players/Player.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ex4.dir\Players\Player.cpp.obj -c C:\Users\barke\ex4\Players\Player.cpp
 
 CMakeFiles/ex4.dir/Players/Player.cpp.i: cmake_force
@@ -236,7 +222,7 @@ CMakeFiles/ex4.dir/Players/Player.cpp.s: cmake_force
 CMakeFiles/ex4.dir/Players/Rogue.cpp.obj: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/Players/Rogue.cpp.obj: CMakeFiles/ex4.dir/includes_CXX.rsp
 CMakeFiles/ex4.dir/Players/Rogue.cpp.obj: ../Players/Rogue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ex4.dir/Players/Rogue.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ex4.dir/Players/Rogue.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ex4.dir\Players\Rogue.cpp.obj -c C:\Users\barke\ex4\Players\Rogue.cpp
 
 CMakeFiles/ex4.dir/Players/Rogue.cpp.i: cmake_force
@@ -250,7 +236,7 @@ CMakeFiles/ex4.dir/Players/Rogue.cpp.s: cmake_force
 CMakeFiles/ex4.dir/Players/Wizard.cpp.obj: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/Players/Wizard.cpp.obj: CMakeFiles/ex4.dir/includes_CXX.rsp
 CMakeFiles/ex4.dir/Players/Wizard.cpp.obj: ../Players/Wizard.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ex4.dir/Players/Wizard.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ex4.dir/Players/Wizard.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ex4.dir\Players\Wizard.cpp.obj -c C:\Users\barke\ex4\Players\Wizard.cpp
 
 CMakeFiles/ex4.dir/Players/Wizard.cpp.i: cmake_force
@@ -264,7 +250,7 @@ CMakeFiles/ex4.dir/Players/Wizard.cpp.s: cmake_force
 CMakeFiles/ex4.dir/Mtmchkin.cpp.obj: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/Mtmchkin.cpp.obj: CMakeFiles/ex4.dir/includes_CXX.rsp
 CMakeFiles/ex4.dir/Mtmchkin.cpp.obj: ../Mtmchkin.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ex4.dir/Mtmchkin.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ex4.dir/Mtmchkin.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ex4.dir\Mtmchkin.cpp.obj -c C:\Users\barke\ex4\Mtmchkin.cpp
 
 CMakeFiles/ex4.dir/Mtmchkin.cpp.i: cmake_force
@@ -278,7 +264,7 @@ CMakeFiles/ex4.dir/Mtmchkin.cpp.s: cmake_force
 CMakeFiles/ex4.dir/test.cpp.obj: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/test.cpp.obj: CMakeFiles/ex4.dir/includes_CXX.rsp
 CMakeFiles/ex4.dir/test.cpp.obj: ../test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/ex4.dir/test.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ex4.dir/test.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ex4.dir\test.cpp.obj -c C:\Users\barke\ex4\test.cpp
 
 CMakeFiles/ex4.dir/test.cpp.i: cmake_force
@@ -292,7 +278,7 @@ CMakeFiles/ex4.dir/test.cpp.s: cmake_force
 CMakeFiles/ex4.dir/utilities.cpp.obj: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/utilities.cpp.obj: CMakeFiles/ex4.dir/includes_CXX.rsp
 CMakeFiles/ex4.dir/utilities.cpp.obj: ../utilities.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/ex4.dir/utilities.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/ex4.dir/utilities.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ex4.dir\utilities.cpp.obj -c C:\Users\barke\ex4\utilities.cpp
 
 CMakeFiles/ex4.dir/utilities.cpp.i: cmake_force
@@ -309,7 +295,6 @@ ex4_OBJECTS = \
 "CMakeFiles/ex4.dir/Cards/Card.cpp.obj" \
 "CMakeFiles/ex4.dir/Cards/Dragon.cpp.obj" \
 "CMakeFiles/ex4.dir/Cards/Fairy.cpp.obj" \
-"CMakeFiles/ex4.dir/Cards/Gang.cpp.obj" \
 "CMakeFiles/ex4.dir/Cards/Goblin.cpp.obj" \
 "CMakeFiles/ex4.dir/Cards/Merchant.cpp.obj" \
 "CMakeFiles/ex4.dir/Cards/Pitfall.cpp.obj" \
@@ -330,7 +315,6 @@ ex4.exe: CMakeFiles/ex4.dir/Cards/Barfight.cpp.obj
 ex4.exe: CMakeFiles/ex4.dir/Cards/Card.cpp.obj
 ex4.exe: CMakeFiles/ex4.dir/Cards/Dragon.cpp.obj
 ex4.exe: CMakeFiles/ex4.dir/Cards/Fairy.cpp.obj
-ex4.exe: CMakeFiles/ex4.dir/Cards/Gang.cpp.obj
 ex4.exe: CMakeFiles/ex4.dir/Cards/Goblin.cpp.obj
 ex4.exe: CMakeFiles/ex4.dir/Cards/Merchant.cpp.obj
 ex4.exe: CMakeFiles/ex4.dir/Cards/Pitfall.cpp.obj
@@ -347,7 +331,7 @@ ex4.exe: CMakeFiles/ex4.dir/build.make
 ex4.exe: CMakeFiles/ex4.dir/linklibs.rsp
 ex4.exe: CMakeFiles/ex4.dir/objects1.rsp
 ex4.exe: CMakeFiles/ex4.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable ex4.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable ex4.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ex4.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
