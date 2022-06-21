@@ -40,6 +40,6 @@ add_executable(ex4
         Exception.h
         Mtmchkin.cpp
         Mtmchkin.h
-        test.cpp
+        testsMain.cpp
         utilities.cpp
         utilities.h)

@@ -149,23 +149,11 @@ CMakeFiles/ex4.dir/Players/Wizard.cpp.obj: \
  ../utilities.h \
  ../Players/Wizard.cpp \
  ../Players/Wizard.h
-CMakeFiles/ex4.dir/test.cpp.obj: \
- ../Cards/Barfight.h \
+CMakeFiles/ex4.dir/testsMain.cpp.obj: \
  ../Cards/Card.h \
- ../Cards/Dragon.h \
- ../Cards/Fairy.h \
- ../Cards/Goblin.h \
- ../Cards/Merchant.h \
- ../Cards/Pitfall.h \
- ../Cards/Treasure.h \
- ../Cards/Vampire.h \
- ../Exception.h \
  ../Mtmchkin.h \
- ../Players/Fighter.h \
  ../Players/Player.h \
- ../Players/Rogue.h \
- ../Players/Wizard.h \
- ../test.cpp
+ ../testsMain.cpp
 CMakeFiles/ex4.dir/utilities.cpp.obj: \
  ../Cards/Card.h \
  ../Exception.h \
