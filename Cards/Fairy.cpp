@@ -1,7 +1,7 @@
 
 
 #include "Fairy.h"
-#include "Players/Wizard.h"
+#include "../Players/Wizard.h"
 #include "utilities.h"
 #include <iostream>
 #include "Card.h"

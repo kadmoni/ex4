@@ -1,6 +1,6 @@
 
 #include "Pitfall.h"
-#include "Players/Rogue.h"
+#include "../Players/Rogue.h"
 #include "utilities.h"
 #include <iostream>
 #include "Card.h"

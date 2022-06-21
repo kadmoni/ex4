@@ -1,7 +1,7 @@
 
 
 #include "Barfight.h"
-#include "Players/Fighter.h"
+#include "../Players/Fighter.h"
 #include "utilities.h"
 #include <iostream>
 #include "Card.h"
