@@ -36,9 +36,9 @@ add_executable(ex4
         Players/Rogue.h
         Players/Wizard.cpp
         Players/Wizard.h
+        tool/main.cpp
         Exception.h
         Mtmchkin.cpp
         Mtmchkin.h
-        test.cpp
         utilities.cpp
         utilities.h)

@@ -26,6 +26,15 @@ public:
     */
     void applyEncounter(Player& player) const override;
 
+    /*
+     * Handling the player's merchant choice
+     *
+     * @param player - The player and his numerical choice
+     * @return
+     *      void
+    */
+    void merchantChoice(Player& player, int choice) const;
+
 
     /*
      * Prints the card info:

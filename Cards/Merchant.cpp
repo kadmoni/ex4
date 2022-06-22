@@ -37,7 +37,10 @@ void Merchant::applyEncounter(Player& player) const {
             printInvalidInput();
         }
     } while (choice != 0 && choice != 1 && choice != 2);
+    merchantChoice(player, choice);
+}
 
+void Merchant::merchantChoice(Player& player, int choice) const {
     int type = 3;
     int cost = 0;
 
@@ -52,7 +55,7 @@ void Merchant::applyEncounter(Player& player) const {
         if (player.pay(m_healCost))
         {
             player.heal(m_heal);
-	        cost = m_healCost;
+            cost = m_healCost;
         }
         else
         {
@@ -74,6 +77,7 @@ void Merchant::applyEncounter(Player& player) const {
     }
     printMerchantSummary(cout, player.getName(), type, cost);
 }
+
 
 
 std::ostream& Merchant::print(std::ostream &out) const

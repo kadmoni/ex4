@@ -488,29 +488,29 @@ Players/Wizard.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Players/Wizard.cpp.s
 .PHONY : Players/Wizard.cpp.s
 
-test.obj: test.cpp.obj
-.PHONY : test.obj
+tool/main.obj: tool/main.cpp.obj
+.PHONY : tool/main.obj
 
 # target to build an object file
-test.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/test.cpp.obj
-.PHONY : test.cpp.obj
+tool/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/tool/main.cpp.obj
+.PHONY : tool/main.cpp.obj
 
-test.i: test.cpp.i
-.PHONY : test.i
+tool/main.i: tool/main.cpp.i
+.PHONY : tool/main.i
 
 # target to preprocess a source file
-test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/test.cpp.i
-.PHONY : test.cpp.i
+tool/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/tool/main.cpp.i
+.PHONY : tool/main.cpp.i
 
-test.s: test.cpp.s
-.PHONY : test.s
+tool/main.s: tool/main.cpp.s
+.PHONY : tool/main.s
 
 # target to generate assembly for a file
-test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/test.cpp.s
-.PHONY : test.cpp.s
+tool/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/tool/main.cpp.s
+.PHONY : tool/main.cpp.s
 
 utilities.obj: utilities.cpp.obj
 .PHONY : utilities.obj
@@ -590,9 +590,9 @@ help:
 	@echo ... Players/Wizard.obj
 	@echo ... Players/Wizard.i
 	@echo ... Players/Wizard.s
-	@echo ... test.obj
-	@echo ... test.i
-	@echo ... test.s
+	@echo ... tool/main.obj
+	@echo ... tool/main.i
+	@echo ... tool/main.s
 	@echo ... utilities.obj
 	@echo ... utilities.i
 	@echo ... utilities.s
