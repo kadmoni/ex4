@@ -15,6 +15,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ex4.dir/Players/Rogue.cpp.obj"
   "CMakeFiles/ex4.dir/Players/Wizard.cpp.obj"
   "CMakeFiles/ex4.dir/testsMain.cpp.obj"
+  "CMakeFiles/ex4.dir/tool/main.cpp.obj"
   "CMakeFiles/ex4.dir/utilities.cpp.obj"
   "ex4.exe"
   "ex4.exe.manifest"

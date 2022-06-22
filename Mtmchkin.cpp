@@ -227,15 +227,21 @@ void createDeck (std::queue<std::unique_ptr<Card>>& m_deck,const std::string fil
 void teamSizeInput (int& teamSize)
 {
     std::string temp;
-    printEnterTeamSizeMessage();
-    std::getline(std::cin,temp);
-    teamSize = std::stoi(temp);
-    while ((teamSize>Mtmchkin::maxTeamSize)||(teamSize<Mtmchkin::minTeamSize))
+    while((teamSize>Mtmchkin::maxTeamSize)||(teamSize<Mtmchkin::minTeamSize))
     {
-        printInvalidTeamSize();
-        printEnterTeamSizeMessage();
-        std::cin>>teamSize;
+        try{
+	    printEnterTeamSizeMessage();
+            std::getline(std::cin,temp);
+            teamSize = std::stoi(temp);
+        }
+        catch(const std::exception& e){
+            printInvalidTeamSize();
+	    continue;
+        }
+	if ((teamSize>Mtmchkin::maxTeamSize)||(teamSize<Mtmchkin::minTeamSize))
+	{
+	    printInvalidTeamSize();
+	}
     }
 }
-
 

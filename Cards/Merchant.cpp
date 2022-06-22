@@ -53,6 +53,7 @@ void Merchant::applyEncounter(Player& player) const {
         if (player.pay(m_healCost))
         {
             player.heal(m_heal);
+	    cost = m_healCost;
         }
         else
         {
