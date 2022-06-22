@@ -24,6 +24,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/barke/ex4/Players/Rogue.cpp" "C:/Users/barke/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Players/Rogue.cpp.obj"
   "C:/Users/barke/ex4/Players/Wizard.cpp" "C:/Users/barke/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Players/Wizard.cpp.obj"
   "C:/Users/barke/ex4/testsMain.cpp" "C:/Users/barke/ex4/cmake-build-debug/CMakeFiles/ex4.dir/testsMain.cpp.obj"
+  "C:/Users/barke/ex4/tool/main.cpp" "C:/Users/barke/ex4/cmake-build-debug/CMakeFiles/ex4.dir/tool/main.cpp.obj"
   "C:/Users/barke/ex4/utilities.cpp" "C:/Users/barke/ex4/cmake-build-debug/CMakeFiles/ex4.dir/utilities.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
@@ -33,7 +34,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../."
   "../Cards"
   "../Players"
-  "../tool"
   )
 
 # The set of dependency files which are needed:

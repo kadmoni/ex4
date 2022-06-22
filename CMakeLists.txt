@@ -6,7 +6,6 @@ set(CMAKE_CXX_STANDARD 14)
 include_directories(.)
 include_directories(Cards)
 include_directories(Players)
-include_directories(tool)
 
 add_executable(ex4
         Cards/Barfight.cpp
@@ -37,6 +36,7 @@ add_executable(ex4
         Players/Rogue.h
         Players/Wizard.cpp
         Players/Wizard.h
+        tool/main.cpp
         Exception.h
         Mtmchkin.cpp
         Mtmchkin.h

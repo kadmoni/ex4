@@ -512,6 +512,30 @@ testsMain.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/testsMain.cpp.s
 .PHONY : testsMain.cpp.s
 
+tool/main.obj: tool/main.cpp.obj
+.PHONY : tool/main.obj
+
+# target to build an object file
+tool/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/tool/main.cpp.obj
+.PHONY : tool/main.cpp.obj
+
+tool/main.i: tool/main.cpp.i
+.PHONY : tool/main.i
+
+# target to preprocess a source file
+tool/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/tool/main.cpp.i
+.PHONY : tool/main.cpp.i
+
+tool/main.s: tool/main.cpp.s
+.PHONY : tool/main.s
+
+# target to generate assembly for a file
+tool/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/tool/main.cpp.s
+.PHONY : tool/main.cpp.s
+
 utilities.obj: utilities.cpp.obj
 .PHONY : utilities.obj
 
@@ -593,6 +617,9 @@ help:
 	@echo ... testsMain.obj
 	@echo ... testsMain.i
 	@echo ... testsMain.s
+	@echo ... tool/main.obj
+	@echo ... tool/main.i
+	@echo ... tool/main.s
 	@echo ... utilities.obj
 	@echo ... utilities.i
 	@echo ... utilities.s

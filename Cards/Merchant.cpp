@@ -21,13 +21,26 @@ Merchant::Merchant() : Card(),
 
 void Merchant::applyEncounter(Player& player) const {
     printMerchantInitialMessageForInteractiveEncounter(cout, player.getName(), player.getCoins());
-    
-    std::string answer;
-    std::getline(std::cin, answer);
-    int choice = stoi(answer);
 
-    int type;
-    int cost;
+    int choice = 3;
+    do {
+        std::string answer;
+        try{
+            std::getline(std::cin, answer);
+            choice = stoi(answer);
+        }
+        catch(const std::exception& e){
+            printInvalidInput();
+            continue;
+        }
+        if (choice != 0 && choice != 1 && choice != 2)
+        {
+            printInvalidInput();
+        }
+    } while (choice != 0 && choice != 1 && choice != 2);
+
+    int type = 3;
+    int cost = 0;
 
     if (choice == 0)
     {
@@ -36,26 +49,29 @@ void Merchant::applyEncounter(Player& player) const {
     }
     else if (choice == 1)
     {
-        if (!player.pay(m_healCost))
+        type = 1;
+        if (player.pay(m_healCost))
+        {
+            player.heal(m_heal);
+	    cost = m_healCost;
+        }
+        else
         {
             printMerchantInsufficientCoins(cout);
         }
-        player.heal(m_heal);
-        type = 1;
-        cost = m_healCost;
     }
     else if (choice == 2)
     {
-        if (!player.pay(m_buffCost))
+        type = 2;
+        if (player.pay(m_buffCost))
+        {
+            cost = m_buffCost;
+            player.buff(m_buff);
+        }
+        else
         {
             printMerchantInsufficientCoins(cout);
         }
-        player.buff(m_buff);
-        type = 2;
-        cost = m_buffCost;
-    }
-    else {
-        printInvalidInput();
     }
     printMerchantSummary(cout, player.getName(), type, cost);
 }
