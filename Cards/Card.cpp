@@ -7,7 +7,7 @@ using std::cout;
 using std::endl;
 
 
-Card::Card() {} //add print function for future code usability
+Card::Card() {}
 
 
 std::ostream& operator<<(std::ostream &out, const Card& card)

@@ -38,32 +38,18 @@ public:
     */
     virtual void applyEncounter(Player& player) const = 0;
 
-
-//    /*
-//     * Prints the card info:
-//     *
-//     * @return
-//     *      void
-//    */
-//    virtual void printCardDetails() const;
-//  I think it belonged to ex2 or my bad
-
     /*
      * Prints the card info:
      *
      * @return
      *      void
     */
-//    void printEndOfCardDetails() const;
-    
-
-
-//    /*
-//     * C'tor to the "default card" - Treasure card that gives 0 coins
-//    */
-//    Card(): m_effect(CardType::Treasure), m_stats() {}
 
     virtual std::ostream& print(std::ostream& out) const = 0;
+
+    /*
+    * friended in order to overload printing operator
+    */
 
     friend std::ostream &operator<<(std::ostream &out, const Card& card);
 

@@ -26,7 +26,6 @@ const std::string Gang::END = "EndGang";
 Gang::Gang(std::ifstream& deck, int& deckLine) : Card()
 {
     std::string tempCard;
-
     while (std::getline(deck,tempCard))
     {
         if (tempCard == Dragon::TYPE)
@@ -66,6 +65,7 @@ Gang::Gang(std::ifstream& deck, int& deckLine) : Card()
         }
         else if (tempCard == Gang::END)
         {
+            deckLine++;
             return;
         }
         else
@@ -73,7 +73,7 @@ Gang::Gang(std::ifstream& deck, int& deckLine) : Card()
             throw DeckFileFormatError(deckLine);
         }
     }
-    throw DeckFileFormatError(deckLine);
+    throw DeckFileFormatError(--deckLine);
 }
 
 
@@ -104,13 +104,13 @@ void Gang::applyEncounter(Player& player) const {
 
 void Gang::applyDamage(Player& player, int currentMonster) const {
     int size = m_theGang.size();
-    int currentForce =player.getForce();
-    player.forceChange(Gang::DEFEATED);
+    int change = player.getForce() + Gang::DEFEATED;
+    player.forceChange(-(change));
     for (int i = currentMonster; i < size ; i++)
     {
         m_theGang[i]->applyEncounter(player);
     }
-    player.forceChange(currentForce);
+    player.forceChange(change);
 }
 
 

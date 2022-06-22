@@ -11,8 +11,8 @@ const std::string Dragon::TYPE = "Dragon";
 
 
 Dragon::Dragon() : Card(),
-    m_force(25),
-    m_loot(1000)
+    m_force(Dragon::dragForce),
+    m_loot(Dragon::dragLoot)
 {}
 
 

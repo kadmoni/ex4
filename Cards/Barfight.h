@@ -50,6 +50,7 @@ public:
      * the type of the Card (Barfight)
      */
     static const std::string TYPE;
+    static const int barDamage = 10;
 
 
 private:

@@ -261,24 +261,10 @@ CMakeFiles/ex4.dir/Players/Wizard.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/Players/Wizard.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\barke\ex4\Players\Wizard.cpp -o CMakeFiles\ex4.dir\Players\Wizard.cpp.s
 
-CMakeFiles/ex4.dir/tool/main.cpp.obj: CMakeFiles/ex4.dir/flags.make
-CMakeFiles/ex4.dir/tool/main.cpp.obj: CMakeFiles/ex4.dir/includes_CXX.rsp
-CMakeFiles/ex4.dir/tool/main.cpp.obj: ../tool/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ex4.dir/tool/main.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ex4.dir\tool\main.cpp.obj -c C:\Users\barke\ex4\tool\main.cpp
-
-CMakeFiles/ex4.dir/tool/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex4.dir/tool/main.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\barke\ex4\tool\main.cpp > CMakeFiles\ex4.dir\tool\main.cpp.i
-
-CMakeFiles/ex4.dir/tool/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/tool/main.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\barke\ex4\tool\main.cpp -o CMakeFiles\ex4.dir\tool\main.cpp.s
-
 CMakeFiles/ex4.dir/Mtmchkin.cpp.obj: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/Mtmchkin.cpp.obj: CMakeFiles/ex4.dir/includes_CXX.rsp
 CMakeFiles/ex4.dir/Mtmchkin.cpp.obj: ../Mtmchkin.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/ex4.dir/Mtmchkin.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ex4.dir/Mtmchkin.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ex4.dir\Mtmchkin.cpp.obj -c C:\Users\barke\ex4\Mtmchkin.cpp
 
 CMakeFiles/ex4.dir/Mtmchkin.cpp.i: cmake_force
@@ -289,24 +275,24 @@ CMakeFiles/ex4.dir/Mtmchkin.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/Mtmchkin.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\barke\ex4\Mtmchkin.cpp -o CMakeFiles\ex4.dir\Mtmchkin.cpp.s
 
-CMakeFiles/ex4.dir/testsMain.cpp.obj: CMakeFiles/ex4.dir/flags.make
-CMakeFiles/ex4.dir/testsMain.cpp.obj: CMakeFiles/ex4.dir/includes_CXX.rsp
-CMakeFiles/ex4.dir/testsMain.cpp.obj: ../testsMain.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/ex4.dir/testsMain.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ex4.dir\testsMain.cpp.obj -c C:\Users\barke\ex4\testsMain.cpp
+CMakeFiles/ex4.dir/test.cpp.obj: CMakeFiles/ex4.dir/flags.make
+CMakeFiles/ex4.dir/test.cpp.obj: CMakeFiles/ex4.dir/includes_CXX.rsp
+CMakeFiles/ex4.dir/test.cpp.obj: ../test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/ex4.dir/test.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ex4.dir\test.cpp.obj -c C:\Users\barke\ex4\test.cpp
 
-CMakeFiles/ex4.dir/testsMain.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex4.dir/testsMain.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\barke\ex4\testsMain.cpp > CMakeFiles\ex4.dir\testsMain.cpp.i
+CMakeFiles/ex4.dir/test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex4.dir/test.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\barke\ex4\test.cpp > CMakeFiles\ex4.dir\test.cpp.i
 
-CMakeFiles/ex4.dir/testsMain.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/testsMain.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\barke\ex4\testsMain.cpp -o CMakeFiles\ex4.dir\testsMain.cpp.s
+CMakeFiles/ex4.dir/test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/test.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\barke\ex4\test.cpp -o CMakeFiles\ex4.dir\test.cpp.s
 
 CMakeFiles/ex4.dir/utilities.cpp.obj: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/utilities.cpp.obj: CMakeFiles/ex4.dir/includes_CXX.rsp
 CMakeFiles/ex4.dir/utilities.cpp.obj: ../utilities.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/ex4.dir/utilities.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/ex4.dir/utilities.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ex4.dir\utilities.cpp.obj -c C:\Users\barke\ex4\utilities.cpp
 
 CMakeFiles/ex4.dir/utilities.cpp.i: cmake_force
@@ -333,9 +319,8 @@ ex4_OBJECTS = \
 "CMakeFiles/ex4.dir/Players/Player.cpp.obj" \
 "CMakeFiles/ex4.dir/Players/Rogue.cpp.obj" \
 "CMakeFiles/ex4.dir/Players/Wizard.cpp.obj" \
-"CMakeFiles/ex4.dir/tool/main.cpp.obj" \
 "CMakeFiles/ex4.dir/Mtmchkin.cpp.obj" \
-"CMakeFiles/ex4.dir/testsMain.cpp.obj" \
+"CMakeFiles/ex4.dir/test.cpp.obj" \
 "CMakeFiles/ex4.dir/utilities.cpp.obj"
 
 # External object files for target ex4
@@ -355,15 +340,14 @@ ex4.exe: CMakeFiles/ex4.dir/Players/Fighter.cpp.obj
 ex4.exe: CMakeFiles/ex4.dir/Players/Player.cpp.obj
 ex4.exe: CMakeFiles/ex4.dir/Players/Rogue.cpp.obj
 ex4.exe: CMakeFiles/ex4.dir/Players/Wizard.cpp.obj
-ex4.exe: CMakeFiles/ex4.dir/tool/main.cpp.obj
 ex4.exe: CMakeFiles/ex4.dir/Mtmchkin.cpp.obj
-ex4.exe: CMakeFiles/ex4.dir/testsMain.cpp.obj
+ex4.exe: CMakeFiles/ex4.dir/test.cpp.obj
 ex4.exe: CMakeFiles/ex4.dir/utilities.cpp.obj
 ex4.exe: CMakeFiles/ex4.dir/build.make
 ex4.exe: CMakeFiles/ex4.dir/linklibs.rsp
 ex4.exe: CMakeFiles/ex4.dir/objects1.rsp
 ex4.exe: CMakeFiles/ex4.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable ex4.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\barke\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable ex4.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ex4.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

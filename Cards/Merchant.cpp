@@ -21,7 +21,6 @@ Merchant::Merchant() : Card(),
 
 void Merchant::applyEncounter(Player& player) const {
     printMerchantInitialMessageForInteractiveEncounter(cout, player.getName(), player.getCoins());
-
     int choice = 3;
     do {
         std::string answer;
@@ -53,7 +52,7 @@ void Merchant::applyEncounter(Player& player) const {
         if (player.pay(m_healCost))
         {
             player.heal(m_heal);
-	    cost = m_healCost;
+	        cost = m_healCost;
         }
         else
         {

@@ -60,6 +60,8 @@ public:
      * the type of the Card (Dragon)
      */
     static const std::string TYPE;
+    static const int dragForce = 25;
+    static const int dragLoot = 1000;
 
 
 private:

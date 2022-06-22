@@ -179,10 +179,7 @@
 		<Unit filename="C:/Users/barke/ex4/Players/Wizard.h">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/barke/ex4/testsMain.cpp">
-			<Option target="ex4"/>
-		</Unit>
-		<Unit filename="C:/Users/barke/ex4/tool/main.cpp">
+		<Unit filename="C:/Users/barke/ex4/test.cpp">
 			<Option target="ex4"/>
 		</Unit>
 		<Unit filename="C:/Users/barke/ex4/utilities.cpp">

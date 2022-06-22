@@ -108,6 +108,38 @@ void createDeck(std::queue<std::unique_ptr<Card>>& m_deck, const std::string fil
  */
 void teamSizeInput (int& teamSize);
 
+/*
+ * adds a monster type Card to the deck
+ *
+ * @param m_deck - queue of pointers to Cards to which the monster will be added
+ * @param tampCard - the current type of card read from the file to be added to the deck
+ * @param deckSize - the current size of the deck
+ * @param deckLine - the current line from which the type of card is read from the file
+ */
+void addMonster (std::queue<std::unique_ptr<Card>>& m_deck,std::string& tempCard,int& deckSize,int& deckLine);
+
+/*
+ * adds an NPC type Card to the deck
+ *
+ * @param m_deck - queue of pointers to Cards to which the NPC encounter will be added
+ * @param tampCard - the current type of card read from the file to be added to the deck
+ * @param deckSize - the current size of the deck
+ * @param deckLine - the current line from which the type of card is read from the file
+ */
+void addNpcEncounter (std::queue<std::unique_ptr<Card>>& m_deck,std::string& tempCard,int& deckSize,int& deckLine);
+
+/*
+ * adds an economy type Card to the deck
+ *
+ * @param m_deck - queue of pointers to Cards to which the economy will be added
+ * @param tampCard - the current type of card read from the file to be added to the deck
+ * @param deckSize - the current size of the deck
+ * @param deckLine - the current line from which the type of card is read from the file
+ */
+void addEconomy (std::queue<std::unique_ptr<Card>>& m_deck,std::string& tempCard,int& deckSize,int& deckLine);
+
+
+
 
 
 #endif /* MTMCHKIN_H_ */

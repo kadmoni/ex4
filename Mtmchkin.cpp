@@ -160,53 +160,17 @@ void createDeck (std::queue<std::unique_ptr<Card>>& m_deck,const std::string fil
     }
     while (std::getline(deck,tempCard))
     {
-        if (tempCard == Dragon::TYPE)
+        if ((tempCard == Dragon::TYPE)||(tempCard == Vampire::TYPE)||(tempCard == Goblin::TYPE))
         {
-            m_deck.push(std::unique_ptr<Card>(new Dragon()));
-            deckSize ++;
-            deckLine++;
+            addMonster(m_deck, tempCard,deckSize,deckLine);
         }
-        else if (tempCard == Vampire::TYPE)
+        else if ((tempCard == Barfight::TYPE)||(tempCard == Pitfall::TYPE)|| (tempCard == Fairy::TYPE))
         {
-            m_deck.push(std::unique_ptr<Card>(new Vampire()));
-            deckSize ++;
-            deckLine++;
+            addNpcEncounter(m_deck, tempCard,deckSize,deckLine);
         }
-        else if (tempCard == Goblin::TYPE)
+        else if ((tempCard == Merchant::TYPE)||(tempCard == Treasure::TYPE))
         {
-            m_deck.push(std::unique_ptr<Card>(new Goblin()));
-            deckSize ++;
-            deckLine++;
-        }
-        else if (tempCard == Barfight::TYPE)
-        {
-            m_deck.push(std::unique_ptr<Card>(new Barfight()));
-            deckSize ++;
-            deckLine++;
-        }
-        else if (tempCard == Pitfall::TYPE)
-        {
-            m_deck.push(std::unique_ptr<Card>(new Pitfall()));
-            deckSize ++;
-            deckLine++;
-        }
-        else if (tempCard == Fairy::TYPE)
-        {
-            m_deck.push(std::unique_ptr<Card>(new Fairy()));
-            deckSize ++;
-            deckLine++;
-        }
-        else if (tempCard == Merchant::TYPE)
-        {
-            m_deck.push(std::unique_ptr<Card>(new Merchant()));
-            deckSize ++;
-            deckLine++;
-        }
-        else if (tempCard == Treasure::TYPE)
-        {
-            m_deck.push(std::unique_ptr<Card>(new Treasure()));
-            deckSize ++;
-            deckLine++;
+            addEconomy(m_deck, tempCard,deckSize,deckLine);
         }
         else if (tempCard == Gang::TYPE)
         {
@@ -244,4 +208,65 @@ void teamSizeInput (int& teamSize)
 	}
     }
 }
+
+void addMonster (std::queue<std::unique_ptr<Card>>& m_deck,std::string& tempCard,int& deckSize,int& deckLine)
+{
+    if (tempCard == Dragon::TYPE)
+    {
+        m_deck.push(std::unique_ptr<Card>(new Dragon()));
+        deckSize ++;
+        deckLine++;
+    }
+    else if (tempCard == Vampire::TYPE)
+    {
+        m_deck.push(std::unique_ptr<Card>(new Vampire()));
+        deckSize ++;
+        deckLine++;
+    }
+    else if (tempCard == Goblin::TYPE)
+    {
+        m_deck.push(std::unique_ptr<Card>(new Goblin()));
+        deckSize ++;
+        deckLine++;
+    }
+}
+
+void addNpcEncounter (std::queue<std::unique_ptr<Card>>& m_deck,std::string& tempCard,int& deckSize,int& deckLine)
+{
+    if (tempCard == Barfight::TYPE)
+    {
+        m_deck.push(std::unique_ptr<Card>(new Barfight()));
+        deckSize ++;
+        deckLine++;
+    }
+    else if (tempCard == Pitfall::TYPE)
+    {
+        m_deck.push(std::unique_ptr<Card>(new Pitfall()));
+        deckSize ++;
+        deckLine++;
+    }
+    else if (tempCard == Fairy::TYPE)
+    {
+        m_deck.push(std::unique_ptr<Card>(new Fairy()));
+        deckSize ++;
+        deckLine++;
+    }
+}
+
+void addEconomy (std::queue<std::unique_ptr<Card>>& m_deck,std::string& tempCard,int& deckSize,int& deckLine)
+{
+    if (tempCard == Merchant::TYPE)
+    {
+        m_deck.push(std::unique_ptr<Card>(new Merchant()));
+        deckSize ++;
+        deckLine++;
+    }
+    else if (tempCard == Treasure::TYPE)
+    {
+        m_deck.push(std::unique_ptr<Card>(new Treasure()));
+        deckSize ++;
+        deckLine++;
+    }
+}
+
 

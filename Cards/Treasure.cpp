@@ -12,7 +12,7 @@ const std::string Treasure::TYPE = "Treasure";
 
 
 Treasure::Treasure() : Card(),
-    m_loot(Treasure::defLootAmout)
+    m_loot(Treasure::defLootAmount)
 {}
 
 

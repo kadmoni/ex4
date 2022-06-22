@@ -13,7 +13,7 @@ const std::string Barfight::TYPE = "Barfight";
 
 
 Barfight::Barfight() : Card(),
-    m_damage(10)
+    m_damage(Barfight::barDamage)
 {}
 
 

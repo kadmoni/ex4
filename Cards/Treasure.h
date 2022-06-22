@@ -47,7 +47,7 @@ public:
      * the type of the Card (Treasure)
      */
     static const std::string TYPE;
-    static const int defLootAmout = 10;
+    static const int defLootAmount = 10;
 
 
 private:
