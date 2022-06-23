@@ -66,11 +66,6 @@ public:
     */
     int getNumberOfRounds() const;
 
-    static const int minTeamSize = 2;
-    static const int maxTeamSize = 6;
-    static const int minDeckSize = 5;
-    static const int maxNameLength = 15;
-    static const int maxLevel = 10;
 
 
 private:
@@ -80,8 +75,12 @@ private:
     std::queue<std::unique_ptr<Card>> m_deck;
     int m_numOfRounds;
 
-};
-/*
+    static const int minTeamSize = 2;
+    static const int maxTeamSize = 6;
+    static const int minDeckSize = 5;
+    static const int maxNameLength = 15;
+
+    /*
  * checks if the name provided follows the provided rules (english letters only, up to 15 characters)
  *
  * @param name - the name scanned from the user
@@ -89,7 +88,7 @@ private:
  *      true - the name follows the rules
  *      false - the name does not follow the rules
  */
-bool checkName (std::string name);
+    bool checkName (std::string name);
 
 /*
  * creates a unique pointer to an appropriate subclass of Player according to user input, and places it in a vector
@@ -99,7 +98,7 @@ bool checkName (std::string name);
  *      true - the Player cannot be created according to the rules
  *      false - the Player was created according to the rules
  */
-bool createPlayer(std::vector<std::unique_ptr<Player>>& activePlayers);
+    bool createPlayer(std::vector<std::unique_ptr<Player>>& activePlayers);
 
 /*
  * creates a queue of unique pointers to Card subclasses from a provided file
@@ -110,14 +109,14 @@ bool createPlayer(std::vector<std::unique_ptr<Player>>& activePlayers);
  * @return
  *      void
  */
-void createDeck(std::queue<std::unique_ptr<Card>>& m_deck, const std::string fileName);
+    void createDeck(std::queue<std::unique_ptr<Card>>& m_deck, const std::string fileName);
 
 /*
  * gets the team size from the user and checks if it follows the provided rules (2-6 players)
  *
  * @param teamSize - the teamSize scanned from the user
  */
-void teamSizeInput (int& teamSize);
+    void teamSizeInput (int& teamSize);
 
 /*
  * adds a monster type Card to the deck
@@ -127,7 +126,7 @@ void teamSizeInput (int& teamSize);
  * @param deckSize - the current size of the deck
  * @param deckLine - the current line from which the type of card is read from the file
  */
-void addMonster (std::queue<std::unique_ptr<Card>>& m_deck,std::string& tempCard,int& deckSize,int& deckLine);
+    void addMonster (std::queue<std::unique_ptr<Card>>& m_deck,std::string& tempCard,int& deckSize,int& deckLine);
 
 /*
  * adds an NPC type Card to the deck
@@ -137,7 +136,7 @@ void addMonster (std::queue<std::unique_ptr<Card>>& m_deck,std::string& tempCard
  * @param deckSize - the current size of the deck
  * @param deckLine - the current line from which the type of card is read from the file
  */
-void addNpcEncounter (std::queue<std::unique_ptr<Card>>& m_deck,std::string& tempCard,int& deckSize,int& deckLine);
+    void addNpcEncounter (std::queue<std::unique_ptr<Card>>& m_deck,std::string& tempCard,int& deckSize,int& deckLine);
 
 /*
  * adds an economy type Card to the deck
@@ -147,7 +146,10 @@ void addNpcEncounter (std::queue<std::unique_ptr<Card>>& m_deck,std::string& tem
  * @param deckSize - the current size of the deck
  * @param deckLine - the current line from which the type of card is read from the file
  */
-void addEconomy (std::queue<std::unique_ptr<Card>>& m_deck,std::string& tempCard,int& deckSize,int& deckLine);
+    void addEconomy (std::queue<std::unique_ptr<Card>>& m_deck,std::string& tempCard,int& deckSize,int& deckLine);
+
+};
+
 
 
 

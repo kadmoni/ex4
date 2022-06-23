@@ -204,7 +204,8 @@ public:
     /*
      * multiplier for unique Player Subclasses abilities
      */
-    const int MULTIPLIER = 2;
+
+    static const int maxLevel =10;
 
 
 protected:
@@ -215,10 +216,12 @@ protected:
     int m_level;
     int m_coins;
 
+    static const int MULTIPLIER = 2;
     static const int inHp = 100;
     static const int inForce = 5;
     static const int inLevel = 1;
     static const int inCoins = 10;
+
 
 };
 

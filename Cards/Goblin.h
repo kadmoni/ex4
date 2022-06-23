@@ -58,15 +58,16 @@ public:
      * the type of the Card (Goblin)
      */
     static const std::string TYPE;
-    static const int gobForce = 6;
-    static const int gobLoot = 2;
-    static const int gobDamage = 10;
 
 
 private:
     int m_force;
     int m_loot;
     int m_damage;
+
+    static const int gobForce = 6;
+    static const int gobLoot = 2;
+    static const int gobDamage = 10;
 
 };
 

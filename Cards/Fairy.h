@@ -51,11 +51,13 @@ public:
      * the type of the Card (Fairy)
      */
     static const std::string TYPE;
-    static const int fairyHeal = 10;
 
 
 private:
     int m_heal;
+
+    static const int fairyHeal = 10;
+
 };
 
 

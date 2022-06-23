@@ -19,7 +19,7 @@ m_maxHp(maxHp),m_hp(m_maxHp),m_force(force), m_level(inLevel),m_coins(inCoins)
 
 void Player::levelUp()
 {
-    if (m_level < Mtmchkin::maxLevel)
+    if (m_level < Player::maxLevel)
     {
         m_level++;
     }
@@ -62,11 +62,11 @@ void Player::forceChange(int amount)
 
 void Player::debuff(int amount)
 {
-    if (amount > 0)
+    if ((m_force > 0)||(m_force < 0))
     {
         m_force -= amount;
     }
-    if (m_force< 0)
+    if (m_force== 0)
     {
         m_force = 0;
     }

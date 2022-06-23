@@ -52,10 +52,12 @@ public:
      * the type of the Card (Pitfall)
      */
     static const std::string TYPE;
-    static const int defPitDamage = 10;
 
 private:
     int m_damage;
+
+    static const int defPitDamage = 10;
+
 };
 
 

@@ -92,7 +92,7 @@ Gang::Gang(const Gang& otherGang)
         {
             this->m_theGang.push_back(std::unique_ptr<Card>(new Goblin));
         }
-        else
+        else if (ptrVampire != nullptr)
         {
             this->m_theGang.push_back(std::unique_ptr<Card>(new Vampire));
         }
@@ -125,7 +125,7 @@ Gang& Gang::operator=(const Gang& otherGang)
         {
             this->m_theGang.push_back(std::unique_ptr<Card>(new Goblin));
         }
-        else
+        else if (ptrVampire != nullptr)
         {
             this->m_theGang.push_back(std::unique_ptr<Card>(new Vampire));
         }
@@ -168,7 +168,7 @@ void Gang::applyDamage(Player& player, int currentMonster) const {
         m_theGang[i]->applyEncounter(player);
     }
     int changeInForce = Gang::DEFEATED - player.getForce();
-    player.forceChange(ogForce-changeInForce);
+    player.forceChange(ogForce - changeInForce);
 }
 
 

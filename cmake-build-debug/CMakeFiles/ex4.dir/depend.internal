@@ -138,23 +138,12 @@ CMakeFiles/ex4.dir/Players/Wizard.cpp.obj
  C:/Users/barke/ex4/Players/Wizard.cpp
  C:/Users/barke/ex4/Players/Wizard.h
  C:/Users/barke/ex4/utilities.h
-CMakeFiles/ex4.dir/test.cpp.obj
- C:/Users/barke/ex4/Cards/Barfight.h
- C:/Users/barke/ex4/Cards/Card.h
- C:/Users/barke/ex4/Cards/Dragon.h
- C:/Users/barke/ex4/Cards/Fairy.h
- C:/Users/barke/ex4/Cards/Goblin.h
- C:/Users/barke/ex4/Cards/Merchant.h
- C:/Users/barke/ex4/Cards/Pitfall.h
- C:/Users/barke/ex4/Cards/Treasure.h
- C:/Users/barke/ex4/Cards/Vampire.h
- C:/Users/barke/ex4/Exception.h
- C:/Users/barke/ex4/Mtmchkin.h
- C:/Users/barke/ex4/Players/Fighter.h
- C:/Users/barke/ex4/Players/Player.h
- C:/Users/barke/ex4/Players/Rogue.h
- C:/Users/barke/ex4/Players/Wizard.h
- C:/Users/barke/ex4/test.cpp
+CMakeFiles/ex4.dir/tool/main.cpp.obj
+ ../Cards/Card.h
+ ../Exception.h
+ ../Mtmchkin.h
+ ../Players/Player.h
+ C:/Users/barke/ex4/tool/main.cpp
 CMakeFiles/ex4.dir/utilities.cpp.obj
  C:/Users/barke/ex4/Cards/Card.h
  C:/Users/barke/ex4/Exception.h

@@ -38,7 +38,7 @@ void Mtmchkin::playRound()
     {
         printTurnStartMessage(m_activePlayers[i]->getName());
         m_deck.front()->applyEncounter(*(m_activePlayers[i]));
-        if (m_activePlayers[i]->getLevel()>=Mtmchkin::maxLevel)
+        if (m_activePlayers[i]->getLevel()>=Player::maxLevel)
         {
             m_winners.push_back(std::move(m_activePlayers[i]));
             m_activePlayers.erase(m_activePlayers.begin()+i);
@@ -104,7 +104,7 @@ void Mtmchkin::printLeaderBoard() const
     }
 }
 
-bool checkName (std::string name)
+bool Mtmchkin::checkName (std::string name)
 {
     int nameSize = name.size();
     for (int i=0;i<nameSize;i++)
@@ -118,7 +118,7 @@ bool checkName (std::string name)
     return true;
 }
 
-bool createPlayer(std::vector<std::unique_ptr<Player>>& m_activePlayers)
+bool Mtmchkin::createPlayer(std::vector<std::unique_ptr<Player>>& m_activePlayers)
 {
     std::string name,job;
     std::getline(std::cin,name,' ');
@@ -148,7 +148,7 @@ bool createPlayer(std::vector<std::unique_ptr<Player>>& m_activePlayers)
 
 }
 
-void createDeck (std::queue<std::unique_ptr<Card>>& m_deck,const std::string filename)
+void Mtmchkin::createDeck (std::queue<std::unique_ptr<Card>>& m_deck,const std::string filename)
 {
     int deckSize =0;
     int deckLine =1;
@@ -188,7 +188,7 @@ void createDeck (std::queue<std::unique_ptr<Card>>& m_deck,const std::string fil
     }
 }
 
-void teamSizeInput (int& teamSize)
+void Mtmchkin::teamSizeInput (int& teamSize)
 {
     std::string temp;
     while((teamSize>Mtmchkin::maxTeamSize)||(teamSize<Mtmchkin::minTeamSize))
@@ -209,7 +209,7 @@ void teamSizeInput (int& teamSize)
     }
 }
 
-void addMonster (std::queue<std::unique_ptr<Card>>& m_deck,std::string& tempCard,int& deckSize,int& deckLine)
+void Mtmchkin::addMonster (std::queue<std::unique_ptr<Card>>& m_deck,std::string& tempCard,int& deckSize,int& deckLine)
 {
     if (tempCard == Dragon::TYPE)
     {
@@ -231,7 +231,7 @@ void addMonster (std::queue<std::unique_ptr<Card>>& m_deck,std::string& tempCard
     }
 }
 
-void addNpcEncounter (std::queue<std::unique_ptr<Card>>& m_deck,std::string& tempCard,int& deckSize,int& deckLine)
+void Mtmchkin::addNpcEncounter (std::queue<std::unique_ptr<Card>>& m_deck,std::string& tempCard,int& deckSize,int& deckLine)
 {
     if (tempCard == Barfight::TYPE)
     {
@@ -253,7 +253,7 @@ void addNpcEncounter (std::queue<std::unique_ptr<Card>>& m_deck,std::string& tem
     }
 }
 
-void addEconomy (std::queue<std::unique_ptr<Card>>& m_deck,std::string& tempCard,int& deckSize,int& deckLine)
+void Mtmchkin::addEconomy (std::queue<std::unique_ptr<Card>>& m_deck,std::string& tempCard,int& deckSize,int& deckLine)
 {
     if (tempCard == Merchant::TYPE)
     {

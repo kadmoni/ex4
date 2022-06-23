@@ -5,7 +5,9 @@
 #include <iostream>
 
 
-
+/*
+ * runs the game Mtmchkin
+ */
 int main(){
     try{
         Mtmchkin game("../deck.txt");
@@ -16,6 +18,7 @@ int main(){
     }
     catch(const std::exception& e){
         std::cout << e.what();
+        return 1;
     }
     return 0;
 }

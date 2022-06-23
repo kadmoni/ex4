@@ -67,6 +67,15 @@ private:
     int m_buff;
     int m_healCost;
     int m_buffCost;
+
+    static int const healMerch = 1;
+    static int const buffMerch = 1;
+    static int const healCost = 5;
+    static int const buffCost = 10;
+    static int const choiceInit = 3;
+    static int const noChoice = 0;
+    static int const choiceHeal = 1;
+    static int const choiceBuff = 2;
 };
 
 

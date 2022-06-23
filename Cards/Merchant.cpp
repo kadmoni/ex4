@@ -11,17 +11,17 @@ const std::string Merchant::TYPE = "Merchant";
 
 
 Merchant::Merchant() : Card(),
-    m_heal(1),
-    m_buff(1),
-    m_healCost(5),
-    m_buffCost(10)
+    m_heal(Merchant::healMerch),
+    m_buff(Merchant::buffMerch),
+    m_healCost(Merchant::healCost),
+    m_buffCost(Merchant::buffCost)
 {}
 
 
 
 void Merchant::applyEncounter(Player& player) const {
     printMerchantInitialMessageForInteractiveEncounter(cout, player.getName(), player.getCoins());
-    int choice = 3;
+    int choice = Merchant::choiceInit;
     do {
         std::string answer;
         try{
@@ -32,26 +32,26 @@ void Merchant::applyEncounter(Player& player) const {
             printInvalidInput();
             continue;
         }
-        if (choice != 0 && choice != 1 && choice != 2)
+        if (choice != Merchant::noChoice && choice != Merchant::choiceHeal && choice != Merchant::choiceBuff)
         {
             printInvalidInput();
         }
-    } while (choice != 0 && choice != 1 && choice != 2);
+    } while (choice != Merchant::noChoice && choice != Merchant::choiceHeal && choice != Merchant::choiceBuff);
     merchantChoice(player, choice);
 }
 
 void Merchant::merchantChoice(Player& player, int choice) const {
-    int type = 3;
+    int type = Merchant::choiceInit;
     int cost = 0;
 
-    if (choice == 0)
+    if (choice == Merchant::noChoice)
     {
-        type = 0;
-        cost = 0;
+        type = Merchant::noChoice;
+        cost = Merchant::noChoice;
     }
-    else if (choice == 1)
+    else if (choice == Merchant::choiceHeal)
     {
-        type = 1;
+        type = Merchant::choiceHeal;
         if (player.pay(m_healCost))
         {
             player.heal(m_heal);
@@ -62,9 +62,9 @@ void Merchant::merchantChoice(Player& player, int choice) const {
             printMerchantInsufficientCoins(cout);
         }
     }
-    else if (choice == 2)
+    else if (choice == Merchant::choiceBuff)
     {
-        type = 2;
+        type = Merchant::choiceBuff;
         if (player.pay(m_buffCost))
         {
             cost = m_buffCost;

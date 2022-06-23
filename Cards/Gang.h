@@ -80,7 +80,7 @@ public:
 
 private:
     std::vector<std::unique_ptr<Card>> m_theGang;
-    static const int DEFEATED = -11;
+    static const int DEFEATED = -12;
 
 };
 

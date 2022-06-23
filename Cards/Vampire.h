@@ -59,10 +59,6 @@ public:
      * the type of the Card (Goblin)
      */
     static const std::string TYPE;
-    static const int vampForce=10;
-    static const int vampLoot=2;
-    static const int vampDamage=10;
-    static const int vampDebuff=1;
 
 
 private:
@@ -70,6 +66,11 @@ private:
     int m_loot;
     int m_damage;
     int m_debuff;
+
+    static const int vampForce=10;
+    static const int vampLoot=2;
+    static const int vampDamage=10;
+    static const int vampDebuff=1;
 
 };
 
