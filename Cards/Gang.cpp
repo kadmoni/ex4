@@ -76,6 +76,63 @@ Gang::Gang(std::ifstream& deck, int& deckLine) : Card()
     throw DeckFileFormatError(--deckLine);
 }
 
+Gang::Gang(const Gang& otherGang)
+{
+    int gangSize = otherGang.m_theGang.size();
+    for (int i = 0; i < gangSize; i++)
+    {
+        Dragon* ptrDragon = dynamic_cast<Dragon*>(&(*(m_theGang[i])));
+        Goblin* ptrGoblin = dynamic_cast<Goblin*>(&(*(m_theGang[i])));
+        Vampire* ptrVampire = dynamic_cast<Vampire*>(&(*(m_theGang[i])));
+        if (ptrDragon != nullptr)
+        {
+            this->m_theGang.push_back(std::unique_ptr<Card>(new Dragon);
+        }
+        else if (ptrGoblin != nullptr)
+        {
+            this->m_theGang.push_back(std::unique_ptr<Card>(new Goblin);
+        }
+        else
+        {
+            this->m_theGang.push_back(std::unique_ptr<Card>(new Vampire);
+        }
+    }
+}
+
+
+Gang& Gang::operator=(const Gang& otherGang)
+{
+    if (this == &otherGang)
+    {
+        return *this;
+    }
+    int gangSize = this->size();
+    for (int i = 0; i <gangSize; i++)
+    {
+        this->m_theGang.erase(this->m_theGang.begin() + i);
+    }
+
+    int gangSize = otherGang.m_theGang.size();
+    for (int i = 0; i < gangSize; i++)
+    {
+        Dragon* ptrDragon = dynamic_cast<Dragon*>(&(*(m_theGang[i])));
+        Goblin* ptrGoblin = dynamic_cast<Goblin*>(&(*(m_theGang[i])));
+        Vampire* ptrVampire = dynamic_cast<Vampire*>(&(*(m_theGang[i])));
+        if (ptrDragon != nullptr)
+        {
+            this->m_theGang.push_back(std::unique_ptr<Card>(new Dragon);
+        }
+        else if (ptrGoblin != nullptr)
+        {
+            this->m_theGang.push_back(std::unique_ptr<Card>(new Goblin);
+        }
+        else
+        {
+            this->m_theGang.push_back(std::unique_ptr<Card>(new Vampire);
+        }
+    }
+}
+
 
 
 void Gang::applyEncounter(Player& player) const {

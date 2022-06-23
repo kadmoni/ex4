@@ -50,13 +50,15 @@ public:
 
 
 
+    Gang& operator=(const Gang& other);
+
+    Gang(const Gang&);
+
 
     /*
      * Here we are explicitly telling the compiler to use the default methods
     */
-    Gang(const Gang&) = default;
     ~Gang() override = default;
-    Gang& operator=(const Gang& other) = default;
 
     static const std::string TYPE;
     static const std::string END;
