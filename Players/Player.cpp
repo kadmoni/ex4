@@ -55,7 +55,7 @@ void Player::buff(int amount)
 
 void Player::forceChange(int amount)
 {
-    m_force += amount;
+    m_force = amount;
 }
 
 

@@ -161,13 +161,14 @@ void Gang::applyEncounter(Player& player) const {
 
 void Gang::applyDamage(Player& player, int currentMonster) const {
     int size = m_theGang.size();
-    int change = player.getForce() + Gang::DEFEATED;
-    player.forceChange(-(change));
+    int ogForce = player.getForce();
+    player.forceChange(Gang::DEFEATED);
     for (int i = currentMonster; i < size ; i++)
     {
         m_theGang[i]->applyEncounter(player);
     }
-    player.forceChange(change);
+    int changeInForce = Gang::DEFEATED - player.getForce();
+    player.forceChange(ogForce-changeInForce);
 }
 
 
