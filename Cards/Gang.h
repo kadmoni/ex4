@@ -12,15 +12,32 @@
 class Gang : public Card {
 public:
     /*
-     * C'tor of Card class
+     * C'tor of Gang class
      *
-     * @param type - The type of the card.
-     * @param stats - The numeral stats of the card.
+     * @param deck - file containing the cards that should be added to the deck
+     * @param deckLine - the line from which to start reading fromt the file
      * @return
-     *      A new instance of Card.
+     *      A new instance of Gang
     */
     Gang(std::ifstream& deck, int& deckLine);
 
+    /*
+     * copy C'tor of Card class
+     *
+     * @param Gang - a different instance of Gang
+     * @return
+     *      A new instance of Gang.
+    */
+    Gang(const Gang&);
+
+    /*
+    * copy C'tor of Card class
+    *
+    * @param Gang - a different instance of Gang
+    * @return
+    *      reference to the current Gang after the assignment
+    */
+    Gang& operator=(const Gang& other);
 
 
     /*
@@ -33,12 +50,15 @@ public:
     void applyEncounter(Player& player) const override;
 
 
-
-
-
-
+    /*
+     * applies the correct amount of damage and status effects after loss to a Gang
+     *
+     * @param player - the player to which damage will be applied
+     * @param currentMonster - the place of the monster in the Gang (so the following will be applied to the Player)
+     * @return
+     *      void
+     */
     void applyDamage(Player& player, int currentMonster) const;
-
 
     /*
      * Prints the card info:
@@ -47,13 +67,6 @@ public:
      *      void
     */
     std::ostream & print(std::ostream &out) const override;
-
-
-
-    Gang& operator=(const Gang& other);
-
-    Gang(const Gang&);
-
 
     /*
      * Here we are explicitly telling the compiler to use the default methods

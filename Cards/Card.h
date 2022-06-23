@@ -21,12 +21,15 @@ public:
     */
     Card();
 
-
-
+    /*
+     * virtual destructor for Card (in order to use subclass destructors correctly) set to default
+     */
     virtual ~Card() = default;
 
+    /*
+     * copy constructor and assignment operator explicitly set to default
+     */
     Card(const Card& card) = default;
-
     Card& operator=(const Card& other) = default;
 
     /*
@@ -56,14 +59,6 @@ public:
     /*
      * Here we are explicitly telling the compiler to use the default methods
     */
-
-    //virtual Card* clone() const = 0;
-
-
-
-
-//protected:
-//    std::string m_name;
 
 };
 

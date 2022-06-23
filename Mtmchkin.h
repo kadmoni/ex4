@@ -23,6 +23,17 @@ public:
     Mtmchkin(const std::string fileName);
 
     /*
+     * copy constructor and assignment operator deleted as instructed
+     */
+    Mtmchkin(const Mtmchkin&) = delete;
+    Mtmchkin& operator=(const Mtmchkin&) = delete;
+
+    /*
+     * destructor set to default
+     */
+    ~Mtmchkin() = default;
+
+    /*
     * Play the next Round of the game - according to the instruction in the exercise document.
     *
     * @return
